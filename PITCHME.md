@@ -40,7 +40,7 @@ https://www.wh-plus.co.jp/
 ## リネット
 @snapend
 
-@snap[midpoint span-70]
+@snap[midpoint span-90]
 ![IMAGE](assets/img/lenet-service.png)
 @snapend
 
