@@ -15,6 +15,8 @@ PHPカンファレンス2019 懇親会LT
 - @ngmy
 - クライミング8エンジニアリング2
 
+![IMAGE](assets/img/profile.jpg)
+
 ---
 
 会社・サービス紹介
