@@ -26,6 +26,7 @@
 
 特殊なLaravelの使い方をしているせい
 
+```
 lenetリポジトリ
 ├── リネット衣類
 │   └── controllers
@@ -43,6 +44,7 @@ lenetリポジトリ
     ├── database
     ├── vendor    
     └── lib
+```
 
 ---
 
@@ -52,6 +54,7 @@ https://getcomposer.org/apidoc/master/index.html
 
 ---
 
+```
 lenetリポジトリ
 ├── リネット衣類
 │   ├── composer.json
@@ -74,6 +77,7 @@ lenetリポジトリ
     ├── database
     ├── vendor    
     └── lib
+```
 
 ---
 
