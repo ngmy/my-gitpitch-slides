@@ -89,3 +89,8 @@ foreach ($serviceLoader->getPrefixesPsr4() as $prefix => $paths) { // PSR-4
     $loader->addPsr4($prefix, $paths);
 }
 ```
+
+---
+
+Composer APIを使えば単純にcomposer.jsonを読み込む以外にも色々できる
+（ご利用は計画的に）
