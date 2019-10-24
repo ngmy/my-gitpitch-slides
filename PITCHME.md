@@ -108,7 +108,7 @@ lenetリポジトリ
 
 ---
 
-```
+```php
 $loader = require base_path() . '/vendor/autoload.php';
 $serviceLoader = require realpath($_SERVER['DOCUMENT_ROOT']) . '/../vendor/autoload.php';
 $loader->addClassMap($serviceLoader->getClassMap()); // クラスマップ
