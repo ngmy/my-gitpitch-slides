@@ -127,6 +127,11 @@ foreach ($serviceLoader->getPrefixesPsr4() as $prefix => $paths) { // PSR-4
 
 ---
 
+lenet.jpドメインにアクセスした時は共有ライブラリとlenet.jpのコードだけが見える。
+他サービスのコードが見えない
+
+---
+
 Composer APIを使えば単純にcomposer.jsonを読み込む以外にも色々できる
 （ご利用は計画的に）
 
