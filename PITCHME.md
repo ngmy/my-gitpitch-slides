@@ -2,7 +2,7 @@
 # Composer APIを使った動的クラスローディング
 @snapend
 
-@snap[south-east span-100 text-06]
+@snap[south-east span-100 text-09]
 Dec 01, 2019
 PHPカンファレンス2019 懇親会LT
 永宮　悠大
