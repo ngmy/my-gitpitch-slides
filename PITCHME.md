@@ -36,10 +36,15 @@ https://www.wh-plus.co.jp/
 
 ---
 
+@snap[north span-55]
 ## リネット
+@spanend
 
+@snap[north span-55]
 ![IMAGE](assets/img/lenet-service.png)
+@snapend
 
+@snap[south text-05]
 <dl>
     <dt>衣類クリーニング</dt>
     <dd>https://www.lenet.jp/</dd>
@@ -50,6 +55,7 @@ https://www.wh-plus.co.jp/
     <dt>靴クリーニング</dt>
     <dd>https://www.kutsulenet.jp/</dd>
 </dl>
+@snapend
 
 ----
 
