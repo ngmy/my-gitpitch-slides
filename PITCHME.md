@@ -27,7 +27,7 @@ https://www.wh-plus.co.jp/
 
 ---
 
-## 
+## リネット
 
 ![IMAGE](assets/img/lenet-service.png)
 
