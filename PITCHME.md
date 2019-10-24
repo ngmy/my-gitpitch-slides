@@ -36,13 +36,15 @@ https://www.wh-plus.co.jp/
 
 ---
 
+@snap[north]
 ## リネット
+@snapend
 
 @snap[span-55]
 ![IMAGE](assets/img/lenet-service.png)
 @snapend
 
-@snap[south text-05]
+@snap[south  span-100 text-05]
 - 衣類クリーニング - https://www.lenet.jp/
 - 衣類クリーニング + 保管 - https://www.lenet-hokan.jp/
 - 布団クリーニング - https://www.futonlenet.jp/
