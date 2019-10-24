@@ -8,7 +8,7 @@ PHPカンファレンス2019 懇親会LT
 
 @snap[north-west]
 ## 自己紹介
-@endsnap
+@snapend
 
 @snap[west span-55]
 永宮　悠大（NAGAMIYA Yuta）
