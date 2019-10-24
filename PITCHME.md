@@ -54,33 +54,23 @@ https://www.wh-plus.co.jp/
 特殊なLaravelの使い方をしているせい
 
 ```
-lenetリポジトリ
-├── 衣類
+リネットリポジトリ
+├── リネット衣類
 │   ├── public
 │   │   └── index.php
-│   └── controllers
+│   ├── controllers // 衣類のコントローラ
+│   └── lib // 衣類のライブラリ
 ├── 保管
-│   ├── public
-│   │   └── index.php
-│   └── controllers
 ├── 布団
-│   ├── public
-│   │   └── index.php
-│   └── controllers
 ├── 靴
-│   ├── public
-│   │   └── index.php
-│   └── controllers
 ├── CMS
-│   ├── public
-│   │   └── index.php
-│   └── controllers
 └── Laravel + 共有ライブラリ
     ├── app
     ├── public
     │   └── index.php
-    ├── database
-    ├── vendor    
+    ├── ... more Laravel Directory
+    ├── composer.json
+    ├── lib // 共有ライブラリ（PSR-4）
     └── vendor
 ```
 
