@@ -55,22 +55,33 @@ https://www.wh-plus.co.jp/
 
 ```
 lenetリポジトリ
-├── リネット衣類
+├── 衣類
+│   ├── public
+│   │   └── index.php
 │   └── controllers
-├── リネット布団
-│   └── controllers
-├── リネット保管
-│   └── controllers
-├── リネット靴
+├── 保管
+│   ├── public
+│   │   └── index.php
+│   └── controllers
+├── 布団
+│   ├── public
+│   │   └── index.php
+│   └── controllers
+├── 靴
+│   ├── public
+│   │   └── index.php
 │   └── controllers
 ├── CMS
+│   ├── public
+│   │   └── index.php
 │   └── controllers
-└── Laravel
+└── Laravel + 共有ライブラリ
     ├── app
-    ├── bootstrap
+    ├── public
+    │   └── index.php
     ├── database
     ├── vendor    
-    └── lib
+    └── vendor
 ```
 
 ---
@@ -83,22 +94,22 @@ https://getcomposer.org/apidoc/master/index.html
 
 ```
 lenetリポジトリ
-├── リネット衣類
+├── lenet.jp
 │   ├── composer.json
 │   └── vendor
-├── リネット布団
+├── lenet-hokan.jp
 │   ├── composer.json
 │   └── vendor
-├── リネット保管
+├── futonlenet.jp
 │   ├── composer.json
 │   └── vendor
-├── リネット靴
+├── kutsulenet.jp
 │   ├── composer.json
 │   └── vendor
-├── CMS
+├── 車内CMS
 │   ├── composer.json
 │   └── vendor
-└── Laravel
+└── laravel + common
     ├── app
     ├── bootstrap
     ├── database
