@@ -43,7 +43,6 @@ https://www.wh-plus.co.jp/
 <dl>
     <dt>衣類クリーニング</dt>
     <dd>https://www.lenet.jp/</dd>
-    <dd>https://www.lenet.jp/</dd>
     <dt>衣類クリーニング + 保管</dt>
     <dd>https://www.lenet-hokan.jp/</dd>
     <dt>布団クリーニング</dt>
