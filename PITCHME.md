@@ -19,7 +19,11 @@ PHPカンファレンス2019 懇親会LT
 
 ---
 
-会社・サービス紹介
+## ホワイトプラス
+
+![IMAGE](assets/img/wplog.png)
+
+https://www.wh-plus.co.jp/
 
 ---
 
