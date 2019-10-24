@@ -84,6 +84,8 @@ lenetリポジトリ
     └── vendor
 ```
 
+@[1-5, zoom-13]
+
 ---
 
 ### Composer API
