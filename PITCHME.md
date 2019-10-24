@@ -38,7 +38,7 @@ https://www.wh-plus.co.jp/
 
 @snap[north span-55]
 ## リネット
-@spanend
+@snapend
 
 @snap[north span-55]
 ![IMAGE](assets/img/lenet-service.png)
