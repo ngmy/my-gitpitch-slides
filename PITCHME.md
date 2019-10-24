@@ -21,7 +21,7 @@ PHPカンファレンス2019 懇親会LT
 
 ## ホワイトプラス
 
-![IMAGE](assets/img/wplog.png)
+![IMAGE](assets/img/wplogo.png)
 
 https://www.wh-plus.co.jp/
 
