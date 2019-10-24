@@ -77,9 +77,11 @@ lenetリポジトリ
 
 ---
 
+```
 $loader = require base_path() . '/vendor/autoload.php';
-$serviceLoader = require realpath($_SERVER['DOCUMENT_ROOT']) . '/../vendor/autoload.php';                      
-$loader->addClassMap($serviceLoader->getClassMap()); // クラスマップ       
-foreach ($serviceLoader->getPrefixesPsr4() as $prefix => $paths) { // PSR-4                                             
-    $loader->addPsr4($prefix, $paths);                                                                         
-}     
+$serviceLoader = require realpath($_SERVER['DOCUMENT_ROOT']) . '/../vendor/autoload.php';
+$loader->addClassMap($serviceLoader->getClassMap()); // クラスマップ
+foreach ($serviceLoader->getPrefixesPsr4() as $prefix => $paths) { // PSR-4
+    $loader->addPsr4($prefix, $paths);
+}
+```
