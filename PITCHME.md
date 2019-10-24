@@ -43,16 +43,10 @@ https://www.wh-plus.co.jp/
 @snapend
 
 @snap[south text-05]
-<dl>
-    <dt>衣類クリーニング</dt>
-    <dd>https://www.lenet.jp/</dd>
-    <dt>衣類クリーニング + 保管</dt>
-    <dd>https://www.lenet-hokan.jp/</dd>
-    <dt>布団クリーニング</dt>
-    <dd>https://www.futonlenet.jp/</dd>
-    <dt>靴クリーニング</dt>
-    <dd>https://www.kutsulenet.jp/</dd>
-</dl>
+- 衣類クリーニング - https://www.lenet.jp/
+- 衣類クリーニング + 保管 - https://www.lenet-hokan.jp/
+- 布団クリーニング - https://www.futonlenet.jp/
+- 靴クリーニング - https://www.kutsulenet.jp/</dd>
 @snapend
 
 ---
