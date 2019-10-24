@@ -1,4 +1,4 @@
-@snap[north]
+@snap[north span-100]
 # Composer APIを使った動的クラスローディング
 @snapned
 
@@ -28,7 +28,7 @@ PHPカンファレンス2019 懇親会LT
 
 ---
 
-@snap[north]
+@snap[north span-100]
 ## ホワイトプラス
 @snapend
 
