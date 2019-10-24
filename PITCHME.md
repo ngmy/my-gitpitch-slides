@@ -104,7 +104,7 @@ https://getcomposer.org/apidoc/master/index.html
 
 ---
 
-<iframe width="100%" src="https://getcomposer.org/apidoc/master/index.html"></iframe>
+<iframe width="100%" height="100%" src="https://getcomposer.org/apidoc/master/index.html"></iframe>
 
 ---
 
