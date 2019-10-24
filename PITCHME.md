@@ -1,8 +1,12 @@
+@snap[north]
 # Composer APIを使った動的クラスローディング
+@snapned
 
+@snap[south]
 Dec 01, 2019
 PHPカンファレンス2019 懇親会LT
 永宮　悠大
+@snapned
 
 ---
 
