@@ -1,4 +1,4 @@
-@snap[north span-100 text-09]
+@snap[north span-100 text-05]
 # Composer APIを使った動的クラスローディング
 @snapned
 
