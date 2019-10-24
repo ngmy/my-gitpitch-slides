@@ -36,11 +36,11 @@ https://www.wh-plus.co.jp/
 
 ---
 
-@snap[north]
+@snap[north span-40]
 ## リネット
 @snapend
 
-@snap[north-midpoint span-90]
+@snap[midpoint span-90]
 ![IMAGE](assets/img/lenet-service.png)
 @snapend
 
