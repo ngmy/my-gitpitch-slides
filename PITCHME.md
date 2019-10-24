@@ -27,6 +27,15 @@ https://www.wh-plus.co.jp/
 
 ---
 
+## 
+
+![IMAGE](assets/img/lenet-service.png)
+
+衣類クリーニング https://www.lenet.jp/
+衣類クリーニング + 保管 https://www.lenet-hokan.jp/
+布団クリーニング https://www.futonlenet.jp/
+靴クリーニング https://www.kutsulenet.jp/
+
 ### composer.jsonを動的に読み込みたくなった
 
 ---
