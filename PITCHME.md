@@ -30,9 +30,13 @@ PHPカンファレンス2019 懇親会LT
 
 ## ホワイトプラス
 
+@snap[midpoint span-90]
 ![IMAGE](assets/img/wplogo.png)
+@snapend
 
+@snap[south span-100]
 https://www.wh-plus.co.jp/
+@snapend
 
 ---
 
