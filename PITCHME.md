@@ -28,7 +28,9 @@ PHPカンファレンス2019 懇親会LT
 
 ---
 
+@snap[north]
 ## ホワイトプラス
+@snapend
 
 @snap[midpoint span-90]
 ![IMAGE](assets/img/wplogo.png)
