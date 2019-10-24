@@ -1,8 +1,8 @@
-@snap[north span-100]
+@snap[north span-100 text-09]
 # Composer APIを使った動的クラスローディング
 @snapned
 
-@snap[south span-100]
+@snap[south span-100 ]
 Dec 01, 2019
 PHPカンファレンス2019 懇親会LT
 永宮　悠大
