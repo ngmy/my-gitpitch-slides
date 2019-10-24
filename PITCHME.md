@@ -40,11 +40,11 @@ https://www.wh-plus.co.jp/
 ## リネット
 @snapend
 
-@snap[span-55 center]
+@snap[midpoint span-70]
 ![IMAGE](assets/img/lenet-service.png)
 @snapend
 
-@snap[south  span-100 text-05]
+@snap[south span-100 text-05]
 - 衣類クリーニング
     - https://www.lenet.jp/
 - 衣類クリーニング + 保管
