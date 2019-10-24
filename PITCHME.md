@@ -57,7 +57,7 @@ https://www.wh-plus.co.jp/
 </dl>
 @snapend
 
-----
+---
 
 ### composer.jsonを動的に読み込みたくなった
 
