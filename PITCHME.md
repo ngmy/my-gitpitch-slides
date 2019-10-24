@@ -12,7 +12,7 @@ PHPカンファレンス2019 懇親会LT
 
 - 株式会社ホワイトプラスのエンジニア
 - PHPの下回りを見てます
-- @fa[solid-github] [@ngmy](https://github.com/ngmy)
+- @fa[github] [@ngmy](https://github.com/ngmy)
 - クライミング8エンジニアリング2
 
 ![IMAGE](assets/img/profile.jpg)
