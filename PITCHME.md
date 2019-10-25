@@ -565,30 +565,6 @@ https://getcomposer.org/apidoc/master/index.html
 
 ---
 
-```
-リネット
-├── 衣類
-│   ├── composer.json
-│   └── vendor
-├── 保管
-│   ├── composer.json
-│   └── vendor
-├── 布団
-│   ├── composer.json
-│   └── vendor
-├── 靴
-│   ├── composer.json
-│   └── vendor
-├── CMS
-│   ├── composer.json
-│   └── vendor
-└── Laravel + 共有ライブラリ
-    ├── composer.json    
-    └── vendor
-```
-
----
-
 ```php
 $loader = require base_path() . '/vendor/autoload.php';
 $serviceLoader = require realpath($_SERVER['DOCUMENT_ROOT']) . '/../vendor/autoload.php';
