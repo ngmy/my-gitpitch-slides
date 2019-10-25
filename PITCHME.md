@@ -71,14 +71,14 @@ https://www.wh-plus.co.jp/
 
 ---
 
-@snap
+@snap[west]
 ```scala
 val x = 2
 val y = x + 2
 ```
 @snapend
 
-@snap
+@snap[east]
 ```haskell
 test = let x = 2
 y = x + 2
