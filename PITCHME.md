@@ -108,6 +108,7 @@ https://www.wh-plus.co.jp/
 
 @snap[east span-50 text-08]
 ```json
+
 {
     "autoload": {
         "classmap": [
