@@ -76,7 +76,7 @@ https://www.wh-plus.co.jp/
 @snapend
 
 @snap[south-west span-50 text-08]
-```
+```text
 リネット
 ├── 衣類
 │   ├── ...
@@ -105,7 +105,7 @@ https://www.wh-plus.co.jp/
 ```
 @snapend
 
-@[1-5, zoom-13]
+@[2-5]
 
 @snap[east span-50 text-08]
 ```json
