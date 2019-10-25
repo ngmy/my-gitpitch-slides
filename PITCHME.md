@@ -116,16 +116,16 @@ lenet
 @snapend
 
 @snap[east span-50]
-@[2, 3-4](lenet.jpのドキュメントルート<br>lenet_common（Laravel）のpublic/index.phpを読み込んでいる)
-@[2, 5-6](lenet.jpのcomposer.json<br>名前空間なしのレガシーなコントローラやライブラリをClassmapでオートロードしている)
-@[7, 8-9](lenet-hokan.jpのドキュメントルート)
-@[7, 10-11](布団のコントローラとライブラリをClassmapでオートロードしている)
-@[12, 13-14](futonlenet.jpのドキュメントルート)
-@[12, 15-16](CMSのコントローラとライブラリをClassmapでオートロードしている)
-@[17, 18-19](Laravelと共有ライブラリをPSR-4でオートロードしている)
-@[17, 20-21](kutsulenet.jpのドキュメントルート)
-@[22, 23-24](Laravelと共有ライブラリをPSR-4でオートロードしている)
-@[22, 25-26](Laravelと共有ライブラリをPSR-4でオートロードしている)
+@[2](Laravelと共有ライブラリ)
+@[2, 3-4](Laravelのindex.php)
+@[2, 5-6](Laravelのcomposer.jsonとvendor)
+@[7](lenet.jpのコード)
+@[7, 8-9](lenet.jpのドキュメントルート)
+@[7, 10-11](lenet.jpのcomposer.jsonとvendor)
+@[12-16](lenet-hokan.jp)
+@[17-21](lenet-hokan.jp)
+@[22-26](lenet-hokan.jp)
+@[27-31](lenet-hokan.jp)
 @snapend
 
 +++
