@@ -74,23 +74,30 @@ https://www.wh-plus.co.jp/
 特殊なLaravelの使い方をしているせい
 
 ```
-リネットリポジトリ
-├── リネット衣類
-│   ├── public
-│   │   └── index.php
-│   ├── controllers // 衣類のコントローラ
-│   └── lib // 衣類のライブラリ
+リネット
+├── 衣類
+│   ├── ...
+│   ├── composer.json
+│   └── vendor
 ├── 保管
+│   ├── ...
+│   ├── composer.json
+│   └── vendor
 ├── 布団
+│   ├── ...
+│   ├── composer.json
+│   └── vendor
 ├── 靴
+│   ├── ...
+│   ├── composer.json
+│   └── vendor
 ├── CMS
+│   ├── ...
+│   ├── composer.json
+│   └── vendor
 └── Laravel + 共有ライブラリ
-    ├── app
-    ├── public
-    │   └── index.php
-    ├── ... more Laravel Directory
-    ├── composer.json
-    ├── lib // 共有ライブラリ（PSR-4）
+    ├── ...
+    ├── composer.json    
     └── vendor
 ```
 
@@ -109,28 +116,25 @@ https://getcomposer.org/apidoc/master/index.html
 ---
 
 ```
-lenetリポジトリ
-├── lenet.jp
+リネット
+├── 衣類
 │   ├── composer.json
 │   └── vendor
-├── lenet-hokan.jp
+├── 保管
 │   ├── composer.json
 │   └── vendor
-├── futonlenet.jp
+├── 布団
 │   ├── composer.json
 │   └── vendor
-├── kutsulenet.jp
+├── 靴
 │   ├── composer.json
 │   └── vendor
-├── 車内CMS
+├── CMS
 │   ├── composer.json
 │   └── vendor
-└── laravel + common
-    ├── app
-    ├── bootstrap
-    ├── database
-    ├── vendor    
-    └── lib
+└── Laravel + 共有ライブラリ
+    ├── composer.json    
+    └── vendor
 ```
 
 ---
