@@ -107,7 +107,8 @@ https://www.wh-plus.co.jp/
 
 @[1-5, zoom-13]
 
-@snap[south-east span-50 text-08]
+@snap[north-east span-50 text-08]
+```json
 {
     "autoload": {
         "classmap": [
@@ -118,6 +119,7 @@ https://www.wh-plus.co.jp/
         ]
     }
 }
+```
 @snapend
 
 ---
