@@ -107,7 +107,7 @@ https://www.wh-plus.co.jp/
 
 @[1-5, zoom-13]
 
-@snap[north-east span-50 text-08]
+@snap[east span-50 text-08]
 ```json
 {
     "autoload": {
