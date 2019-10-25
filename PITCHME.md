@@ -118,7 +118,7 @@ lenet
 @snap[east span-50]
 @[2](Laravelと共有ライブラリ)
 @[2, 3-4](Laravelのindex.php)
-@[2, 5-6](Laravelのcomposer.jsonとvendor)
+@[2, 5-6](Laravelのcomposer.jsonとvendor<br>共有ライブラリをpsr-4に登録している)
 @[7](衣類のコード)
 @[7, 8-9](衣類のドキュメントルート<br>Laravelのindex.phpをrequireしている)
 @[7, 10-11](衣類のcomposer.jsonとvendor<br>名前空間なしのレガシーなコードをclassmapに登録している)
