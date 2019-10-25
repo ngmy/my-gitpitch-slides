@@ -105,7 +105,7 @@ https://www.wh-plus.co.jp/
 ```
 @snapend
 
-@snap[east span-50 text-08]
+@snap[east span-50 text-06]
 ```json
 {
     "autoload": {
@@ -120,8 +120,13 @@ https://www.wh-plus.co.jp/
 ```
 @snapend
 
-@snap[south-east span-50 text-08]
+@snap[south-east span-50 text-06]
 ```json
+"require": {
+    ...
+    "laravel/framework": "^6.2",
+    ...
+},
 "autoload": {
     "psr-4": {
         "App\\": "app/",
@@ -193,7 +198,7 @@ https://www.wh-plus.co.jp/
 
 ---
 
-@snap[south-west span-50 text-08 text-red]
+@snap[south-west span-50 text-08]
 ```text
 リネット
 ├── 衣類
@@ -240,7 +245,7 @@ https://www.wh-plus.co.jp/
 
 ---
 
-@snap[south-west span-50 text-08 text-red]
+@snap[south-west span-50 text-08]
 ```text
 リネット
 ├── 衣類
@@ -287,7 +292,7 @@ https://www.wh-plus.co.jp/
 
 ---
 
-@snap[south-west span-50 text-08 text-red]
+@snap[south-west span-50 text-08]
 ```text
 リネット
 ├── 衣類
@@ -334,7 +339,7 @@ https://www.wh-plus.co.jp/
 
 ---
 
-@snap[south-west span-50 text-08 text-red]
+@snap[south-west span-50 text-08]
 ```text
 リネット
 ├── 衣類
@@ -364,7 +369,7 @@ https://www.wh-plus.co.jp/
 ```
 @snapend
 
-@snap[east span-50 text-08]
+@snap[east span-50 text-06]
 ```json
 {
     "autoload": {
@@ -381,7 +386,7 @@ https://www.wh-plus.co.jp/
 
 ---
 
-@snap[south-west span-50 text-08 text-red]
+@snap[south-west span-50 text-08]
 ```text
 リネット
 ├── 衣類
