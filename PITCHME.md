@@ -114,6 +114,14 @@ https://www.wh-plus.co.jp/
 @[22, 23](Laravelと共有ライブラリをPSR-4でオートロードしている)
 @snapend
 
++++
+
+a
+
++++
+
+b
+
 ---
 
 ### Composer API
