@@ -73,6 +73,7 @@ https://www.wh-plus.co.jp/
 
 特殊なLaravelの使い方をしているせい
 
+@snap[south span-50 text-05]
 ```
 リネット
 ├── 衣類
@@ -100,6 +101,7 @@ https://www.wh-plus.co.jp/
     ├── composer.json    
     └── vendor
 ```
+@snapend
 
 @[1-5, zoom-13]
 
