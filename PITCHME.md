@@ -120,7 +120,7 @@ https://www.wh-plus.co.jp/
 ```
 @snapend
 
-@snap[east span-50 text-08]
+@snap[south-east span-50 text-08]
 ```json
 "autoload": {
     "psr-4": {
