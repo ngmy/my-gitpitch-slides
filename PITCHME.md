@@ -71,6 +71,10 @@ https://www.wh-plus.co.jp/
 
 ---
 
+@snap[north span-100]
+特殊なLaravelの使い方をしているせい
+@snapend
+
 @snap[west]
 ```scala
 val x = 2
@@ -91,10 +95,6 @@ in y + x
 @[2, 4](Declare y in Scala and Haskell)
 
 ---
-
-@snap[north span-100]
-特殊なLaravelの使い方をしているせい
-@snapend
 
 @snap[west]
 ```scala
