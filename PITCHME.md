@@ -75,7 +75,7 @@ https://www.wh-plus.co.jp/
 特殊なLaravelの使い方をしているせい
 @snapend
 
-@snap[south-west span-50 text-08 text-gray]
+@snap[south-west span-50 text-08 text-red]
 ```text
 リネット
 ├── 衣類
