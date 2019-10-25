@@ -71,16 +71,20 @@ https://www.wh-plus.co.jp/
 
 ---
 
+@snap
 ```scala
 val x = 2
 val y = x + 2
 ```
+@snapend
 
+@snap
 ```haskell
 test = let x = 2
 y = x + 2
 in y + x
 ```
+@snapend
 
 @[1](Declare constant x in Scala)
 @[1, 3](Declare x in Scala and Haskell)
