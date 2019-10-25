@@ -102,13 +102,11 @@ https://www.wh-plus.co.jp/
     ├── ...
     ├── composer.json    
     └── vendor
-
 ```
 @snapend
 
 @snap[east span-50 text-08]
 ```json
-
 {
     "autoload": {
         "classmap": [
@@ -122,12 +120,29 @@ https://www.wh-plus.co.jp/
 ```
 @snapend
 
+@snap[east span-50 text-08]
+```json
+"autoload": {
+    "psr-4": {
+        "App\\": "app/",
+        "Lenet\\": "lib/Lenet",
+        ...
+    },
+    "classmap": [
+        "database/seeds",
+        "database/factories",
+        ...
+    ]
+},
+```
+@snap[south-east span-50 text-08]
+
 @[4, 26-35]
 @[8, 26-35]
 @[12, 26-35]
 @[16, 26-35]
 @[20, 26-35]
-@[24-24, 26-35]
+@[24, 36-47]
 
 ---
 
