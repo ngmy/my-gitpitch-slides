@@ -112,7 +112,7 @@ lenet
 @snapend
 
 @snap[east span-50]
-@[2, 3-4](lenet.jpのドキュメントルート¥nhoge)
+@[2, 3-4](lenet.jpのドキュメントルート¥nhoge\na<br>hoge)
 @[2, 5-6](衣類のコントローラとライブラリをClassmapでオートロードしている)
 @[7, 8-9](保管のコントローラとライブラリをClassmapでオートロードしている)
 @[7, 10-11](布団のコントローラとライブラリをClassmapでオートロードしている)
