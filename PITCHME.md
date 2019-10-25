@@ -72,7 +72,7 @@ https://www.wh-plus.co.jp/
 ---
 
 @snap[north span-100]
-Laravelの使い方のクセが強い
+Laravelのディレクトリ構成のクセがすごい
 @snapend
 
 @snap[south-west span-50 text-07]
