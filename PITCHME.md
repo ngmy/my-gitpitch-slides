@@ -96,7 +96,7 @@ in y + x
 特殊なLaravelの使い方をしているせい
 @snapend
 
-@snap[west span-50 text-08]
+@snap[west]
 ```text
 リネット
 ├── 衣類
@@ -126,7 +126,7 @@ in y + x
 ```
 @snapend
 
-@snap[east span-50 text-08]
+@snap[east]
 ```json
 {
     "autoload": {
