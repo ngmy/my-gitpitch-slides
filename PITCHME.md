@@ -71,38 +71,28 @@ https://www.wh-plus.co.jp/
 
 ---
 
+```scala
+val x = 2
+val y = x + 2
+```
+
+```haskell
+test = let x = 2
+y = x + 2
+in y + x
+```
+
+@[1](Declare constant x in Scala)
+@[1, 3](Declare x in Scala and Haskell)
+@[2, 4](Declare y in Scala and Haskell)
+
+---
+
 @snap[north span-100]
 特殊なLaravelの使い方をしているせい
 @snapend
 
-```text
-リネット
-├── 衣類
-│   ├── ...
-│   ├── composer.json
-│   └── vendor
-├── 保管
-│   ├── ...
-│   ├── composer.json
-│   └── vendor
-```
 
-```json
-{
-    "autoload": {
-        "classmap": [
-            ...
-        ],
-        "files": [
-            ...
-        ]
-    }
-}
-```
-
-@[1]
-@[1, 3]
-@[2, 4]
 
 ---
 
@@ -134,6 +124,7 @@ https://www.wh-plus.co.jp/
     ├── composer.json    
     └── vendor
 ```
+@snapend
 
 @snap[east span-50 text-08]
 ```json
@@ -180,6 +171,7 @@ https://www.wh-plus.co.jp/
     ├── composer.json    
     └── vendor
 ```
+@snapend
 
 @snap[east span-50 text-08]
 ```json
@@ -226,6 +218,7 @@ https://www.wh-plus.co.jp/
     ├── composer.json    
     └── vendor
 ```
+@snapend
 
 @snap[east span-50 text-08]
 ```json
@@ -272,6 +265,7 @@ https://www.wh-plus.co.jp/
     ├── composer.json    
     └── vendor
 ```
+@snapend
 
 @snap[east span-50 text-08]
 ```json
@@ -318,6 +312,7 @@ https://www.wh-plus.co.jp/
     ├── composer.json    
     └── vendor
 ```
+@snapend
 
 @snap[east span-50 text-08]
 ```json
@@ -364,6 +359,7 @@ https://www.wh-plus.co.jp/
     ├── composer.json    
     └── vendor
 ```
+@snapend
 
 @snap[east span-50 text-08]
 ```json
