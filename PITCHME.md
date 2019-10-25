@@ -1,5 +1,5 @@
 @snap[midpoint span-100 text-05]
-# Composer APIで実現する1リポジトリ複数composer.json
+# Composer APIで実現する<br>1リポジトリ複数composer.json
 @snapend
 
 @snap[south-east span-100 text-07]
