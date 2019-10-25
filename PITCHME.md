@@ -104,9 +104,8 @@ https://www.wh-plus.co.jp/
     └── vendor
 ```
 
-@[1-5](
 @snap[east span-50 text-08]
-```json
+@[1-5](```json
 {
     "autoload": {
         "classmap": [
@@ -117,9 +116,8 @@ https://www.wh-plus.co.jp/
         ]
     }
 }
-```
+```)
 @snapend
-)
 
 ---
 
