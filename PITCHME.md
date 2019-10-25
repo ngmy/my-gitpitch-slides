@@ -100,8 +100,6 @@ in y + x
 ```text
 lenet
 lenet.jp
-composer.json
-vendor
 ```
 @snapend
 
