@@ -104,7 +104,7 @@ val y = x + 2
 @snapend
 
 @snap[east]
-```haskell
+```json
 test = let x = 2
 y = x + 2
 in y + x
