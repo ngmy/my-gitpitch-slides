@@ -75,7 +75,7 @@ https://www.wh-plus.co.jp/
 特殊なLaravelの使い方をしているせい
 @snapend
 
-@snap[west span-50 text-07]
+@snap[south-west span-50 text-08]
 ```text
 リネット
 ├── 衣類
@@ -105,13 +105,13 @@ https://www.wh-plus.co.jp/
 ```
 @snapend
 
-@snap[south span-100]
-@[4](classmapで読み込んでいる)
-@[8](classmapで読み込んでいる)
-@[12](classmapで読み込んでいる)
-@[16](classmapで読み込んでいる)
-@[20](classmapで読み込んでいる)
-@[24](Laravelのcomposer.json。psr-4で読み込んでいる)
+@snap[east span-100]
+@[4](衣類のコントローラとライブラリをClassmapでオートロードしている)
+@[8](保管のコントローラとライブラリをClassmapでオートロードしている)
+@[12](布団のコントローラとライブラリをClassmapでオートロードしている)
+@[16](靴のコントローラとライブラリをClassmapでオートロードしている)
+@[20](CMSのコントローラとライブラリをClassmapでオートロードしている)
+@[24](Laravelと共有ライブラリをPSR-4でオートロードしている)
 @snapend
 
 ---
