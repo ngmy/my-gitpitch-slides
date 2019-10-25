@@ -96,11 +96,58 @@ in y + x
 特殊なLaravelの使い方をしているせい
 @snapend
 
+@snap[west span-50 text-08
+```text
+リネット
+├── 衣類
+│   ├── ...
+│   ├── composer.json
+│   └── vendor
+├── 保管
+│   ├── ...
+│   ├── composer.json
+│   └── vendor
+├── 布団
+│   ├── ...
+│   ├── composer.json
+│   └── vendor
+├── 靴
+│   ├── ...
+│   ├── composer.json
+│   └── vendor
+├── CMS
+│   ├── ...
+│   ├── composer.json
+│   └── vendor
+└── Laravel + 共有ライブラリ
+    ├── ...
+    ├── composer.json    
+    └── vendor
+```
+@snapend
 
+@snap[east span-50 text-08]
+```json
+{
+    "autoload": {
+        "classmap": [
+            ...
+        ],
+        "files": [
+            ...
+        ]
+    }
+}
+```
+@snapend
+
+@[1](Declare constant x in Scala)
+@[1, 3](Declare x in Scala and Haskell)
+@[2, 4](Declare y in Scala and Haskell)
 
 ---
 
-@snap[south-west span-50 text-08 text-red]
+@snap[south-west span-50 text-08]
 ```text
 リネット
 ├── 衣類
