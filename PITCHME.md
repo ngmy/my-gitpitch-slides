@@ -78,6 +78,11 @@ https://www.wh-plus.co.jp/
 @snap[south-west span-50 text-07]
 ```text
 lenet
+├── lenet_common
+│   ├── public
+│   │   └── index.php
+│   ├── composer.json
+│   └── vendor
 ├── lenet.jp
 │   ├── public
 │   │   └── index.php
@@ -98,12 +103,7 @@ lenet
 │   │   └── index.php
 │   ├── composer.json
 │   └── vendor
-├── wh-plus.com
-│   ├── public
-│   │   └── index.php
-│   ├── composer.json
-│   └── vendor
-└── lenet_common
+└── wh-plus.com
     ├── public
     │   └── index.php
     ├── composer.json
