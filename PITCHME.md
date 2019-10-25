@@ -104,6 +104,25 @@ https://www.wh-plus.co.jp/
     └── vendor
 ```
 
+@snap[east span-50 text-08]
+```json
+{
+    "autoload": {
+        "classmap": [
+            ...
+        ],
+        "files": [
+            ...
+        ]
+    }
+}
+```
+@snapend
+
+@[1]
+@[1, 3]
+@[2, 4]
+
 ---
 
 @snap[south-west span-50 text-08 text-red]
