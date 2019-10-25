@@ -97,7 +97,7 @@ in y + x
 @snapend
 
 @snap[west]
-```text
+```scala
 リネット
 ├── 衣類
 │   ├── ...
@@ -127,7 +127,7 @@ in y + x
 @snapend
 
 @snap[east]
-```json
+```haskell
 {
     "autoload": {
         "classmap": [
