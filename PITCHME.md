@@ -71,7 +71,7 @@ https://www.wh-plus.co.jp/
 
 ---
 
-Laravelのディレクトリ構成のクセがすごい
+Laravelのディレクトリ構成のクセがすごい！
 
 ---
 
