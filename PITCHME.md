@@ -72,7 +72,7 @@ https://www.wh-plus.co.jp/
 ---
 
 @snap[north span-100]
-特殊なLaravelの使い方をしているせい
+Laravelの使い方のクセが強い
 @snapend
 
 @snap[south-west span-50 text-07]
