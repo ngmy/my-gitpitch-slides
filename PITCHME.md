@@ -100,6 +100,7 @@ in y + x
 ```text
 lenet
 lenet.jp
+lenet.jp
 ```
 @snapend
 
