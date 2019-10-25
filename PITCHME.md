@@ -97,7 +97,7 @@ in y + x
 ---
 
 @snap[west]
-```scala
+```text
 val x = 2
 val y = x + 2
 ```
