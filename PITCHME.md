@@ -42,7 +42,7 @@ https://www.wh-plus.co.jp/
 
 ---
 
-@snap[north span-40]
+@snap[north span-100]
 ## リネット
 @snapend
 
@@ -71,9 +71,11 @@ https://www.wh-plus.co.jp/
 
 ---
 
+@snap[north span-100]
 特殊なLaravelの使い方をしているせい
+@snapend
 
-@snap[south span-50 text-05]
+@snap[south span-50 text-08]
 ```
 リネット
 ├── 衣類
