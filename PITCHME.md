@@ -82,48 +82,46 @@ lenet
 │   ├── public
 │   │   └── index.php
 │   ├── composer.json
-│   ├── vendor
-│   └── ...
+│   └── vendor
 ├── lenet-hokan.jp
 │   ├── public
 │   │   └── index.php
 │   ├── composer.json
-│   ├── vendor
-│   └── ...
+│   └── vendor
 ├── futonlenet.jp
 │   ├── public
 │   │   └── index.php
 │   ├── composer.json
-│   ├── vendor
-│   └── ...
+│   └── vendor
 ├── kutsulenet.jp
 │   ├── public
 │   │   └── index.php
 │   ├── composer.json
-│   ├── vendor
-│   └── ...
+│   └── vendor
 ├── wh-plus.com
 │   ├── public
 │   │   └── index.php
 │   ├── composer.json
-│   ├── vendor
-│   └── ...
+│   └── vendor
 └── lenet_common
     ├── public
     │   └── index.php
     ├── composer.json
-    ├── vendor
-    └── ...
+    └── vendor
 ```
 @snapend
 
 @snap[east span-50]
-@[2, 3](衣類のコントローラとライブラリをClassmapでオートロードしている)
-@[6, 7](保管のコントローラとライブラリをClassmapでオートロードしている)
-@[10, 11](布団のコントローラとライブラリをClassmapでオートロードしている)
-@[14, 15](靴のコントローラとライブラリをClassmapでオートロードしている)
-@[18, 19](CMSのコントローラとライブラリをClassmapでオートロードしている)
-@[22, 23](Laravelと共有ライブラリをPSR-4でオートロードしている)
+@[2, 3-4]
+@[2, 5-6](衣類のコントローラとライブラリをClassmapでオートロードしている)
+@[7, 8-9](保管のコントローラとライブラリをClassmapでオートロードしている)
+@[7, 10-11](布団のコントローラとライブラリをClassmapでオートロードしている)
+@[12, 13-14](靴のコントローラとライブラリをClassmapでオートロードしている)
+@[12, 15-16](CMSのコントローラとライブラリをClassmapでオートロードしている)
+@[17, 18-19](Laravelと共有ライブラリをPSR-4でオートロードしている)
+@[17, 20-21](Laravelと共有ライブラリをPSR-4でオートロードしている)
+@[22, 23-24](Laravelと共有ライブラリをPSR-4でオートロードしている)
+@[22, 25-26](Laravelと共有ライブラリをPSR-4でオートロードしている)
 @snapend
 
 +++
