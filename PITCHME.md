@@ -98,46 +98,16 @@ in y + x
 
 @snap[west]
 ```scala
-リネット
-├── 衣類
-│   ├── ...
-│   ├── composer.json
-│   └── vendor
-├── 保管
-│   ├── ...
-│   ├── composer.json
-│   └── vendor
-├── 布団
-│   ├── ...
-│   ├── composer.json
-│   └── vendor
-├── 靴
-│   ├── ...
-│   ├── composer.json
-│   └── vendor
-├── CMS
-│   ├── ...
-│   ├── composer.json
-│   └── vendor
-└── Laravel + 共有ライブラリ
-    ├── ...
-    ├── composer.json    
-    └── vendor
+val x = 2
+val y = x + 2
 ```
 @snapend
 
 @snap[east]
 ```haskell
-{
-    "autoload": {
-        "classmap": [
-            ...
-        ],
-        "files": [
-            ...
-        ]
-    }
-}
+test = let x = 2
+y = x + 2
+in y + x
 ```
 @snapend
 
