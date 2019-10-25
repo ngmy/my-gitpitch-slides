@@ -96,7 +96,7 @@ in y + x
 特殊なLaravelの使い方をしているせい
 @snapend
 
-@snap[west span-50 text-08
+@snap[west span-50 text-08]
 ```text
 リネット
 ├── 衣類
