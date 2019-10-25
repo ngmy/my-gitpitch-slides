@@ -71,12 +71,12 @@ https://www.wh-plus.co.jp/
 
 ---
 
-Laravelのディレクトリ構成のクセがすごい
+リネットのLaravelのディレクトリ構成のクセがすごい
 
 ---
 
 @snap[north span-100]
-Laravelのディレクトリ構成のクセがすごい
+リネットのLaravelのディレクトリ構成
 @snapend
 
 @snap[south-west span-50 text-07]
