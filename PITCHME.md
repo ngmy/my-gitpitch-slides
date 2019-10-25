@@ -99,9 +99,9 @@ in y + x
 @snap[west]
 ```text
 lenet
-├── lenet.jp
-│   ├── composer.json
-│   └── vendor
+lenet.jp
+composer.json
+vendor
 ```
 @snapend
 
