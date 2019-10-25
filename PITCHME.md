@@ -98,8 +98,11 @@ in y + x
 
 @snap[west]
 ```text
-val x = 2
-val y = x + 2
+リネット
+├── 衣類
+│   ├── ...
+│   ├── composer.json
+│   └── vendor
 ```
 @snapend
 
