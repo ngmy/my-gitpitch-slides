@@ -105,7 +105,7 @@ https://www.wh-plus.co.jp/
 ```
 @snapend
 
-@snap[east span-100]
+@snap[east span-50]
 @[4](衣類のコントローラとライブラリをClassmapでオートロードしている)
 @[8](保管のコントローラとライブラリをClassmapでオートロードしている)
 @[12](布団のコントローラとライブラリをClassmapでオートロードしている)
