@@ -119,22 +119,14 @@ lenet
 @[2](Laravelと共有ライブラリ)
 @[2, 3-4](Laravelのindex.php)
 @[2, 5-6](Laravelのcomposer.jsonとvendor)
-@[7](lenet.jpのコード)
-@[7, 8-9](lenet.jpのドキュメントルート)
-@[7, 10-11](lenet.jpのcomposer.jsonとvendor)
-@[12-16](lenet-hokan.jp)
-@[17-21](lenet-hokan.jp)
-@[22-26](lenet-hokan.jp)
-@[27-31](lenet-hokan.jp)
+@[7](衣類のコード)
+@[7, 8-9](衣類のドキュメントルート)
+@[7, 10-11](衣類のcomposer.jsonとvendor)
+@[12-16](保管のコード<br>※衣類と同じ)
+@[17-21](布団のコード<br>※衣類と同じ)
+@[22-26](靴のコード<br>※衣類と同じ)
+@[27-31](社内・工場CMSのコード<br>※衣類と同じ)
 @snapend
-
-+++
-
-a
-
-+++
-
-b
 
 ---
 
