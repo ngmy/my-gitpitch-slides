@@ -105,9 +105,16 @@ val y = x + 2
 
 @snap[east]
 ```json
-test = let x = 2
-y = x + 2
-in y + x
+{
+    "autoload": {
+        "classmap": [
+            ...
+        ],
+        "files": [
+            ...
+        ]
+    }
+}
 ```
 @snapend
 
