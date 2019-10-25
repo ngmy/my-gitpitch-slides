@@ -75,7 +75,7 @@ https://www.wh-plus.co.jp/
 特殊なLaravelの使い方をしているせい
 @snapend
 
-@snap[south span-50 text-08]
+@snap[south-west span-50 text-08]
 ```
 リネット
 ├── 衣類
@@ -106,6 +106,19 @@ https://www.wh-plus.co.jp/
 @snapend
 
 @[1-5, zoom-13]
+
+@snap[south-east span-50 text-08]
+{
+    "autoload": {
+        "classmap": [
+            ...
+        ],
+        "files": [
+            ...
+        ]
+    }
+}
+@snapend
 
 ---
 
