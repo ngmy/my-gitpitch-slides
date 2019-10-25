@@ -75,30 +75,42 @@ https://www.wh-plus.co.jp/
 特殊なLaravelの使い方をしているせい
 @snapend
 
-@snap[south-west span-50 text-08]
+@snap[south-west span-50 text-07]
 ```text
-リネット
-├── 衣類
+lenet
+├── lenet.jp
+│   ├── public
+│   │   └── index.php
 │   ├── composer.json
 │   ├── vendor
 │   └── ...
-├── 保管
+├── lenet-hokan.jp
+│   ├── public
+│   │   └── index.php
 │   ├── composer.json
 │   ├── vendor
 │   └── ...
-├── 布団
+├── futonlenet.jp
+│   ├── public
+│   │   └── index.php
 │   ├── composer.json
 │   ├── vendor
 │   └── ...
-├── 靴
+├── kutsulenet.jp
+│   ├── public
+│   │   └── index.php
 │   ├── composer.json
 │   ├── vendor
 │   └── ...
-├── CMS
+├── wh-plus.com
+│   ├── public
+│   │   └── index.php
 │   ├── composer.json
 │   ├── vendor
 │   └── ...
-└── Laravel + 共有ライブラリ
+└── lenet_common
+    ├── public
+    │   └── index.php
     ├── composer.json
     ├── vendor
     └── ...
