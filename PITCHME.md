@@ -105,7 +105,7 @@ https://www.wh-plus.co.jp/
 ```
 @snapend
 
-@snap[west span-50 text-07]
+@snap[south span-100]
 @[4](classmapで読み込んでいる)
 @[8](classmapで読み込んでいる)
 @[12](classmapで読み込んでいる)
