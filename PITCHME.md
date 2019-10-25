@@ -75,7 +75,7 @@ https://www.wh-plus.co.jp/
 特殊なLaravelの使い方をしているせい
 @snapend
 
-@snap[south-west span-50 text-08]
+@snap[west span-50 text-07]
 ```text
 リネット
 ├── 衣類
@@ -105,49 +105,14 @@ https://www.wh-plus.co.jp/
 ```
 @snapend
 
-@snap[east span-50 text-06]
-```json
-{
-    "autoload": {
-        "classmap": [
-            ...
-        ],
-        "files": [
-            ...
-        ]
-    }
-}
-```
+@snap[west span-50 text-07]
+@[4](classmapで読み込んでいる)
+@[8](classmapで読み込んでいる)
+@[12](classmapで読み込んでいる)
+@[16](classmapで読み込んでいる)
+@[20](classmapで読み込んでいる)
+@[24](Laravelのcomposer.json。psr-4で読み込んでいる)
 @snapend
-
-@snap[south-east span-50 text-06]
-```json
-"require": {
-    ...
-    "laravel/framework": "^6.2",
-    ...
-},
-"autoload": {
-    "psr-4": {
-        "App\\": "app/",
-        "Lenet\\": "lib/Lenet",
-        ...
-    },
-    "classmap": [
-        "database/seeds",
-        "database/factories",
-        ...
-    ]
-},
-```
-@snapend
-
-@[4, 26-35]
-@[8, 26-35]
-@[12, 26-35]
-@[16, 26-35]
-@[20, 26-35]
-@[24, 36-47]
 
 ---
 
