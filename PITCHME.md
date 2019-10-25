@@ -129,7 +129,7 @@ https://getcomposer.org/apidoc/master/index.html
 ```php
 $loader = require base_path() . '/vendor/autoload.php';
 $serviceLoader = require realpath($_SERVER['DOCUMENT_ROOT'])
-               . '/../vendor/autoload.php';
+    . '/../vendor/autoload.php';
 $loader->addClassMap($serviceLoader->getClassMap());
 foreach ($serviceLoader->getPrefixesPsr4() as $prefix => $paths) {
     $loader->addPsr4($prefix, $paths);
