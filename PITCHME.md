@@ -135,7 +135,7 @@ https://www.wh-plus.co.jp/
     ]
 },
 ```
-@snap[south-east span-50 text-08]
+@snapend
 
 @[4, 26-35]
 @[8, 26-35]
