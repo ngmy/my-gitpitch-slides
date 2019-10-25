@@ -79,30 +79,29 @@ https://www.wh-plus.co.jp/
 ```text
 リネット
 ├── 衣類
-│   ├── ...
 │   ├── composer.json
-│   └── vendor
+│   ├── vendor
+│   └── ...
 ├── 保管
-│   ├── ...
 │   ├── composer.json
-│   └── vendor
+│   ├── vendor
+│   └── ...
 ├── 布団
-│   ├── ...
 │   ├── composer.json
-│   └── vendor
+│   ├── vendor
+│   └── ...
 ├── 靴
-│   ├── ...
 │   ├── composer.json
-│   └── vendor
+│   ├── vendor
+│   └── ...
 ├── CMS
-│   ├── ...
 │   ├── composer.json
-│   └── vendor
+│   ├── vendor
+│   └── ...
 └── Laravel + 共有ライブラリ
-    ├── ...
-    ├── composer.json    
-    └── vendor
- 
+    ├── composer.json
+    ├── vendor
+    └── ...
 ```
 @snapend
 
