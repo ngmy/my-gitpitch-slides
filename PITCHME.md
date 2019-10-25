@@ -98,8 +98,8 @@ in y + x
 
 @snap[west]
 ```text
-リネット
-├── 衣類
+lenet
+├── lenet.jp
 │   ├── ...
 │   ├── composer.json
 │   └── vendor
