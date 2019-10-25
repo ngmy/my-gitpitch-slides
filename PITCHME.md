@@ -110,7 +110,7 @@ https://www.wh-plus.co.jp/
 @[10,12]
 @[14,16]
 @[18,20]
-@[22,24]
+@[22,24-24]
 
 @snap[east span-50 text-08]
 ```json
