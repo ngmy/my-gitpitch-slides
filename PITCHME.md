@@ -71,6 +71,10 @@ https://www.wh-plus.co.jp/
 
 ---
 
+Laravelのディレクトリ構成のクセがすごい
+
+---
+
 @snap[north span-100]
 Laravelのディレクトリ構成のクセがすごい
 @snapend
