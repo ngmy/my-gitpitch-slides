@@ -160,7 +160,37 @@ foreach ($serviceLoader->getPrefixesPsr4() as $prefix => $paths) {
 ---
 
 @snap[midpoint span-100]
-![IMAGE](assets/img/lenet-package.png)
+![IMAGE](assets/img/lenet-package-1.png)
+@snapend
+
++++
+
+@snap[midpoint span-100]
+![IMAGE](assets/img/lenet-package-2.png)
+@snapend
+
++++
+
+@snap[midpoint span-100]
+![IMAGE](assets/img/lenet-package-3.png)
+@snapend
+
++++
+
+@snap[midpoint span-100]
+![IMAGE](assets/img/lenet-package-4.png)
+@snapend
+
++++
+
+@snap[midpoint span-100]
+![IMAGE](assets/img/lenet-package-5.png)
+@snapend
+
++++
+
+@snap[midpoint span-100]
+![IMAGE](assets/img/lenet-package-6.png)
 @snapend
 
 ---
