@@ -157,10 +157,7 @@ foreach ($serviceLoader->getPrefixesPsr4() as $prefix => $paths) {
 @[5-7](PSR-4をマージ)
 @snapend
 
----
-
-lenet.jpドメインにアクセスした時は共有ライブラリとlenet.jpのコードだけが見える。
-他サービスのコードが見えない
+---?image=assets/img/lenet-package.png
 
 ---
 
