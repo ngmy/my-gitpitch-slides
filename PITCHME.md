@@ -30,7 +30,7 @@ PHPカンファレンス2019 懇親会LT
 
 ---
 
-@snap[north span-100]
+@snap[north span-100 text-07]
 ## ホワイトプラスを知ってる人？ &#x1f64b;
 @snapend
 
