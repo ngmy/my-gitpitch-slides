@@ -9,5 +9,7 @@ theme-code       : [ "Source Code Pro" ]
 theme-controls   : [ "#484848" ]
 theme-margins    : [ "0", "15px" ]
 
+theme-override: assets/css/PITCHME.css
+
 logo : assets/img/wplogo.png
 logo-position : top-left
