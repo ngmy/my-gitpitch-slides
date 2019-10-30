@@ -4,7 +4,7 @@
 #
 theme : template
 
-theme-background : [ "#FFF" ]
+#theme-background : [ "#FFF" ]
 theme-links      : [ "#5289F7", "#5254F7" ]
 theme-code       : [ "Source Code Pro" ]
 theme-controls   : [ "#484848" ]
