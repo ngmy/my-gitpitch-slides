@@ -53,7 +53,7 @@ https://www.wh-plus.co.jp/
 ---
 
 @snap[north span-100 text-07]
-## リネットを作ってます
+## リネットというサービスをやってます
 @snapend
 
 @snap[west span-40]
