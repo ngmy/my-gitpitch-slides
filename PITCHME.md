@@ -19,7 +19,7 @@ PHPカンファレンス2019 懇親会LT
 - 株式会社ホワイトプラスのエンジニア
 - PHP、Laravelの下回りを見てます
 - @fa[github] [@ngmy](https://github.com/ngmy)
-- クライミング8：エンジニアリング2
+- 最近はクライミング8：エンジニアリング2
 @snapend
 
 @snap[east span-40]
