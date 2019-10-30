@@ -1,16 +1,4 @@
 #
-# Theme Template
-# Doc: https://gitpitch.com/docs/themes/default
-#
-theme : template
-
-#theme-background : [ "#FFF" ]
-theme-links      : [ "#5289F7", "#5254F7" ]
-theme-code       : [ "Source Code Pro" ]
-theme-controls   : [ "#484848" ]
-theme-margins    : [ "0", "15px" ]
-
-#
 # Highlight Setting
 # Doc: https://gitpitch.com/docs/settings/highlight
 #
