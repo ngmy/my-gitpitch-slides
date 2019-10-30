@@ -48,7 +48,7 @@ https://www.wh-plus.co.jp/
 ## ゴールドスポンサーやってます
 @snapend
 
-@snap[south span-100]
+@snap[south span-90]
 ![IMAGE](assets/img/sponsor.png)
 @snapend
 
