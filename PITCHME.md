@@ -29,7 +29,7 @@ PHPカンファレンス2019 懇親会LT
 ---
 
 @snap[north span-100]
-## ホワイトプラス
+## ホワイトプラスを知ってる人？ U+1F64B
 @snapend
 
 @snap[midpoint span-90]
