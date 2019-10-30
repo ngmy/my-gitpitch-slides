@@ -40,6 +40,12 @@ PHPカンファレンス2019 懇親会LT
 https://www.wh-plus.co.jp/
 @snapend
 
++++
+
+snap[midpoint span-100]
+![IMAGE](assets/img/sponsor.png)
+@snapend
+
 ---
 
 @snap[north span-100]
