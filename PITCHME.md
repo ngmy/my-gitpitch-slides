@@ -19,7 +19,7 @@ PHPカンファレンス2019 懇親会LT
 （NAGAMIYA Yuta）
 
 - 株式会社ホワイトプラスのエンジニア
-- PHPの下回りを見てます
+- PHP、Laravelの下回りを見てます
 - @fa[github] [@ngmy](https://github.com/ngmy)
 - クライミング8：エンジニアリング2
 @snapend
