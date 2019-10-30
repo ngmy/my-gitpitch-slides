@@ -46,7 +46,7 @@ https://www.wh-plus.co.jp/
 
 @snap[north span-100 text-07]
 ## ゴールドスポンサーやってます
-@snap[north span-100 text-07]
+@snapend
 
 @snap[midpoint span-100]
 ![IMAGE](assets/img/sponsor.png)
