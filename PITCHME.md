@@ -17,9 +17,7 @@ PHPカンファレンス2019 懇親会LT
 @snap[west span-55]
 永宮　悠大
 （NAGAMIYA Yuta）
-@snapend
 
-@snap[west span-55]
 - 株式会社ホワイトプラスのエンジニア
 - PHPの下回りを見てます
 - @fa[github] [@ngmy](https://github.com/ngmy)
