@@ -4,7 +4,13 @@ theme-override: assets/css/PITCHME.css
 
 highlight : tomorrow
 
-layout : center
-
 logo : assets/img/wplogo.png
 logo-position : top-left
+
+layout : center
+
+published : true
+
+title : "GitPitch In 60 Seconds"
+description : "A short tutorial introducing the power and simplicity of GitPitch, the markdown presentation service on Git."
+thumbnail : https://gitpitch.com/gpimg/tutorial-thumb.png
