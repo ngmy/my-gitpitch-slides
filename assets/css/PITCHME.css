@@ -2,29 +2,29 @@
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+JP");
 
 .reveal {
-    font-family: Raleway, "游ゴシック", "Yu Gothic", "游ゴシック体", YuGothic, sans-serif !important;
+    font-family: Roboto, "Noto Sans JP", sans-serif !important;
 }
 
 .reveal h1 {
-    font-family: Roboto, "Noto Sans JP" !important;
+    font-family: Roboto, "Noto Sans JP", sans-serif !important;
 }
 
 .reveal h2 {
-    font-family: "Noto Sans JP" !important;
+    font-family: Roboto, "Noto Sans JP", sans-serif !important;
 }
 
 .reveal h3 {
-    font-family: "Noto Sans JP" !important;
+    font-family: Roboto, "Noto Sans JP", sans-serif !important;
 }
 
 .reveal h4 {
-    font-family: "Noto Sans JP" !important;
+    font-family: Roboto, "Noto Sans JP", sans-serif !important;
 }
 
 .reveal h5 {
-    font-family: "Noto Sans JP" !important;
+    font-family: Roboto, "Noto Sans JP", sans-serif !important;
 }
 
 .reveal h6 {
-    font-family: "Noto Sans JP" !important;
+    font-family: Roboto, "Noto Sans JP", sans-serif !important;
 }
