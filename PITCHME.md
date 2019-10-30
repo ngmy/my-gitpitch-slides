@@ -22,7 +22,7 @@ PHPカンファレンス2019 懇親会LT
 - 最近はクライミング8：エンジニアリング2
 @snapend
 
-@snap[north-east span-40]
+@snap[east span-40]
 ![IMAGE](assets/img/profile.jpg)
 @snapend
 
