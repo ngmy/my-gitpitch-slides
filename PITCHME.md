@@ -1,4 +1,4 @@
-@snap[midpoint span-100 text-05]
+@snap[midpoint span-100 text-06]
 # Composer APIで実現する単一リポジトリ複数composer.json
 @snapend
 
