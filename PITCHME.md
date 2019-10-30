@@ -71,7 +71,7 @@ https://www.wh-plus.co.jp/
     - https://www.futonlenet.jp/
 - 靴クリーニング
     - https://www.kutsulenet.jp/</dd>
-- PHP + Laravelで作ってます
+- PHP + Laravelで構築
 @snapend
 
 ---
