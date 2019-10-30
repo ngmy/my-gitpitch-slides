@@ -4,5 +4,7 @@ theme-override: assets/css/PITCHME.css
 
 highlight : tomorrow
 
+layout : center
+
 logo : assets/img/wplogo.png
 logo-position : top-left
