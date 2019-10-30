@@ -182,10 +182,18 @@ foreach ($serviceLoader->getPrefixesPsr4() as $prefix => $paths) {
 ![IMAGE](assets/img/lenet-package-2.png)
 @snapend
 
+@snap[south span-100]
+https://www.lenet.jp/ にアクセスした時
+@snapend
+
 +++
 
 @snap[midpoint span-100]
 ![IMAGE](assets/img/lenet-package-3.png)
+@snapend
+
+@snap[south span-100]
+https://www.lenet-hokan.jp/ にアクセスした時
 @snapend
 
 +++
@@ -194,16 +202,29 @@ foreach ($serviceLoader->getPrefixesPsr4() as $prefix => $paths) {
 ![IMAGE](assets/img/lenet-package-4.png)
 @snapend
 
+@snap[south span-100]
+https://www.futonlenet.jp/ にアクセスした時
+@snapend
+
 +++
 
 @snap[midpoint span-100]
 ![IMAGE](assets/img/lenet-package-5.png)
 @snapend
 
+
+@snap[south span-100]
+https://www.kutsulenet.jp/ にアクセスした時
+@snapend
+
 +++
 
 @snap[midpoint span-100]
 ![IMAGE](assets/img/lenet-package-6.png)
+@snapend
+
+@snap[south span-100]
+社内・工場CMSにアクセスした時
 @snapend
 
 ---
