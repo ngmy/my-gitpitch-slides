@@ -53,7 +53,7 @@ https://www.wh-plus.co.jp/
 ---
 
 @snap[north span-100]
-## リネット
+## 宅配クリーニングのリネット
 @snapend
 
 @snap[west span-40]
