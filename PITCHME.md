@@ -42,7 +42,7 @@ https://www.wh-plus.co.jp/
 
 +++
 
-snap[midpoint span-100]
+@snap[midpoint span-100]
 ![IMAGE](assets/img/sponsor.png)
 @snapend
 
