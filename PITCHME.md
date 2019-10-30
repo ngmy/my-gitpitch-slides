@@ -56,11 +56,11 @@ https://www.wh-plus.co.jp/
 ## リネット
 @snapend
 
-@snap[west span-50]
+@snap[west span-40]
 ![IMAGE](assets/img/lenet.png)
 @snapend
 
-@snap[east span-50 text-05]
+@snap[east span-50 text-07]
 - 宅配クリーニングのリネット
 - PC・スマホから注文できて、自宅にいたままクリーニングできるWebサービス
 - 衣類クリーニング
