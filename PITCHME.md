@@ -50,7 +50,7 @@ https://www.wh-plus.co.jp/
 ![IMAGE](assets/img/sponsor.png)
 @snapend
 
----?color=linear-gradient(90deg, #5384AD 65%, white 35%)
+---
 
 @snap[north span-100 text-07]
 ## リネットやってます
