@@ -56,11 +56,13 @@ https://www.wh-plus.co.jp/
 ## リネット
 @snapend
 
-@snap[west span-40]
+@snap[west span-50]
 ![IMAGE](assets/img/lenet.png)
 @snapend
 
-@snap[east span-60 text-05]
+@snap[east span-50 text-05]
+- 宅配クリーニングのリネット
+- PC・スマホから注文できて、自宅にいたままクリーニングできるWebサービス
 - 衣類クリーニング
     - https://www.lenet.jp/
 - 衣類クリーニング + 保管
@@ -69,6 +71,7 @@ https://www.wh-plus.co.jp/
     - https://www.futonlenet.jp/
 - 靴クリーニング
     - https://www.kutsulenet.jp/</dd>
+- PHP + Laravelで作ってます
 @snapend
 
 ---
