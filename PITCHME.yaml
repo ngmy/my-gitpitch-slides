@@ -1,3 +1,5 @@
+theme : template
+
 theme-background : [ "#FFF" ]
 theme-headline   : [ "Noto Sans JP", "#5289F7", "none" ]
 theme-byline     : [ "Noto Sans JP", "#111111", "none" ]
