@@ -29,7 +29,7 @@ PHPカンファレンス2019 懇親会LT
 ---
 
 @snap[north span-100]
-## ホワイトプラスを知ってる人？ :raising_hand:
+## ホワイトプラスを知ってる人？ &#x1f64b;
 @snapend
 
 @snap[midpoint span-90]
