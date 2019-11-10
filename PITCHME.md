@@ -211,7 +211,6 @@ parameters:
 
 ---
 
-
 ```
 # vim: set ft=yaml:
 
@@ -224,6 +223,7 @@ parameters:
     - %rootDir%/../../../vendor/autoload.php
     - %rootDir%/../../../_ide_helper.php
 ```
+
 ---
 
 ドキュメントルート
@@ -321,8 +321,6 @@ lenet
 ```
 @snapend
 
-```
-
 ---
 
 各サービスの設定ファイルはヘルパークラスを作って読み混んでる
@@ -368,7 +366,7 @@ Laravelのデフォルトそのまま
 ただバッチはこの前DigDagに移行した
 
 @snap[east span-40]
-![IMAGE](assets/img/logo-digdag-sq-tr.jpg)
+![IMAGE](assets/img/logo-digdag-sq-tr.png)
 @snapend
 
 ---
