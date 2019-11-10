@@ -367,6 +367,10 @@ k8sのyaml
 Laravelのデフォルトそのまま
 ただバッチはこの前DigDagに移行した
 
+@snap[east span-40]
+![IMAGE](assets/img/logo-digdag-sq-tr.jpg)
+@snapend
+
 ---
 
 ### 一つのプロジェクトで複数のcomposer.jsonを読み込みたくなった
