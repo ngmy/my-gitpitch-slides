@@ -346,6 +346,21 @@ k8sのyaml
 
 ---
 
+ビューパス
+
+```
+<?php
+
+    'paths' => [
+        realpath(base_path('resources/views')),
+        realpath(base_path('../lenet_common/app/views')), // TODO 移行完了したら削除する
+        $_SERVER['DOCUMENT_ROOT'].'/../templates',
+    ],
+
+```
+
+---
+
 ### 一つのプロジェクトで複数のcomposer.jsonを読み込みたくなった
 
 ---
