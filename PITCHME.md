@@ -1,5 +1,5 @@
 @snap[midpoint span-90 text-05]
-# Composer APIで実現する単一リポジトリ複数composer.json
+# Laravelでモジュラモノリス
 @snapend
 
 @snap[south-east span-100 text-07]
