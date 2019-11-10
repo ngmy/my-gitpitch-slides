@@ -76,6 +76,157 @@ https://www.wh-plus.co.jp/
 
 ---
 
+### 境界を強制する
+
+---
+
+Composer APIでオートロードするクラスを制限する
+
+---
+
+@snap[south-west span-50 text-07]
+```text
+lenet
+├── lenet_common
+│   ├── public
+│   │   └── index.php
+│   ├── composer.json
+│   ├── phpstan.neon
+│   └── vendor
+├── lenet.jp
+│   ├── public
+│   │   └── index.php
+│   ├── composer.json
+│   ├── phpstan.neon
+│   └── vendor
+├── lenet-hokan.jp
+│   ├── public
+│   │   └── index.php
+│   ├── composer.json
+│   ├── phpstan.neon
+│   └── vendor
+├── futonlenet.jp
+│   ├── public
+│   │   └── index.php
+│   ├── composer.json
+│   ├── phpstan.neon
+│   └── vendor
+├── kutsulenet.jp
+│   ├── public
+│   │   └── index.php
+│   ├── composer.json
+│   ├── phpstan.neon
+│   └── vendor
+└── wh-plus.com
+    ├── public
+    │   └── index.php
+    ├── composer.json
+    ├── phpstan.neon
+    └── vendor
+```
+@snapend
+
+---
+
+```php
+$loader = require base_path() . '/vendor/autoload.php';
+$serviceLoader = require realpath($_SERVER['DOCUMENT_ROOT'])
+    . '/../vendor/autoload.php';
+$loader->addClassMap($serviceLoader->getClassMap());
+foreach ($serviceLoader->getPrefixesPsr4() as $prefix => $paths) {
+    $loader->addPsr4($prefix, $paths);
+}
+```
+
+@snap[south span-100]
+@[1](Laravel + 共有ライブラリのautoload.phpを読み込む)
+@[2-3](ドキュメントルートから応じたサービスのautoload.phpを読み込む)
+@[4](Classmapをマージ)
+@[5-7](PSR-4をマージ)
+@snapend
+
+---
+
+PHPStanで依存の違反を検出する
+
+---
+
+@snap[south-west span-50 text-07]
+```text
+lenet
+├── lenet_common
+│   ├── public
+│   │   └── index.php
+│   ├── composer.json
+│   ├── phpstan.neon
+│   └── vendor
+├── lenet.jp
+│   ├── public
+│   │   └── index.php
+│   ├── composer.json
+│   ├── phpstan.neon
+│   └── vendor
+├── lenet-hokan.jp
+│   ├── public
+│   │   └── index.php
+│   ├── composer.json
+│   ├── phpstan.neon
+│   └── vendor
+├── futonlenet.jp
+│   ├── public
+│   │   └── index.php
+│   ├── composer.json
+│   ├── phpstan.neon
+│   └── vendor
+├── kutsulenet.jp
+│   ├── public
+│   │   └── index.php
+│   ├── composer.json
+│   ├── phpstan.neon
+│   └── vendor
+└── wh-plus.com
+    ├── public
+    │   └── index.php
+    ├── composer.json
+    ├── phpstan.neon
+    └── vendor
+```
+@snapend
+
+---
+
+```
+# vim: set ft=yaml:
+
+parameters:
+  paths:
+    - %rootDir%/../../../../kuritaku.jp/app
+    - %rootDir%/../../../../kuritaku.jp/controllers
+    - %rootDir%/../../../../kuritaku.jp/lib
+  autoload_files:
+    - %rootDir%/../../../vendor/autoload.php # 共有ライブラリ + Laravel
+    - %rootDir%/../../../_ide_helper.php
+    - %rootDir%/../../../../kuritaku.jp/vendor/autoload.php
+```
+
+---
+
+
+```
+# vim: set ft=yaml:
+
+parameters:
+  paths:
+    - %rootDir%/../../../app
+    - %rootDir%/../../../controllers
+    - %rootDir%/../../../lib
+  autoload_files:
+    - %rootDir%/../../../vendor/autoload.php
+    - %rootDir%/../../../_ide_helper.php
+```
+
+---
+
 ### 一つのプロジェクトで複数のcomposer.jsonを読み込みたくなった
 
 ---
