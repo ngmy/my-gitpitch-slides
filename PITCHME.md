@@ -371,6 +371,16 @@ Laravelのデフォルトそのまま
 
 ---
 
+必要なパスの書き換え
+
+```
+ $app->bind('path.public', function () {                                                                                 
+     return $_SERVER['DOCUMENT_ROOT'];                                                                                   
+ });   
+```
+
+---
+
 ### 一つのプロジェクトで複数のcomposer.jsonを読み込みたくなった
 
 ---
