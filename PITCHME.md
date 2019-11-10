@@ -381,6 +381,88 @@ Laravelのデフォルトそのまま
 
 ---
 
+エラーハンドリング
+
+
+```
+    public function report(Exception $exception)
+    {
+        ...
+
+        // サービス固有のレポート処理
+        $this->reportForService($exception);
+
+        parent::report($exception);
+    }
+
+    public function render($request, Exception $exception)
+    {
+        ...
+
+        // サービス固有のレンダー処理
+        $response = $this->renderForService($request, $exception);
+        if (!is_null($response)) {
+            return $response;
+        }
+
+        return parent::render($request, $exception);
+    }
+```
+
+---
+
+```
+<?php
+
+class Handler extends BaseExceptionHandler
+{
+    /**
+     * 例外をレポート、もしくはログする
+     *
+     * ここは例外をSentryやBugsnagなどへ送るために適した場所
+     *
+     * @param  \Exception  $exception
+     * @return void
+     */
+    protected function reportForService(Exception $exception)
+    {
+    }
+
+    /**
+     * HTTPレスポンスへ例外をレンダー
+     *
+     * @param  \Illuminate\Http\Request $request
+     * @param  \Exception               $exception
+     * @return \Illuminate\Http\Response|null
+     */
+    public function renderForService($request, Exception $exception)
+    {
+        if (ErrorResponseUtil::is404($exception) || ErrorResponseUtil::is405($exception)) {
+            if (starts_with($request->path(), ['plan', 'sp/plan'])) {
+                return Redirect::to('/plan');
+            }
+
+            // Error 404
+            return Response::stream(function () {
+                if (Agent::isMobile()) {
+                    include public_path('sp/errordoc/404.php');
+                } else {
+                    include public_path('errordoc/404.php');
+                }
+            }, 404);
+        }
+
+        // 開発環境のシステムエラーはトレース表示させたいのでレスポンスを作らない
+        if (!Config::get('app.debug')) {
+            // Error Unknown
+            return Response::view('error.' . TemplateUtil::baseDir() . '.index', [], 500);
+        }
+    }
+}
+```
+
+---
+
 サービスごとを疎結合にしつつ
 共通のコードは共有できる
 
