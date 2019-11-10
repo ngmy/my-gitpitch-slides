@@ -224,6 +224,52 @@ parameters:
     - %rootDir%/../../../vendor/autoload.php
     - %rootDir%/../../../_ide_helper.php
 ```
+---
+
+ドキュメントルート
+
+```
+<?php
+
+require $_SERVER['DOCUMENT_ROOT'] . '/../../lenet_common/public/index.php';
+```
+
+---
+
+ミドルウェアの登録
+
+```
+class RouteServiceProvider extends ServiceProvider
+{
+    public function boot()
+    {
+        /*
+         * サービスに応じたミドルウェアを登録
+         *
+         * バッチの場合はwh-plus.comのミドルウェアを登録する。（Laravel 4.2の時代の挙動に合わせている）
+         */
+        switch ($_SERVER['HOST_SUFFIX']) {
+            case 'wh-plus.com':
+                $this->app->make(Kernel::class)->pushMiddleware(\Com\WhPlus\App\Http\Middleware\BeforeMiddleware::class);
+
+                $this->app['router']->aliasMiddleware('apiAuth', \Com\WhPlus\App\Http\Middleware\AuthenticateApi::class);
+                $this->app['router']->aliasMiddleware('auth', \Com\WhPlus\App\Http\Middleware\Authenticate::class);
+                ...
+                break;
+            case 'kuritaku.jp':
+                ...
+            case 'lenet-hokan.jp':
+                ...
+            case 'kuritakufuton.net':
+                ...
+                break;
+            default:
+                break;
+        }
+
+        parent::boot();
+    }
+```
 
 ---
 
