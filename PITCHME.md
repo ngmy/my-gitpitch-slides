@@ -365,7 +365,7 @@ k8sのyaml
 Laravelのデフォルトそのまま
 ただバッチはこの前DigDagに移行した
 
-@snap[east span-40]
+@snap[south span-40]
 ![IMAGE](assets/img/logo-digdag-sq-tr.png)
 @snapend
 
