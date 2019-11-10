@@ -273,6 +273,79 @@ class RouteServiceProvider extends ServiceProvider
 
 ---
 
+設定ファイル
+
+---
+
+@snap[south-west span-50 text-07]
+```text
+lenet
+├── lenet_common
+│   ├── config
+│   ├── public
+│   │   └── index.php
+│   ├── composer.json
+│   ├── phpstan.neon
+│   └── vendor
+├── lenet.jp
+│   ├── config
+│   ├── public
+│   │   └── index.php
+│   ├── composer.json
+│   ├── phpstan.neon
+│   └── vendor
+├── lenet-hokan.jp
+│   ├── public
+│   │   └── index.php
+│   ├── composer.json
+│   ├── phpstan.neon
+│   └── vendor
+├── futonlenet.jp
+│   ├── public
+│   │   └── index.php
+│   ├── composer.json
+│   ├── phpstan.neon
+│   └── vendor
+├── kutsulenet.jp
+│   ├── public
+│   │   └── index.php
+│   ├── composer.json
+│   ├── phpstan.neon
+│   └── vendor
+└── wh-plus.com
+    ├── public
+    │   └── index.php
+    ├── composer.json
+    ├── phpstan.neon
+    └── vendor
+```
+@snapend
+
+```
+
+---
+
+各サービスの設定ファイルはヘルパークラスを作って読み混んでる
+
+---
+
+Laravelの設定はすべて環境変数で流し込むようにしている
+k8sのyaml
+
+```
+          env:
+            - name: APP_ENV
+              value: production
+            - name: APP_HOST_PREFIX
+              value: www
+            - name: APP_SERVICE
+              value: lenet.jp
+            - name: APP_DB_ENDPOINT
+              ...
+```
+
+---
+
 ### 一つのプロジェクトで複数のcomposer.jsonを読み込みたくなった
 
 ---
