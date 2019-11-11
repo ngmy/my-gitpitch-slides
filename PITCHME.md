@@ -80,13 +80,15 @@ https://www.wh-plus.co.jp/
 ## モノリス
 @snapend
 
-?image=assets/img/toy_dorodango.png
+![IMAGE](assets/img/toy_dorodango.png)
 
----?image=assets/img/rubiks_cube.png
+---
 
 @snap[north span-100 text-07]
 ## モジュラモノリス
 @snapend
+
+![IMAGE](assets/img/rubiks_cube.png）
 
 ---
 
