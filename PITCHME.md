@@ -228,7 +228,7 @@ parameters:
 
 ---
 
-```
+```{lenet_common/phpstan.neon}
 # vim: set ft=yaml:
 
 parameters:
