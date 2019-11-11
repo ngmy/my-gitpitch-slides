@@ -97,6 +97,61 @@ https://www.wh-plus.co.jp/
 
 ---
 
+@snap[north span-100]
+リネットのLaravelのディレクトリ構成
+@snapend
+
+@snap[south-west span-50 text-07]
+```text
+lenet
+├── lenet_common
+├── lenet.jp
+├── lenet-hokan.jp
+├── futonlenet.jp
+├── kutsulenet.jp
+└── wh-plus.com
+├── lenet_common
+├── lenet.jp
+├── lenet-hokan.jp
+├── futonlenet.jp
+├── kutsulenet.jp
+└── wh-plus.com
+├── lenet_common
+├── lenet.jp
+├── lenet-hokan.jp
+├── futonlenet.jp
+├── kutsulenet.jp
+└── wh-plus.com
+├── lenet_common
+├── lenet.jp
+├── lenet-hokan.jp
+├── futonlenet.jp
+├── kutsulenet.jp
+└── wh-plus.com
+├── lenet_common
+├── lenet.jp
+├── lenet-hokan.jp
+├── futonlenet.jp
+├── kutsulenet.jp
+└── wh-plus.com
+├── lenet_common
+├── lenet.jp
+├── lenet-hokan.jp
+├── futonlenet.jp
+├── kutsulenet.jp
+└── wh-plus.com
+```
+@snapend
+
+@snap[east span-50]
+@[2](Laravelと共有ライブラリ)
+@[3](衣類)
+@[4](保管)
+@[5](布団)
+@[6](靴)
+@[28](社内・工場CMS)
+@snapend
+
 ---
 
 ### 境界を遵守させる
