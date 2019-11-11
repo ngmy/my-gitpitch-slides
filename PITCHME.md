@@ -74,15 +74,9 @@ https://www.wh-plus.co.jp/
 - PHP + Laravelで構築
 @snapend
 
----
+---?image=assets/img/toy_dorodango.png
 
-モノリス
-
----
-
-モジュラモノリス
-
----
+---?image=assets/img/rubiks_cube.png
 
 一つのLaravelアプリケーションをモジュールを分割し、疎結合にする
 
