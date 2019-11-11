@@ -212,6 +212,10 @@ lenet
 
 ---
 
+@snap[north span-100 text-07]
+## 各サービスのphpstan.neon
+@snapend
+
 ```
 # vim: set ft=yaml:
 
@@ -227,6 +231,10 @@ parameters:
 ```
 
 ---
+
+@snap[north span-100 text-07]
+## lenet_commonのphpstan.neon
+@snapend
 
 ```{lenet_common/phpstan.neon}
 # vim: set ft=yaml:
