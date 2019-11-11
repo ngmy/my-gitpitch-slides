@@ -151,7 +151,7 @@ lenet
 │   ├── lib
 │   ├── public
 │   ├── templates
-│   └── vendor
+│   ├── vendor
 │   ├── composer.json
 │   └── phpstan.neon
 ├── lenet-hokan.jp
