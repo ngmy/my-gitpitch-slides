@@ -82,13 +82,11 @@ https://www.wh-plus.co.jp/
 
 ![IMAGE](assets/img/toy_dorodango.png)
 
----
+---？image=assets/img/rubiks_cube.png&size=80% auto
 
 @snap[north span-100 text-07]
 ## モジュラモノリス
 @snapend
-
-![IMAGE](assets/img/rubiks_cube.png)
 
 ---
 
