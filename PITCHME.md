@@ -78,7 +78,7 @@ https://www.wh-plus.co.jp/
 
 ### モノリス
 
----?image=assets/img/rubiks_cube.png&size=auto 100%
+---?image=assets/img/rubiks_cube.png&size=auto 80%
 
 @snap[north span-100 text-07]
 ## モジュラモノリス
