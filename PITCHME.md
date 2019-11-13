@@ -74,7 +74,7 @@ https://www.wh-plus.co.jp/
 - PHP + Laravelで構築
 @snapend
 
----?image=assets/img/toy_dorodango_kirei.png&size=cover
+---?image=assets/img/toy_dorodango_kirei.png&size=auto 80%
 
 ### モノリス
 
