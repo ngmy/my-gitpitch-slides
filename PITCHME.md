@@ -76,7 +76,9 @@ https://www.wh-plus.co.jp/
 
 ---?image=assets/img/toy_dorodango_kirei.png&size=auto 80%
 
-### モノリス
+@snap[north span-100 text-07]
+## モノリス
+@snapend
 
 ---?image=assets/img/rubiks_cube.png&size=auto 80%
 
