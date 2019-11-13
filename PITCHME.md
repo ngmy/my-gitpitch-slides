@@ -1,5 +1,5 @@
-@snap[midpoint span-100 text-07]
-# Laravelで<br>モジュラモノリス
+@snap[midpoint span-100 text-08]
+# Laravelでモジュラモノリス
 @snapend
 
 @snap[south-east span-100 text-07]
