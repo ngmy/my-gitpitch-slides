@@ -42,7 +42,7 @@ logo-position : top-left
 # Footnote Setting
 # Doc: https://gitpitch.com/docs/settings/footnote
 #
-footnote : "&copy 2019 永宮悠大."
+footnote : "&copy; 2019 [@ngmy]()"
 
 #
 # Published Setting
