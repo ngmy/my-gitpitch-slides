@@ -36,7 +36,7 @@ logo-position : top-left
 # Layout Setting
 # Doc: https://gitpitch.com/docs/settings/layout
 #
-layout : center
+layout : top
 
 #
 # Footnote Setting
