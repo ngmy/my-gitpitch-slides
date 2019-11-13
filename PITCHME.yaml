@@ -55,5 +55,5 @@ published : true
 # Doc: https://gitpitch.com/docs/settings/twitter-card
 #
 title : "Laravelでモジュラモノリス"
-description : "A short tutorial introducing the power and simplicity of GitPitch, the markdown presentation service on Git."
+description : "PHPカンファレンス2019の懇親会LTの資料です。"
 thumbnail : assets/img/rubiks_cube.png
