@@ -131,33 +131,27 @@ lenet
 
 @snap[west span-40]
 ```text
-lenet
-├── lenet_common
-│   ├── app
-│   ├── bootstrap
-│   ├── config
-│   ├── database
-│   ├── lib
-│   ├── public
-│   ├── resources
-│   ├── routes
-│   ├── storage
-│   ├── tests
-│   ├── vendor
-│   ├── composer.json
-│   └── phpstan.neon
-├── lenet.jp
-├── lenet-hokan.jp
-├── futonlenet.jp
-├── kutsulenet.jp
-└── wh-plus.com
+lenet_common
+├── app
+├── bootstrap
+├── config
+├── database
+├── lib
+├── public
+├── resources
+├── routes
+├── storage
+├── tests
+├── vendor
+├── composer.json
+└── phpstan.neon
 ```
 @snapend
 
 @snap[east span-60 text-center]
-@[2-6, 8-14](Laravel)
-@[8](共有ライブラリ)
-@[15](PHPStanの設定ファイル)
+@[2-5, 7-13](Laravel)
+@[6](共有ライブラリ)
+@[14](PHPStanの設定ファイル)
 @snapend
 
 ---
