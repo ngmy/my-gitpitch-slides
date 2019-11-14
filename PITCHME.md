@@ -98,7 +98,7 @@ https://www.wh-plus.co.jp/
 ---
 
 @snap[north span-100]
-リネットのLaravelのディレクトリ構成
+リネットリポジトリのディレクトリ構成
 @snapend
 
 @snap[west span-50 text-07]
@@ -125,7 +125,7 @@ lenet
 ---
 
 @snap[north span-100]
-lenet_commonのディレクトリ構成
+lenet_commonのディレクトリ
 @snapend
 
 @snap[south-west span-50 text-07]
