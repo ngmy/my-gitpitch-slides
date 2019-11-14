@@ -99,6 +99,7 @@ https://www.wh-plus.co.jp/
 
 @snap[north span-100]
 リネットのLaravelのディレクトリ構成
+@snapend
 
 @snap[west span-50 text-07]
 ```text
@@ -111,9 +112,6 @@ lenet
 └── wh-plus.com
 ```
 @snapend
-
-@snapend
-
 
 @snap[east span-50]
 @[2](Laravelと共有ライブラリ)
