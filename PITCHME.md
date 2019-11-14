@@ -282,8 +282,10 @@ lenet_common/app/Providers/RouteServiceProvider.php
 ```php
 switch ($_SERVER['HOST_SUFFIX']) {
     case 'lenet.jp':
-        $this->app->make(Kernel::class)->pushMiddleware(\Jp\Lenet\App\Http\Middleware\BeforeMiddleware::class);
-        $this->app['router']->aliasMiddleware('auth', \Jp\Lenet\App\Http\Middleware\Authenticate::class);
+        $this->app->make(Kernel::class)
+            ->pushMiddleware(\Jp\Lenet\App\Http\Middleware\BeforeMiddleware::class);
+        $this->app['router']
+            ->aliasMiddleware('auth', \Jp\Lenet\App\Http\Middleware\Authenticate::class);
         break;
     case 'lenet-hokan.jp':
         // ...
