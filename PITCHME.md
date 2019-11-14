@@ -176,7 +176,7 @@ lenet.jp
 @snapend
 
 @snap[east span-60 text-center]
-@[2](サービス固有のLaravel)
+@[2](ルートファイル、ミドルウェア、例外ハンドラ等)
 @[3](サービス固有の設定)
 @[4](コントローラ)
 @[5](ライブラリ)
@@ -189,7 +189,7 @@ lenet.jp
 ---
 
 @snap[north span-100]
-各サービスのindex.php → Laravel
+各サービスのindex.php → Laravelのindex.php
 @snapend
 
 ```php
@@ -199,7 +199,7 @@ require $_SERVER['DOCUMENT_ROOT'] . '/../../lenet_common/public/index.php';
 ---
 
 @snap[north span-100]
-Laravel → 各サービスのroutes.php
+Laravelのルートファイル → 各サービスのルートファイル
 @snapend
 
 ```php
