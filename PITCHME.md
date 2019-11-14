@@ -188,15 +188,17 @@ lenet.jp
 
 ---
 
+@snap[north span-100]
 ## 各サービスのindex.php
+@snapend
 
 ```
-<?php
-
 require $_SERVER['DOCUMENT_ROOT'] . '/../../lenet_common/public/index.php';
 ```
 
+@snap[south]
 Laravelのindex.phpを読み込んでいる
+@snapend
 
 ---
 
