@@ -276,7 +276,10 @@ parameters:
 
 ミドルウェアの登録
 
-```
+lenet_common/app/Providers/RouteServiceProvider.php
+
+@snap[span-100 text-07]
+```php
 switch ($_SERVER['HOST_SUFFIX']) {
     case 'lenet.jp':
         // グローバルミドルウェア
@@ -302,6 +305,7 @@ switch ($_SERVER['HOST_SUFFIX']) {
         break;
 }
 ```
+@snapend
 
 ---
 
