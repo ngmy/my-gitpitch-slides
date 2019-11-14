@@ -280,26 +280,11 @@ lenet_common/app/Providers/RouteServiceProvider.php
 
 @snap[span-100 text-07]
 ```php
-switch ($_SERVER['HOST_SUFFIX']) {
-    case 'lenet.jp':
-        $this->app->make(Kernel::class)
-            ->pushMiddleware(\Jp\Lenet\App\Http\Middleware\BeforeMiddleware::class);
-        $this->app['router']
-            ->aliasMiddleware('auth', \Jp\Lenet\App\Http\Middleware\Authenticate::class);
-        break;
-    case 'lenet-hokan.jp':
-        // ...
-    case 'futonlenet.jp':
-        // ...
-        break;
-    case 'kutsulenet.jp':
-        // ...
-        break;
-    case 'wh-plus.com':
-        // ...
-        break;
-    default:
-        break;
+if ($_SERVER['HOST_SUFFIX'] == 'lenet.jp') {
+    $this->app->make(Kernel::class)
+        ->pushMiddleware(\Jp\Lenet\App\Http\Middleware\BeforeMiddleware::class);
+    $this->app['router']
+        ->aliasMiddleware('auth', \Jp\Lenet\App\Http\Middleware\Authenticate::class);
 }
 ```
 @snapend
