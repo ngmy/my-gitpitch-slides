@@ -188,6 +188,18 @@ lenet.jp
 
 ---
 
+## 各サービスのindex.php
+
+```
+<?php
+
+require $_SERVER['DOCUMENT_ROOT'] . '/../../lenet_common/public/index.php';
+```
+
+Laravelのindex.phpを読み込んでいる
+
+---
+
 ### 境界を遵守させる
 
 ---
@@ -256,18 +268,6 @@ foreach ($serviceLoader->getPrefixesPsr4() as $prefix => $paths) {
 @[4](Classmapをマージ)
 @[5-7](PSR-4をマージ)
 @snapend
-
----
-
-各サービスのindex.php
-
-```
-<?php
-
-require $_SERVER['DOCUMENT_ROOT'] . '/../../lenet_common/public/index.php';
-```
-
-Laravelのindex.phpを読み込んでいる
 
 ---
 
