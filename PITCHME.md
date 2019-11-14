@@ -176,9 +176,14 @@ lenet.jp
 @snapend
 
 @snap[east span-60 text-center]
-@[2-5, 7-13](Laravel)
-@[6](共有ライブラリ)
-@[14](PHPStanの設定ファイル)
+@[2](サービス固有のLaravel)
+@[3](サービス固有の設定)
+@[4](コントローラ)
+@[5](ライブラリ)
+@[6](ドキュメントルート)
+@[7](テンプレート)
+@[8-9](composer.json + vendor)
+@[10](PHPStanの設定ファイル)
 @snapend
 
 ---
