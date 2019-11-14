@@ -259,6 +259,18 @@ foreach ($serviceLoader->getPrefixesPsr4() as $prefix => $paths) {
 
 ---
 
+各サービスのindex.php
+
+```
+<?php
+
+require $_SERVER['DOCUMENT_ROOT'] . '/../../lenet_common/public/index.php';
+```
+
+Laravelのindex.phpを読み込んでいる
+
+---
+
 PHPStanで依存の違反を検出する
 
 ---
@@ -342,16 +354,6 @@ parameters:
   autoload_files:
     - %rootDir%/../../../vendor/autoload.php
     - %rootDir%/../../../_ide_helper.php
-```
-
----
-
-ドキュメントルート
-
-```
-<?php
-
-require $_SERVER['DOCUMENT_ROOT'] . '/../../lenet_common/public/index.php';
 ```
 
 ---
