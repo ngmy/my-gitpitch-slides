@@ -189,16 +189,22 @@ lenet.jp
 ---
 
 @snap[north span-100]
-## 各サービスのindex.php
+## 各サービスのindex.php → Laravel
 @snapend
 
-```
+```php
 require $_SERVER['DOCUMENT_ROOT'] . '/../../lenet_common/public/index.php';
 ```
 
-@snap[south]
-Laravelのindex.phpを読み込んでいる
+---
+
+@snap[north span-100]
+## Laravel → 各サービスのroutes.php
 @snapend
+
+```php
+require SERVICE_BASEDIR . '/app/routes.php';
+```
 
 ---
 
