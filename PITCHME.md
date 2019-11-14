@@ -125,7 +125,7 @@ lenet
 ---
 
 @snap[north span-100]
-lenet_commonのディレクトリ
+Laravel + 共有ライブラリのディレクトリ構成
 @snapend
 
 @snap[south-west span-50 text-07]
@@ -144,6 +144,24 @@ lenet
 │   ├── vendor
 │   ├── composer.json
 │   └── phpstan.neon
+├── lenet.jp
+├── lenet-hokan.jp
+├── futonlenet.jp
+├── kutsulenet.jp
+└── wh-plus.com
+```
+@snapend
+
+---
+
+@snap[north span-100]
+各サービスのディレクトリ構成
+@snapend
+
+@snap[south-west span-50 text-07]
+```text
+lenet
+├── lenet_common
 ├── lenet.jp
 │   ├── app
 │   ├── config
