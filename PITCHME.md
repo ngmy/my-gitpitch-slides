@@ -160,25 +160,25 @@ lenet_common
 各サービスのディレクトリ構成
 @snapend
 
-@snap[west span-50 text-07]
+@snap[west span-40]
 ```text
-lenet
-├── lenet_common
-├── lenet.jp
-│   ├── app
-│   ├── config
-│   ├── controllers
-│   ├── lib
-│   ├── public
-│   ├── templates
-│   ├── vendor
-│   ├── composer.json
-│   └── phpstan.neon
-├── lenet-hokan.jp
-├── futonlenet.jp
-├── kutsulenet.jp
-└── wh-plus.com
+lenet.jp
+├── app
+├── config
+├── controllers
+├── lib
+├── public
+├── templates
+├── vendor
+├── composer.json
+└── phpstan.neon
 ```
+@snapend
+
+@snap[east span-60 text-center]
+@[2-5, 7-13](Laravel)
+@[6](共有ライブラリ)
+@[14](PHPStanの設定ファイル)
 @snapend
 
 ---
