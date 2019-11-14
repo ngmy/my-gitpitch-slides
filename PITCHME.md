@@ -280,7 +280,7 @@ parameters:
 
 lenet_common/app/Providers/RouteServiceProvider.php
 
-@snap[span-100 text-07]
+@snap[span-100]
 ```php
 if ($_SERVER['HOST_SUFFIX'] == 'lenet.jp') {
     $this->app->make(Kernel::class)->pushMiddleware(
