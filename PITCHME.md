@@ -128,7 +128,7 @@ lenet
 Laravel + 共有ライブラリのディレクトリ構成
 @snapend
 
-@snap[south-west span-50 text-07]
+@snap[west span-50 text-07]
 ```text
 lenet
 ├── lenet_common
@@ -158,7 +158,7 @@ lenet
 各サービスのディレクトリ構成
 @snapend
 
-@snap[south-west span-50 text-07]
+@snap[west span-50 text-07]
 ```text
 lenet
 ├── lenet_common
