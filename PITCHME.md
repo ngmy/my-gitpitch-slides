@@ -203,7 +203,7 @@ Laravelのルートファイル → 各サービスのルートファイル
 @snapend
 
 ```php
-require SERVICE_BASEDIR . '/app/routes.php';
+require $_SERVER['SERVICE_BASEDIR'] . '/app/routes.php';
 ```
 
 ---
@@ -282,7 +282,7 @@ lenet_common/app/Providers/RouteServiceProvider.php
 
 @snap[span-100]
 ```php
-if ($_SERVER['HOST_SUFFIX'] == 'lenet.jp') {
+if ($_SERVER['SERVICE_NAME'] == 'lenet.jp') {
     $this->app->make(Kernel::class)->pushMiddleware(
         \Jp\Lenet\App\Http\Middleware\BeforeMiddleware::class
     );
