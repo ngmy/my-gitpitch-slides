@@ -189,7 +189,7 @@ lenet.jp
 ---
 
 @snap[north span-100]
-## 各サービスのindex.php → Laravel
+各サービスのindex.php → Laravel
 @snapend
 
 ```php
@@ -199,7 +199,7 @@ require $_SERVER['DOCUMENT_ROOT'] . '/../../lenet_common/public/index.php';
 ---
 
 @snap[north span-100]
-## Laravel → 各サービスのroutes.php
+Laravel → 各サービスのroutes.php
 @snapend
 
 ```php
@@ -213,50 +213,6 @@ require SERVICE_BASEDIR . '/app/routes.php';
 ---
 
 Composer APIでオートロードするクラスを制限する
-
----
-
-@snap[south-west span-50 text-07]
-```text
-lenet
-├── lenet_common
-│   ├── public
-│   │   └── index.php
-│   ├── composer.json
-│   ├── phpstan.neon
-│   └── vendor
-├── lenet.jp
-│   ├── public
-│   │   └── index.php
-│   ├── composer.json
-│   ├── phpstan.neon
-│   └── vendor
-├── lenet-hokan.jp
-│   ├── public
-│   │   └── index.php
-│   ├── composer.json
-│   ├── phpstan.neon
-│   └── vendor
-├── futonlenet.jp
-│   ├── public
-│   │   └── index.php
-│   ├── composer.json
-│   ├── phpstan.neon
-│   └── vendor
-├── kutsulenet.jp
-│   ├── public
-│   │   └── index.php
-│   ├── composer.json
-│   ├── phpstan.neon
-│   └── vendor
-└── wh-plus.com
-    ├── public
-    │   └── index.php
-    ├── composer.json
-    ├── phpstan.neon
-    └── vendor
-```
-@snapend
 
 ---
 
@@ -283,57 +239,11 @@ PHPStanで依存の違反を検出する
 
 ---
 
-@snap[south-west span-50 text-07]
-```text
-lenet
-├── lenet_common
-│   ├── public
-│   │   └── index.php
-│   ├── composer.json
-│   ├── phpstan.neon
-│   └── vendor
-├── lenet.jp
-│   ├── public
-│   │   └── index.php
-│   ├── composer.json
-│   ├── phpstan.neon
-│   └── vendor
-├── lenet-hokan.jp
-│   ├── public
-│   │   └── index.php
-│   ├── composer.json
-│   ├── phpstan.neon
-│   └── vendor
-├── futonlenet.jp
-│   ├── public
-│   │   └── index.php
-│   ├── composer.json
-│   ├── phpstan.neon
-│   └── vendor
-├── kutsulenet.jp
-│   ├── public
-│   │   └── index.php
-│   ├── composer.json
-│   ├── phpstan.neon
-│   └── vendor
-└── wh-plus.com
-    ├── public
-    │   └── index.php
-    ├── composer.json
-    ├── phpstan.neon
-    └── vendor
-```
-@snapend
-
----
-
 @snap[north span-100 text-07]
 ## 各サービスのphpstan.neon
 @snapend
 
-```
-# vim: set ft=yaml:
-
+```yaml
 parameters:
   paths:
     - %rootDir%/../../../../kuritaku.jp/app
@@ -351,9 +261,7 @@ parameters:
 ## lenet_commonのphpstan.neon
 @snapend
 
-```{lenet_common/phpstan.neon}
-# vim: set ft=yaml:
-
+```yaml
 parameters:
   paths:
     - %rootDir%/../../../app
