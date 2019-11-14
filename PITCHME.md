@@ -101,7 +101,7 @@ https://www.wh-plus.co.jp/
 リネットリポジトリのディレクトリ構成
 @snapend
 
-@snap[west span-50 text-07]
+@snap[west span-40 text-07]
 ```text
 lenet
 ├── lenet_common
@@ -113,7 +113,7 @@ lenet
 ```
 @snapend
 
-@snap[east span-50 text-center]
+@snap[east span-60 text-left]
 @[2-7](1つの共有コード + 5つのサービス)
 @[2](共有コード（Laravel + 共有ライブラリ）)
 @[3](サービス1（衣類）)
