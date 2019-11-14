@@ -277,36 +277,30 @@ parameters:
 ミドルウェアの登録
 
 ```
-class RouteServiceProvider extends ServiceProvider
-{
-    public function boot()
-    {
-        /*
-         * サービスに応じたミドルウェアを登録
-         *
-         * バッチの場合はwh-plus.comのミドルウェアを登録する。（Laravel 4.2の時代の挙動に合わせている）
-         */
-        switch ($_SERVER['HOST_SUFFIX']) {
-            case 'wh-plus.com':
-                $this->app->make(Kernel::class)->pushMiddleware(\Com\WhPlus\App\Http\Middleware\BeforeMiddleware::class);
-
-                $this->app['router']->aliasMiddleware('apiAuth', \Com\WhPlus\App\Http\Middleware\AuthenticateApi::class);
-                $this->app['router']->aliasMiddleware('auth', \Com\WhPlus\App\Http\Middleware\Authenticate::class);
-                ...
-                break;
-            case 'kuritaku.jp':
-                ...
-            case 'lenet-hokan.jp':
-                ...
-            case 'kuritakufuton.net':
-                ...
-                break;
-            default:
-                break;
-        }
-
-        parent::boot();
-    }
+switch ($_SERVER['HOST_SUFFIX']) {
+    case 'lenet.jp':
+        // グローバルミドルウェア
+        $this->app->make(Kernel::class)->pushMiddleware(\Jp\Lenet\App\Http\Middleware\BeforeMiddleware::class);
+        $this->app->make(Kernel::class)->pushMiddleware(\Jp\Lenet\App\Http\Middleware\AfterMiddleware::class);
+        // ...
+        // 名前付きミドルウェア
+        $this->app['router']->aliasMiddleware('auth', \Jp\Lenet\App\Http\Middleware\Authenticate::class);
+        // ...
+    case 'lenet-hokan.jp':
+        // ...
+        break;
+    case 'futonlenet.jp':
+        // ...
+        break;
+    case 'kutsulenet.jp':
+        // ...
+        break;
+    case 'wh-plus.com':
+        // ...
+        break;
+    default:
+        break;
+}
 ```
 
 ---
