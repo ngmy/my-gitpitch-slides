@@ -274,17 +274,22 @@ parameters:
 
 ---
 
+@snap[north span-100]
 ミドルウェアの登録
+@snapend
 
 lenet_common/app/Providers/RouteServiceProvider.php
 
 @snap[span-100 text-07]
 ```php
 if ($_SERVER['HOST_SUFFIX'] == 'lenet.jp') {
-    $this->app->make(Kernel::class)
-        ->pushMiddleware(\Jp\Lenet\App\Http\Middleware\BeforeMiddleware::class);
-    $this->app['router']
-        ->aliasMiddleware('auth', \Jp\Lenet\App\Http\Middleware\Authenticate::class);
+    $this->app->make(Kernel::class)->pushMiddleware(
+        \Jp\Lenet\App\Http\Middleware\BeforeMiddleware::class
+    );
+    $this->app['router']->aliasMiddleware(
+        'auth',
+        \Jp\Lenet\App\Http\Middleware\Authenticate::class
+    );
 }
 ```
 @snapend
