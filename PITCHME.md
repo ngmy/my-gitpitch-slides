@@ -286,10 +286,12 @@ if ($_SERVER['HOST_SUFFIX'] == 'lenet.jp') {
     $this->app->make(Kernel::class)->pushMiddleware(
         \Jp\Lenet\App\Http\Middleware\BeforeMiddleware::class
     );
+    // ...
     $this->app['router']->aliasMiddleware(
         'auth',
         \Jp\Lenet\App\Http\Middleware\Authenticate::class
     );
+    // ...
 }
 ```
 @snapend
