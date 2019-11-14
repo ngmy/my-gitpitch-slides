@@ -100,7 +100,7 @@ https://www.wh-plus.co.jp/
 @snap[north span-100]
 リネットのLaravelのディレクトリ構成
 
-@snap[south-west span-50 text-07]
+@snap[west span-50 text-07]
 ```text
 lenet
 ├── lenet_common
