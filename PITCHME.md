@@ -113,7 +113,7 @@ lenet
 ```
 @snapend
 
-@snap[east span-60 text-left]
+@snap[east span-60 text-center]
 @[2-7](1つの共有コード + 5つのサービス)
 @[2](共有コード（Laravel + 共有ライブラリ）)
 @[3](サービス1（衣類）)
