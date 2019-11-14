@@ -129,7 +129,7 @@ lenet
 共有コードのディレクトリ構成
 @snapend
 
-@snap[west span-50 text-07]
+@snap[west span-40]
 ```text
 lenet
 ├── lenet_common
@@ -137,6 +137,7 @@ lenet
 │   ├── bootstrap
 │   ├── config
 │   ├── database
+│   ├── lib
 │   ├── public
 │   ├── resources
 │   ├── routes
@@ -151,6 +152,16 @@ lenet
 ├── kutsulenet.jp
 └── wh-plus.com
 ```
+@snapend
+
+@snap[east span-60 text-center]
+@[2-7](1つの共有コード + 5つのサービス)
+@[2](共有コード（Laravel + 共有ライブラリ）)
+@[3](サービス1（衣類）)
+@[4](サービス2（保管）)
+@[5](サービス3（布団）)
+@[6](サービス4（靴）)
+@[7](サービス5（社内・工場CMS）)
 @snapend
 
 ---
