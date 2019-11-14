@@ -101,7 +101,7 @@ https://www.wh-plus.co.jp/
 リネットリポジトリのディレクトリ構成
 @snapend
 
-@snap[west span-40
+@snap[west span-40]
 ```text
 lenet
 ├── lenet_common
