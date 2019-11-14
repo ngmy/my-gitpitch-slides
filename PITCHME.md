@@ -499,73 +499,6 @@ class Handler extends BaseExceptionHandler
 
 ---
 
-### 一つのプロジェクトで複数のcomposer.jsonを読み込みたくなった
-
----
-
-なんで？
-
----
-
-リネットのLaravelのディレクトリ構成のクセがすごい
-
----
-
-@snap[north span-100]
-リネットのLaravelのディレクトリ構成
-@snapend
-
-@snap[south-west span-50 text-07]
-```text
-lenet
-├── lenet_common
-│   ├── public
-│   │   └── index.php
-│   ├── composer.json
-│   └── vendor
-├── lenet.jp
-│   ├── public
-│   │   └── index.php
-│   ├── composer.json
-│   └── vendor
-├── lenet-hokan.jp
-│   ├── public
-│   │   └── index.php
-│   ├── composer.json
-│   └── vendor
-├── futonlenet.jp
-│   ├── public
-│   │   └── index.php
-│   ├── composer.json
-│   └── vendor
-├── kutsulenet.jp
-│   ├── public
-│   │   └── index.php
-│   ├── composer.json
-│   └── vendor
-└── wh-plus.com
-    ├── public
-    │   └── index.php
-    ├── composer.json
-    └── vendor
-```
-@snapend
-
-@snap[east span-50]
-@[2](Laravelと共有ライブラリ)
-@[2, 3-4](Laravelのindex.php)
-@[2, 5-6](Laravelのcomposer.jsonとvendor<br>共有ライブラリをpsr-4に登録している)
-@[7](衣類のコード)
-@[7, 8-9](衣類のドキュメントルート<br>Laravelのindex.phpをrequireしている)
-@[7, 10-11](衣類のcomposer.jsonとvendor<br>名前空間なしのレガシーなコードをclassmapに登録している)
-@[12-16](保管のコード<br>※衣類と同じ)
-@[17-21](布団のコード<br>※衣類と同じ)
-@[22-26](靴のコード<br>※衣類と同じ)
-@[27-31](社内・工場CMSのコード<br>※衣類と同じ)
-@snapend
-
----
-
 ### Composer API
 
 https://getcomposer.org/apidoc/master/index.html
@@ -573,25 +506,6 @@ https://getcomposer.org/apidoc/master/index.html
 ---
 
 <iframe class="stretch" src="https://getcomposer.org/apidoc/master/index.html"></iframe>
-
----
-
-```php
-$loader = require base_path() . '/vendor/autoload.php';
-$serviceLoader = require realpath($_SERVER['DOCUMENT_ROOT'])
-    . '/../vendor/autoload.php';
-$loader->addClassMap($serviceLoader->getClassMap());
-foreach ($serviceLoader->getPrefixesPsr4() as $prefix => $paths) {
-    $loader->addPsr4($prefix, $paths);
-}
-```
-
-@snap[south span-100]
-@[1](Laravel + 共有ライブラリのautoload.phpを読み込む)
-@[2-3](ドキュメントルートから応じたサービスのautoload.phpを読み込む)
-@[4](Classmapをマージ)
-@[5-7](PSR-4をマージ)
-@snapend
 
 ---
 
@@ -649,12 +563,3 @@ https://www.kutsulenet.jp/ にアクセスした時
 @snap[south span-100]
 社内・工場CMSにアクセスした時
 @snapend
-
----
-
-Composer APIを使えば単純にcomposer.jsonを読み込む以外にも色々できる
-（ご利用は計画的に）
-
----
-
-ご静聴ありがとうございました
