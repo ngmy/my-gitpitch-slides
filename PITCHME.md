@@ -48,7 +48,7 @@ https://www.wh-plus.co.jp/
 ## ネット宅配クリーニングのリネット
 @snapend
 
-@snap[west span-40]
+@snap[west span-50]
 ![IMAGE](assets/img/cleaning_result.png)
 @snapend
 
