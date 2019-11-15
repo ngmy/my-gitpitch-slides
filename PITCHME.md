@@ -370,7 +370,7 @@ if ($_SERVER['SERVICE_NAME'] == 'lenet.jp') {
 
 
 - Laravelの設定はすべて環境変数で流し込むようにしている
-    - k8sのyaml
+    - サービスごとにk8sのyamlがある
 - .envファイルは使っていない
 
 ```yaml
