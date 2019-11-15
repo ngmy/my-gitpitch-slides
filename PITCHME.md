@@ -50,7 +50,7 @@ https://www.wh-plus.co.jp/
 ![IMAGE](assets/img/sponsor.png)
 @snapend
 
----?image=assets/img/cleaning_result.png&size=contain
+---?image=assets/img/cleaning_result.png&size=cover
 
 ---
 
