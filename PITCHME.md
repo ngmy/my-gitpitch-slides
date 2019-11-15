@@ -50,6 +50,8 @@ https://www.wh-plus.co.jp/
 ![IMAGE](assets/img/sponsor.png)
 @snapend
 
+---?image=assets/img/cleaning_result.png&size=contain
+
 ---
 
 @snap[north span-100 text-07]
