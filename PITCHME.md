@@ -207,6 +207,16 @@ Composer APIでオートロードするクラスを制限する
 
 ---
 
+### Composer API
+
+https://getcomposer.org/apidoc/master/index.html
+
+---
+
+<iframe class="stretch" src="https://getcomposer.org/apidoc/master/index.html"></iframe>
+
+---
+
 ```php
 $loader = require base_path() . '/vendor/autoload.php';
 $serviceLoader = require realpath($_SERVER['DOCUMENT_ROOT'])
@@ -440,13 +450,3 @@ if ($_SERVER['SERVICE_NAME'] == 'lenet.jp') {
 ---
 
 ご静聴ありがとうございました
-
----
-
-### Composer API
-
-https://getcomposer.org/apidoc/master/index.html
-
----
-
-<iframe class="stretch" src="https://getcomposer.org/apidoc/master/index.html"></iframe>
