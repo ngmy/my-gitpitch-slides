@@ -325,7 +325,7 @@ k8sのyaml
 
 @snap[north span-100]
 ビューパス
-＠snapend
+@snapend
 
 ```php
 <?php
