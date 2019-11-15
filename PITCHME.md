@@ -29,7 +29,7 @@ PHPカンファレンス2019 懇親会LT
 ---
 
 @snap[north span-100 text-07]
-## ホワイトプラスを知ってる人？ &#x1f64b;
+## ホワイトプラス
 @snapend
 
 @snap[midpoint span-90]
@@ -40,15 +40,7 @@ PHPカンファレンス2019 懇親会LT
 https://www.wh-plus.co.jp/
 @snapend
 
----
-
-@snap[north span-100 text-07]
-## ゴールドスポンサーやってます
-@snapend
-
-@snap[south span-90]
-![IMAGE](assets/img/sponsor.png)
-@snapend
+---?image=assets/img/sponsor.png&size=contain
 
 ---?image=assets/img/cleaning_result.png&size=auto 100%
 
