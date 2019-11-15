@@ -42,6 +42,8 @@ https://www.wh-plus.co.jp/
 
 ---image=assets/img/sponsor.png&size=contain
 
+---
+
 ---?image=assets/img/cleaning_result.png&size=contain
 
 ---
