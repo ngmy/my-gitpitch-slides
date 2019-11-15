@@ -40,9 +40,7 @@ PHPカンファレンス2019 懇親会LT
 https://www.wh-plus.co.jp/
 @snapend
 
----image=assets/img/sponsor.png&size=contain
-
----
+---?image=assets/img/sponsor.png&size=contain
 
 ---?image=assets/img/cleaning_result.png&size=contain
 
