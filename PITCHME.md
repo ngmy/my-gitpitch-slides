@@ -19,6 +19,10 @@ PHPカンファレンス2019 懇親会LT
 - 株式会社ホワイトプラスのエンジニア
 - PHP、Laravelの面倒を見てます
 - @fa[github] [@ngmy](https://github.com/ngmy)
+<span class="fa-stack" style="color:#4cb10d">
+    <i class="fa fa-square fa-stack-2x"></i>
+    <i class="fa fa-search fa-stack-1x fa-inverse fa-2x"></i>
+</span>]]]]]
 - クライミング8：エンジニアリング2
 @snapend
 
