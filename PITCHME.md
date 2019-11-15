@@ -337,11 +337,13 @@ k8sのyaml
 
 ---
 
+@snap[north span-100]
 マイグレーション・バッチ・ストレージ
+@snapend
 
-共通
-Laravelのデフォルトそのまま
-ただバッチはこの前DigDagに移行した
+- 全てのサービスで共有
+- Laravelのデフォルトそのまま
+- ただし、バッチはこの前DigDagに移行した
 
 @snap[south span-40]
 ![IMAGE](assets/img/logo-digdag-sq-tr.png)
