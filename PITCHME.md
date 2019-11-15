@@ -29,7 +29,7 @@ PHPカンファレンス2019 懇親会LT
 ---
 
 @snap[north span-100 text-07]
-## ホワイトプラス
+## 株式会社ホワイトプラス
 @snapend
 
 @snap[midpoint span-90]
@@ -44,8 +44,10 @@ https://www.wh-plus.co.jp/
 
 ---?image=assets/img/cleaning_result.png&size=contain
 
++++
+
 @snap[north span-100 text-07]
-## リネットやってます
+## 宅配クリーニングのリネット
 @snapend
 
 @snap[west span-40]
