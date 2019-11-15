@@ -379,6 +379,8 @@ k8sのyaml
               ...
 ```
 
+.envファイルは使っていない
+
 ---
 
 @snap[north span-100]
