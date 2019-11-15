@@ -47,7 +47,7 @@ https://www.wh-plus.co.jp/
 +++
 
 @snap[north span-100 text-07]
-## 宅配クリーニングのリネット
+## ネット宅配クリーニングのリネット
 @snapend
 
 @snap[west span-40]
@@ -55,11 +55,10 @@ https://www.wh-plus.co.jp/
 @snapend
 
 @snap[east span-50 text-07]
-- 宅配クリーニングのリネット
-- PC・スマホから注文できて、自宅にいたままクリーニングできるWebサービス
+- PC・スマホから24時間いつでも注文できて、自宅にいたままおお預け・お受け取りができるWebサービス
 - 衣類クリーニング
     - https://www.lenet.jp/
-- 衣類クリーニング + 保管
+- 衣類クリーニング保管
     - https://www.lenet-hokan.jp/
 - 布団クリーニング
     - https://www.futonlenet.jp/
