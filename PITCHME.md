@@ -323,7 +323,9 @@ k8sのyaml
 
 ---
 
+@snap[north span-100]
 ビューパス
+＠snapend
 
 ```
 <?php
@@ -351,7 +353,9 @@ k8sのyaml
 
 ---
 
+@snap[north span-100]
 必要なパスの書き換え
+@snapend
 
 ```
  $app->bind('path.public', function () {                                                                                 
