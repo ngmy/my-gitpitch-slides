@@ -364,22 +364,26 @@ if ($_SERVER['SERVICE_NAME'] == 'lenet.jp') {
 
 ---
 
-Laravelの設定はすべて環境変数で流し込むようにしている
-k8sのyaml
+@snap[north span-100]
+環境設定
+@snapend
+
+
+- Laravelの設定はすべて環境変数で流し込むようにしている
+    - k8sのyaml
+- .envファイルは使っていない
 
 ```yaml
-          env:
-            - name: APP_ENV
-              value: production
-            - name: APP_HOST_PREFIX
-              value: www
-            - name: APP_SERVICE
-              value: lenet.jp
-            - name: APP_DB_ENDPOINT
-              ...
+env:
+  - name: APP_ENV
+    value: production
+  - name: APP_HOST_PREFIX
+    value: www
+  - name: APP_SERVICE
+    value: lenet.jp
+  - name: APP_DB_ENDPOINT
+  # ...
 ```
-
-.envファイルは使っていない
 
 ---
 
