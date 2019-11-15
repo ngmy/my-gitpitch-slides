@@ -367,6 +367,20 @@ k8sのyaml
 
 エラーハンドリング
 
+---
+
+@snap[north span-100]
+エラーハンドラの登録
+@snapend
+
+```php
+if ($_SERVER['SERVICE_NAME'] == 'lenet.jp') {
+    $this->app->singleton(
+        \Illuminate\Contracts\Debug\ExceptionHandler::class,
+        \Jp\Lenet\App\Exceptions\Handler::class
+    );
+}
+---
 
 ```
     public function report(Exception $exception)
