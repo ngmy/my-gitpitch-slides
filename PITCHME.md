@@ -247,19 +247,24 @@ PHPStanで依存の違反を検出する
 ```yaml
 parameters:
   paths:
-    - %rootDir%/../../../../kuritaku.jp/app
-    - %rootDir%/../../../../kuritaku.jp/controllers
-    - %rootDir%/../../../../kuritaku.jp/lib
+    - %rootDir%/../../../../lenet.jp/app
+    - %rootDir%/../../../../lenet.jp/controllers
+    - %rootDir%/../../../../lenet.jp/lib
   autoload_files:
-    - %rootDir%/../../../vendor/autoload.php # 共有ライブラリ + Laravel
+    - %rootDir%/../../../vendor/autoload.php
     - %rootDir%/../../../_ide_helper.php
-    - %rootDir%/../../../../kuritaku.jp/vendor/autoload.php
+    - %rootDir%/../../../../lenet.jp/vendor/autoload.php
 ```
+
+@snap[south span-100]
+@[6-8](共有コードのクラスをオートロード)
+@[6,9](自サービスのクラスをオートロード)
+@snapend
 
 ---
 
 @snap[north span-100 text-07]
-## lenet_commonのphpstan.neon
+## 共有コードのphpstan.neon
 @snapend
 
 ```yaml
@@ -272,6 +277,10 @@ parameters:
     - %rootDir%/../../../vendor/autoload.php
     - %rootDir%/../../../_ide_helper.php
 ```
+
+@snap[south span-100]
+@[6-8](共有コードのクラスをオートロード)
+@snapend
 
 ---
 
