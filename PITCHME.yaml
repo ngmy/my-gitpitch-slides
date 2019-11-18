@@ -17,7 +17,7 @@ theme-margins    : [ "0", "15px" ]
 # Highlight Setting
 # Doc: https://gitpitch.com/docs/settings/highlight
 #
-highlight : tomorrow
+highlight : monokai
 
 #
 # Theme-Override Setting
