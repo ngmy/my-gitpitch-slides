@@ -89,7 +89,7 @@ https://www.wh-plus.co.jp/
 ---
 
 @snap[north span-100]
-リネットリポジトリのディレクトリ構成
+### リネットリポジトリのディレクトリ構成
 @snapend
 
 @snap[west span-40]
@@ -117,7 +117,7 @@ lenet
 ---
 
 @snap[north span-100]
-共有コードのディレクトリ構成
+### 共有コードのディレクトリ構成
 @snapend
 
 @snap[west span-40]
@@ -148,7 +148,7 @@ lenet_common
 ---
 
 @snap[north span-100]
-各サービスのディレクトリ構成
+### 各サービスのディレクトリ構成
 @snapend
 
 @snap[west span-40]
@@ -247,10 +247,10 @@ PHPStanで依存の違反を検出する
 ---
 
 @snap[north span-100 text-07]
-## 各サービスのphpstan.neon
+### 各サービスのphpstan.neon
 @snapend
 
-`lenet.jp/phpstan.neon`
+#### `lenet.jp/phpstan.neon`
 
 ```yaml
 parameters:
@@ -272,10 +272,10 @@ parameters:
 ---
 
 @snap[north span-100 text-07]
-## 共有コードのphpstan.neon
+### 共有コードのphpstan.neon
 @snapend
 
-`lenet_common/phpstan.neon`
+#### `lenet_common/phpstan.neon`
 
 ```yaml
 parameters:
@@ -384,15 +384,14 @@ if ($_SERVER['SERVICE_NAME'] == 'lenet.jp') {
 ---
 
 @snap[north span-100]
-環境設定
+### 環境設定
 @snapend
-
 
 - Laravelの設定はすべて環境変数で流し込むようにしている
     - サービスごとにk8sのyamlがある
 - .envファイルは使っていない
 
-`lenet-jp.yaml`
+#### `lenet-jp.yaml`
 
 ```yaml
 env:
@@ -409,10 +408,10 @@ env:
 ---
 
 @snap[north span-100]
-ビューパス
+### ビューパス
 @snapend
 
-`lenet_common/config/view.php`
+#### `lenet_common/config/view.php`
 
 ```php
 'paths' => [
@@ -424,7 +423,7 @@ env:
 ---
 
 @snap[north span-100]
-マイグレーション・バッチ・ストレージ
+### マイグレーション・バッチ・ストレージ
 @snapend
 
 - 全てのサービスで共有
@@ -438,10 +437,10 @@ env:
 ---
 
 @snap[north span-100]
-必要なパスの書き換え
+### 必要なパスの書き換え
 @snapend
 
-`lenet_common/bootstrap/app.php`
+#### `lenet_common/bootstrap/app.php`
 
 ```
  $app->bind('path.public', function () {                                                                                 
@@ -456,10 +455,10 @@ env:
 ---
 
 @snap[north span-100]
-エラーハンドラの登録
+### エラーハンドラの登録
 @snapend
 
-`lenet_common/app/Providers/AppServiceProvider.php`の`register`メソッド
+#### `lenet_common/app/Providers/AppServiceProvider.php`の`register`メソッド
 
 ```php
 if ($_SERVER['SERVICE_NAME'] == 'lenet.jp') {
