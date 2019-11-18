@@ -193,9 +193,9 @@ require $_SERVER['DOCUMENT_ROOT'] . '/../../lenet_common/public/index.php';
 ## Laravelのルートファイル → 各サービスのルートファイル
 @snapend
 
-### lenet_common/routes/web.php 
+### lenet_common/routes/web.php
 
-```php
+```php:lenet_common/routes/web.php
 require $_SERVER['DOCUMENT_ROOT'] . '/../app/routes.php';
 ```
 
