@@ -84,12 +84,12 @@ https://www.wh-plus.co.jp/
 
 ---
 
-### モジュールに分割する
+## モジュールに分割する
 
 ---
 
 @snap[north span-100]
-### リネットリポジトリのディレクトリ構成
+## リネットリポジトリのディレクトリ構成
 @snapend
 
 @snap[west span-40]
@@ -117,7 +117,7 @@ lenet
 ---
 
 @snap[north span-100]
-### 共有コードのディレクトリ構成
+## 共有コードのディレクトリ構成
 @snapend
 
 @snap[west span-40]
@@ -148,7 +148,7 @@ lenet_common
 ---
 
 @snap[north span-100]
-### 各サービスのディレクトリ構成
+## 各サービスのディレクトリ構成
 @snapend
 
 @snap[west span-40]
@@ -180,7 +180,7 @@ lenet.jp
 ---
 
 @snap[north span-100]
-### 各サービスのindex.php &rarr; Laravelのindex.php
+## 各サービスのindex.php &rarr; Laravelのindex.php
 @snapend
 
 #### `lenet.jp/public/index.php`
@@ -192,7 +192,7 @@ require $_SERVER['DOCUMENT_ROOT'] . '/../../lenet_common/public/index.php';
 ---
 
 @snap[north span-100]
-### Laravelのルートファイル &rarr; 各サービスのルートファイル
+## Laravelのルートファイル &rarr; 各サービスのルートファイル
 @snapend
 
 #### `lenet_common/routes/web.php`
@@ -203,7 +203,7 @@ require $_SERVER['DOCUMENT_ROOT'] . '/../app/routes.php';
 
 ---
 
-### 境界を遵守させる
+## 境界を遵守させる
 
 ---
 
@@ -211,7 +211,7 @@ Composer APIでオートロードするクラスを制限する
 
 ---
 
-### Composer API
+## Composer API
 
 https://getcomposer.org/apidoc/master/index.html
 
@@ -247,7 +247,7 @@ PHPStanで依存の違反を検出する
 ---
 
 @snap[north span-100 text-07]
-### 各サービスのphpstan.neon
+## 各サービスのphpstan.neon
 @snapend
 
 #### `lenet.jp/phpstan.neon`
@@ -272,7 +272,7 @@ parameters:
 ---
 
 @snap[north span-100 text-07]
-### 共有コードのphpstan.neon
+## 共有コードのphpstan.neon
 @snapend
 
 #### `lenet_common/phpstan.neon`
