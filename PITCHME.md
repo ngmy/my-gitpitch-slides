@@ -195,7 +195,8 @@ Laravelのルートファイル → 各サービスのルートファイル
 @snapend
 
 ```php
-require $_SERVER['SERVICE_BASEDIR'] . '/app/routes.php';
+require $_SERVER['DOCUMENT_ROOT'] .
+    '/../app/routes.php';
 ```
 
 ---
