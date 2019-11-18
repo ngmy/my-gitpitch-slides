@@ -240,58 +240,6 @@ foreach ($serviceLoader->getPrefixesPsr4() as $prefix => $paths) {
 
 ---
 
-## PHPStanで依存の違反を検出する
-
----
-
-@snap[north span-100 text-07]
-### 各サービスのphpstan.neon
-@snapend
-
-#### `lenet.jp/phpstan.neon`
-
-```yaml
-parameters:
-  paths:
-    - %rootDir%/../../../../lenet.jp/app
-    - %rootDir%/../../../../lenet.jp/controllers
-    - %rootDir%/../../../../lenet.jp/lib
-  autoload_files:
-    - %rootDir%/../../../vendor/autoload.php
-    - %rootDir%/../../../_ide_helper.php
-    - %rootDir%/../../../../lenet.jp/vendor/autoload.php
-```
-
-@snap[south span-100]
-@[6-8](共有コードのクラスをオートロード)
-@[6,9](自サービスのクラスをオートロード)
-@snapend
-
----
-
-@snap[north span-100 text-07]
-### 共有コードのphpstan.neon
-@snapend
-
-#### `lenet_common/phpstan.neon`
-
-```yaml
-parameters:
-  paths:
-    - %rootDir%/../../../app
-    - %rootDir%/../../../controllers
-    - %rootDir%/../../../lib
-  autoload_files:
-    - %rootDir%/../../../vendor/autoload.php
-    - %rootDir%/../../../_ide_helper.php
-```
-
-@snap[south span-100]
-@[6-8](共有コードのクラスをオートロード)
-@snapend
-
----
-
 @snap[midpoint span-100]
 ![IMAGE](assets/img/lenet-package-1.png)
 @snapend
@@ -348,6 +296,58 @@ https://www.kutsulenet.jp/ にアクセスした時
 @snapend
 
 ---
+
+## PHPStanで依存の違反を検出する
+
+---
+
+@snap[north span-100 text-07]
+### 各サービスのphpstan.neon
+@snapend
+
+#### `lenet.jp/phpstan.neon`
+
+```yaml
+parameters:
+  paths:
+    - %rootDir%/../../../../lenet.jp/app
+    - %rootDir%/../../../../lenet.jp/controllers
+    - %rootDir%/../../../../lenet.jp/lib
+  autoload_files:
+    - %rootDir%/../../../vendor/autoload.php
+    - %rootDir%/../../../_ide_helper.php
+    - %rootDir%/../../../../lenet.jp/vendor/autoload.php
+```
+
+@snap[south span-100]
+@[6-8](共有コードのクラスをオートロード)
+@[6,9](自サービスのクラスをオートロード)
+@snapend
+
+---
+
+@snap[north span-100 text-07]
+### 共有コードのphpstan.neon
+@snapend
+
+#### `lenet_common/phpstan.neon`
+
+```yaml
+parameters:
+  paths:
+    - %rootDir%/../../../app
+    - %rootDir%/../../../controllers
+    - %rootDir%/../../../lib
+  autoload_files:
+    - %rootDir%/../../../vendor/autoload.php
+    - %rootDir%/../../../_ide_helper.php
+```
+
+@snap[south span-100]
+@[6-8](共有コードのクラスをオートロード)
+@snapend
+
+
 
 @snap[north span-100]
 ### ミドルウェアの登録
