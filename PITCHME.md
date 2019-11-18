@@ -349,6 +349,18 @@ parameters:
 
 ---
 
+@snap[midpoint span-100]
+![IMAGE](assets/img/lenet-package-1.png)
+@snapend
+
++++
+
+@snap[midpoint span-100]
+![IMAGE](assets/img/lenet-package-1.png)
+@snapend
+
+---
+
 @snap[north span-100]
 ### ミドルウェアの登録
 @snapend
