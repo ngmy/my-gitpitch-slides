@@ -10,7 +10,7 @@ PHPカンファレンス2019 懇親会LT
 
 ---
 
-@snap[north-west]
+@snap[north-west text-07]
 ## 自己紹介
 @snapend
 
@@ -88,7 +88,7 @@ https://www.wh-plus.co.jp/
 
 ---
 
-@snap[north span-100]
+@snap[north span-100 text-07]
 ## リネットリポジトリのディレクトリ構成
 @snapend
 
@@ -116,7 +116,7 @@ lenet
 
 ---
 
-@snap[north span-100]
+@snap[north span-100 text-07]
 ## 共有コードのディレクトリ構成
 @snapend
 
@@ -147,7 +147,7 @@ lenet_common
 
 ---
 
-@snap[north span-100]
+@snap[north span-100 text-07]
 ## 各サービスのディレクトリ構成
 @snapend
 
@@ -179,7 +179,7 @@ lenet.jp
 
 ---
 
-@snap[north span-100]
+@snap[north span-100 text-07]
 ## 各サービスのindex.php &rarr; Laravelのindex.php
 @snapend
 
@@ -191,7 +191,7 @@ require $_SERVER['DOCUMENT_ROOT'] . '/../../lenet_common/public/index.php';
 
 ---
 
-@snap[north span-100]
+@snap[north span-100 text-07]
 ## Laravelのルートファイル &rarr; 各サービスのルートファイル
 @snapend
 
@@ -383,8 +383,8 @@ if ($_SERVER['SERVICE_NAME'] == 'lenet.jp') {
 
 ---
 
-@snap[north span-100]
-### 環境設定
+@snap[north span-100 text-07]
+## 環境設定
 @snapend
 
 - Laravelの設定はすべて環境変数で流し込むようにしている
@@ -407,8 +407,8 @@ env:
 
 ---
 
-@snap[north span-100]
-### ビューパス
+@snap[north span-100 text-07]
+## ビューパス
 @snapend
 
 #### `lenet_common/config/view.php`
@@ -422,8 +422,8 @@ env:
 
 ---
 
-@snap[north span-100]
-### マイグレーション・バッチ・ストレージ
+@snap[north span-100 text-07]
+## マイグレーション・バッチ・ストレージ
 @snapend
 
 - 全てのサービスで共有
@@ -436,8 +436,8 @@ env:
 
 ---
 
-@snap[north span-100]
-### 必要なパスの書き換え
+@snap[north span-100 text-07]
+## 必要なパスの書き換え
 @snapend
 
 #### `lenet_common/bootstrap/app.php`
@@ -454,8 +454,8 @@ env:
 
 ---
 
-@snap[north span-100]
-### エラーハンドラの登録
+@snap[north span-100 text-07]
+## エラーハンドラの登録
 @snapend
 
 #### `lenet_common/app/Providers/AppServiceProvider.php`の`register`メソッド
