@@ -180,8 +180,10 @@ lenet.jp
 ---
 
 @snap[north span-100]
-各サービスのindex.php → Laravelのindex.php
+## 各サービスのindex.php → Laravelのindex.php
 @snapend
+
+`lenet_common/public/index.php`
 
 ```php
 require $_SERVER['DOCUMENT_ROOT'] . '/../../lenet_common/public/index.php';
@@ -193,7 +195,7 @@ require $_SERVER['DOCUMENT_ROOT'] . '/../../lenet_common/public/index.php';
 ## Laravelのルートファイル → 各サービスのルートファイル
 @snapend
 
-### lenet_common/routes/web.php
+`lenet_common/routes/web.php`
 
 ```php:lenet_common/routes/web.php
 require $_SERVER['DOCUMENT_ROOT'] . '/../app/routes.php';
@@ -218,6 +220,8 @@ https://getcomposer.org/apidoc/master/index.html
 <iframe class="stretch" src="https://getcomposer.org/apidoc/master/index.html"></iframe>
 
 ---
+
+`lenet_common/app/Providers/AppServiceProvider.php`の`register`メソッド
 
 ```php
 $loader = require base_path() . '/vendor/autoload.php';
@@ -246,6 +250,8 @@ PHPStanで依存の違反を検出する
 ## 各サービスのphpstan.neon
 @snapend
 
+`lenet.jp/phpstan.neon`
+
 ```yaml
 parameters:
   paths:
@@ -268,6 +274,8 @@ parameters:
 @snap[north span-100 text-07]
 ## 共有コードのphpstan.neon
 @snapend
+
+`lenet_common/phpstan.neon`
 
 ```yaml
 parameters:
@@ -347,7 +355,7 @@ https://www.kutsulenet.jp/ にアクセスした時
 ミドルウェアの登録
 @snapend
 
-lenet_common/app/Providers/RouteServiceProvider.php
+`lenet_common/app/Providers/RouteServiceProvider.php`の`boot`メソッド
 
 @snap[span-100]
 ```php
@@ -384,6 +392,8 @@ if ($_SERVER['SERVICE_NAME'] == 'lenet.jp') {
     - サービスごとにk8sのyamlがある
 - .envファイルは使っていない
 
+`lenet-jp.yaml`
+
 ```yaml
 env:
   - name: APP_ENV
@@ -401,6 +411,8 @@ env:
 @snap[north span-100]
 ビューパス
 @snapend
+
+`lenet_common/config/view.php`
 
 ```php
 <?php
@@ -432,6 +444,8 @@ env:
 必要なパスの書き換え
 @snapend
 
+`lenet_common/bootstrap/app.php`
+
 ```
  $app->bind('path.public', function () {                                                                                 
      return $_SERVER['DOCUMENT_ROOT'];                                                                                   
@@ -447,6 +461,8 @@ env:
 @snap[north span-100]
 エラーハンドラの登録
 @snapend
+
+`lenet_common/app/Providers/AppServiceProvider.php`の`register`メソッド
 
 ```php
 if ($_SERVER['SERVICE_NAME'] == 'lenet.jp') {
