@@ -180,7 +180,7 @@ lenet.jp
 ---
 
 @snap[north span-100]
-## 各サービスのindex.php → Laravelのindex.php
+### 各サービスのindex.php &rarr; Laravelのindex.php
 @snapend
 
 #### `lenet.jp/public/index.php`
@@ -192,7 +192,7 @@ require $_SERVER['DOCUMENT_ROOT'] . '/../../lenet_common/public/index.php';
 ---
 
 @snap[north span-100]
-## Laravelのルートファイル → 各サービスのルートファイル
+### Laravelのルートファイル &rarr; 各サービスのルートファイル
 @snapend
 
 #### `lenet_common/routes/web.php`
