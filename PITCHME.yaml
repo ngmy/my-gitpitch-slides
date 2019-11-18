@@ -2,7 +2,7 @@
 # Theme Template
 # Doc: https://gitpitch.com/docs/themes/default
 #
-theme : white
+theme : theme
 
 theme-background : [ "#FFF" ]
 theme-headline   : [ "Raleway", "#5289F7", "none" ]
@@ -17,7 +17,7 @@ theme-margins    : [ "0", "15px" ]
 # Highlight Setting
 # Doc: https://gitpitch.com/docs/settings/highlight
 #
-highlight : monokai
+highlight : tomorrow
 
 #
 # Theme-Override Setting
