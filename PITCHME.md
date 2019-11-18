@@ -87,7 +87,7 @@ https://www.wh-plus.co.jp/
 ---
 
 @snap[north span-100 text-07]
-## リネットリポジトリのディレクトリ構成
+### リネットリポジトリのディレクトリ構成
 @snapend
 
 @snap[west span-40]
@@ -115,7 +115,7 @@ lenet
 ---
 
 @snap[north span-100 text-07]
-## 共有コードのディレクトリ構成
+### 共有コードのディレクトリ構成
 @snapend
 
 @snap[west span-40]
@@ -146,7 +146,7 @@ lenet_common
 ---
 
 @snap[north span-100 text-07]
-## 各サービスのディレクトリ構成
+### 各サービスのディレクトリ構成
 @snapend
 
 @snap[west span-40]
@@ -178,7 +178,7 @@ lenet.jp
 ---
 
 @snap[north span-100 text-07]
-## 各サービスのindex.php &rarr; Laravelのindex.php
+### 各サービスのindex.php &rarr; Laravelのindex.php
 @snapend
 
 #### `lenet.jp/public/index.php`
@@ -190,7 +190,7 @@ require $_SERVER['DOCUMENT_ROOT'] . '/../../lenet_common/public/index.php';
 ---
 
 @snap[north span-100 text-07]
-## Laravelのルートファイル &rarr; 各サービスのルートファイル
+### Laravelのルートファイル &rarr; 各サービスのルートファイル
 @snapend
 
 #### `lenet_common/routes/web.php`
@@ -209,7 +209,7 @@ Composer APIでオートロードするクラスを制限する
 
 ---
 
-## Composer API
+### Composer API
 
 https://getcomposer.org/apidoc/master/index.html
 
@@ -240,12 +240,12 @@ foreach ($serviceLoader->getPrefixesPsr4() as $prefix => $paths) {
 
 ---
 
-PHPStanで依存の違反を検出する
+## PHPStanで依存の違反を検出する
 
 ---
 
 @snap[north span-100 text-07]
-## 各サービスのphpstan.neon
+### 各サービスのphpstan.neon
 @snapend
 
 #### `lenet.jp/phpstan.neon`
@@ -270,7 +270,7 @@ parameters:
 ---
 
 @snap[north span-100 text-07]
-## 共有コードのphpstan.neon
+### 共有コードのphpstan.neon
 @snapend
 
 #### `lenet_common/phpstan.neon`
@@ -350,7 +350,7 @@ https://www.kutsulenet.jp/ にアクセスした時
 ---
 
 @snap[north span-100]
-ミドルウェアの登録
+### ミドルウェアの登録
 @snapend
 
 `lenet_common/app/Providers/RouteServiceProvider.php`の`boot`メソッド
@@ -373,16 +373,8 @@ if ($_SERVER['SERVICE_NAME'] == 'lenet.jp') {
 
 ---
 
-設定ファイル
-
----
-
-各サービスの設定ファイルはヘルパークラスを作って読み混んでる
-
----
-
 @snap[north span-100 text-07]
-## 環境設定
+### 環境設定
 @snapend
 
 - Laravelの設定はすべて環境変数で流し込むようにしている
@@ -405,8 +397,14 @@ env:
 
 ---
 
+### 設定ファイル
+
+各サービスの設定ファイルはヘルパークラスを作って読み混んでる
+
+---
+
 @snap[north span-100 text-07]
-## ビューパス
+### ビューパス
 @snapend
 
 #### `lenet_common/config/view.php`
@@ -421,7 +419,7 @@ env:
 ---
 
 @snap[north span-100 text-07]
-## マイグレーション・バッチ・ストレージ
+### マイグレーション・バッチ・ストレージ
 @snapend
 
 - 全てのサービスで共有
@@ -435,7 +433,7 @@ env:
 ---
 
 @snap[north span-100 text-07]
-## 必要なパスの書き換え
+### 必要なパスの書き換え
 @snapend
 
 #### `lenet_common/bootstrap/app.php`
@@ -448,12 +446,8 @@ env:
 
 ---
 
-エラーハンドリング
-
----
-
 @snap[north span-100 text-07]
-## エラーハンドラの登録
+### エラーハンドラの登録
 @snapend
 
 #### `lenet_common/app/Providers/AppServiceProvider.php`の`register`メソッド
