@@ -184,8 +184,7 @@ lenet.jp
 @snapend
 
 ```php
-require $_SERVER['DOCUMENT_ROOT'] .
-    '/../../lenet_common/public/index.php';
+require $_SERVER['DOCUMENT_ROOT'] . '/../../lenet_common/public/index.php';
 ```
 
 ---
@@ -195,8 +194,7 @@ Laravelのルートファイル → 各サービスのルートファイル
 @snapend
 
 ```php
-require $_SERVER['DOCUMENT_ROOT'] .
-    '/../app/routes.php';
+require $_SERVER['DOCUMENT_ROOT'] . '/../app/routes.php';
 ```
 
 ---
