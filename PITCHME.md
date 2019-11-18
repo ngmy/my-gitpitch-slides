@@ -415,13 +415,10 @@ env:
 `lenet_common/config/view.php`
 
 ```php
-<?php
-
-    'paths' => [
-        realpath(base_path('resources/views')),
-        $_SERVER['DOCUMENT_ROOT'] . '/../templates',
-    ],
-
+'paths' => [
+    realpath(base_path('resources/views')),
+    $_SERVER['DOCUMENT_ROOT'] . '/../templates',
+],
 ```
 
 ---
