@@ -350,13 +350,7 @@ parameters:
 ---
 
 @snap[midpoint span-100]
-![IMAGE](assets/img/lenet-package-1.png)
-@snapend
-
-+++
-
-@snap[midpoint span-100]
-![IMAGE](assets/img/lenet-package-1.png)
+![IMAGE](assets/img/lenet-package-7.png)
 @snapend
 
 ---
