@@ -1,4 +1,4 @@
-@snap[midpoint span-60 text-07]
+@snap[midpoint span-60 text-08]
 # Laravelでモジュラモノリス
 @snapend
 
