@@ -63,11 +63,13 @@ https://www.wh-plus.co.jp/
 - PHP + Laravelで構築
 @snapend
 
----?image=assets/img/toy_dorodango_kirei.png&size=auto 80%
+---
 
 @snap[north span-100 text-07]
 ## モノリス
 @snapend
+
+![IMAGE](assets/img/toy_dorodango_kirei.png)
 
 ---?image=assets/img/rubiks_cube.png&size=auto 80%
 
