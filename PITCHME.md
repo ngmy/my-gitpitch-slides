@@ -455,7 +455,7 @@ env:
 ### マイグレーション・ストレージ・ジョブスケジューラ
 @snapend
 
-@snap[midpoint span-100 text-07]
+@snap[midpoint span-100]
 - 全てのサービスで共有
 - Laravelをそのまま利用
 - ただし、ジョブスケジューラは最近[DigDag](https://www.digdag.io/)に移行
