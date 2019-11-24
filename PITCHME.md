@@ -462,7 +462,7 @@ env:
 @snapend
 
 @snap[south span-40]
-![IMAGE](assets/img/logo-digdag-sq-tr.png)
+![IMAGE](assets/img/logo-digdag-rec-tr.png)
 @snapend
 
 ---
