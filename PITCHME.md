@@ -69,7 +69,9 @@ https://www.wh-plus.co.jp/
 ## モノリス
 @snapend
 
+@snap[midpoint]
 ![IMAGE](assets/img/toy_dorodango_kirei.png)
+@snapend
 
 ---
 
@@ -77,7 +79,9 @@ https://www.wh-plus.co.jp/
 ## モジュラモノリス
 @snapend
 
+@snap[midpoint]
 ![IMAGE](assets/img/rubiks_cube.png)
+@snapend
 
 ---
 
