@@ -452,12 +452,14 @@ env:
 ---
 
 @snap[north span-100 text-07]
-### マイグレーション・バッチ・ストレージ
+### マイグレーション・ストレージ・ジョブスケジューラ
 @snapend
 
+@snap[north span-100 text-07]
 - 全てのサービスで共有
-- Laravelのデフォルトそのまま
-- ただし、バッチはこの前DigDagに移行した
+- Laravelをそのまま利用
+- ただし、ジョブスケジューラは最近[DigDag](https://www.digdag.io/)に移行
+@snapend
 
 @snap[south span-40]
 ![IMAGE](assets/img/logo-digdag-sq-tr.png)
