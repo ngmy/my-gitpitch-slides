@@ -8,7 +8,7 @@ PHPカンファレンス2019 懇親会LT
 
 ---
 
-@snap[north-west text-07]
+@snap[north text-07]
 ## 自己紹介
 @snapend
 
