@@ -242,8 +242,8 @@ foreach ($serviceLoader->getPrefixesPsr4() as $prefix => $paths) {
 ```
 
 @snap[south span-100]
-@[1](Laravel + 共有ライブラリのautoload.phpを読み込む)
-@[2-3](ドキュメントルートから応じたサービスのautoload.phpを読み込む)
+@[1](共有コードのautoload.phpを読み込む)
+@[2-3](ドキュメントルートに対応するサービスのautoload.phpを読み込む)
 @[4](Classmapをマージ)
 @[5-7](PSR-4をマージ)
 @snapend
