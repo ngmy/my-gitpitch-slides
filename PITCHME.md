@@ -77,7 +77,7 @@ https://www.wh-plus.co.jp/
 ## モジュラモノリス
 @snapend
 
-![IMAGE](image=assets/img/rubiks_cube.png)
+![IMAGE](assets/img/rubiks_cube.png)
 
 ---
 
