@@ -71,11 +71,13 @@ https://www.wh-plus.co.jp/
 
 ![IMAGE](assets/img/toy_dorodango_kirei.png)
 
----?image=assets/img/rubiks_cube.png&size=auto 80%
+---
 
 @snap[north span-100 text-07]
 ## モジュラモノリス
 @snapend
+
+![IMAGE](image=assets/img/rubiks_cube.png)
 
 ---
 
