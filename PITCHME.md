@@ -1,4 +1,6 @@
+@snap[midpoint text-07]
 # Laravelでモジュラモノリス
+@snapend
 
 @snap[south-east span-100 text-07]
 2019年12月1日（日）
