@@ -50,7 +50,7 @@ https://www.wh-plus.co.jp/
 ![IMAGE](assets/img/cleaning_result.png)
 @snapend
 
-@snap[east span-50 text-07]
+@snap[south-east span-50 text-07]
 - PC・スマホから24時間いつでも注文できて、お洋服のお預けもお届けも自宅にいたままできるサービス
 - 衣類クリーニング
     - https://www.lenet.jp/
