@@ -380,7 +380,7 @@ parameters:
 
 ---
 
-@snap[north span-100]
+@snap[north span-100 text-07]
 ### ミドルウェアの登録
 @snapend
 
@@ -428,9 +428,11 @@ env:
 
 ---
 
+@snap[north span-100 text-07]
 ### 設定ファイル
+@snapend
 
-各サービスの設定ファイルはヘルパークラスを作って読み混んでる
+各サービスの設定ファイルはヘルパークラスを作って読み込んでいる
 
 ---
 
