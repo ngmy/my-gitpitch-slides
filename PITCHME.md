@@ -42,7 +42,7 @@ https://www.wh-plus.co.jp/
 
 ---
 
-@snap[north span-100 text-07]
+@snap[north span-100 text-06]
 ## ネット宅配クリーニングのリネット
 @snapend
 
