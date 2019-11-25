@@ -243,10 +243,10 @@ foreach ($serviceLoader->getPrefixesPsr4() as $prefix => $paths) {
 ```
 
 @snap[south span-100]
-@[1](共有コードのautoload.phpを読み込む)
-@[2-3](ドキュメントルートに対応するサービスのautoload.phpを読み込む)
-@[4](Classmapをマージ)
-@[5-7](PSR-4をマージ)
+@[1,2](共有コードのautoload.phpを読み込む)
+@[1,3-4](ドキュメントルートに対応するサービスのautoload.phpを読み込む)
+@[1,5](Classmapをマージ)
+@[1,6-8](PSR-4をマージ)
 @snapend
 
 ---
@@ -330,8 +330,8 @@ parameters:
 ```
 
 @snap[south span-100]
-@[6-8](共有コードのクラスをオートロード)
-@[6,9](自サービスのクラスをオートロード)
+@[1,7-9](共有コードのクラスをオートロード)
+@[1,7,10](自サービスのクラスをオートロード)
 @snapend
 
 ---
@@ -353,7 +353,7 @@ parameters:
 ```
 
 @snap[south span-100]
-@[6-8](共有コードのクラスをオートロード)
+@[1,7-9](共有コードのクラスをオートロード)
 @snapend
 
 ---
