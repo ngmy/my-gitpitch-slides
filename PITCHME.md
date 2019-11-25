@@ -383,10 +383,9 @@ parameters:
 ### ミドルウェアの登録
 @snapend
 
-`lenet_common/app/Providers/RouteServiceProvider.php`の`boot`メソッド
-
 @snap[span-100]
 ```php
+// lenet_common/app/Providers/RouteServiceProvider.phpのbootメソッド
 if ($_SERVER['SERVICE_NAME'] == 'lenet.jp') {
     $this->app->make(Kernel::class)->pushMiddleware(
         \Jp\Lenet\App\Http\Middleware\BeforeMiddleware::class
@@ -411,9 +410,8 @@ if ($_SERVER['SERVICE_NAME'] == 'lenet.jp') {
     - サービスごとにk8sのyamlがある
 - .envファイルは使っていない
 
-#### `lenet-jp.yaml`
-
 ```yaml
+# kubernetes/lenet-jp.yaml
 env:
   - name: APP_ENV
     value: production
@@ -439,9 +437,8 @@ env:
 ### ビューパス
 @snapend
 
-#### `lenet_common/config/view.php`
-
 ```php
+// lenet_common/config/view.php
 'paths' => [
     realpath(base_path('resources/views')),
     $_SERVER['DOCUMENT_ROOT'] . '/../templates',
@@ -470,12 +467,11 @@ env:
 ### 必要なパスの書き換え
 @snapend
 
-#### `lenet_common/bootstrap/app.php`
-
 ```
- $app->bind('path.public', function () {                                                                                 
-     return $_SERVER['DOCUMENT_ROOT'];                                                                                   
- });   
+// lenet_common/bootstrap/app.php
+$app->bind('path.public', function () {                                                                                 
+    return $_SERVER['DOCUMENT_ROOT'];                                                                                   
+});   
 ```
 
 ---
@@ -484,9 +480,8 @@ env:
 ### エラーハンドラの登録
 @snapend
 
-#### `lenet_common/app/Providers/AppServiceProvider.php`の`register`メソッド
-
 ```php
+// lenet_common/app/Providers/AppServiceProvider.phpのregisterメソッド
 if ($_SERVER['SERVICE_NAME'] == 'lenet.jp') {
     $this->app->singleton(
         \Illuminate\Contracts\Debug\ExceptionHandler::class,
