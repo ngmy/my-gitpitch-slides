@@ -241,7 +241,6 @@ https://getcomposer.org/apidoc/master/index.html
 @snapend
 
 `lenet_common/app/Providers/AppServiceProvider.php`の`register`メソッド
-@snap[text-11]
 ```php
 $loader = require base_path() . '/vendor/autoload.php';
 $serviceLoader = require $_SERVER['DOCUMENT_ROOT']
@@ -251,7 +250,6 @@ foreach ($serviceLoader->getPrefixesPsr4() as $prefix => $paths) {
     $loader->addPsr4($prefix, $paths);
 }
 ```
-@snapend
 
 @snap[south span-100]
 @[1](共有コードのautoload.phpを読み込む)
