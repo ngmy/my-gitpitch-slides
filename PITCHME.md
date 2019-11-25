@@ -105,7 +105,7 @@ https://www.wh-plus.co.jp/
 @snapend
 
 @snap[west span-40]
-```text
+```plaintext
 lenet
 ├── lenet_common
 ├── lenet.jp
@@ -133,7 +133,7 @@ lenet
 @snapend
 
 @snap[west span-40]
-```text
+```plaintext
 lenet_common
 ├── app
 ├── bootstrap
