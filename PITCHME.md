@@ -198,8 +198,8 @@ lenet.jp
 `lenet.jp/public/index.php`
 @snap[text-12]
 ```php
-require $_SERVER['DOCUMENT_ROOT'] .
-    '/../../lenet_common/public/index.php';
+require $_SERVER['DOCUMENT_ROOT']
+    . '/../../lenet_common/public/index.php';
 ```
 @snapend
 
@@ -212,8 +212,8 @@ require $_SERVER['DOCUMENT_ROOT'] .
 `lenet_common/routes/web.php`
 @snap[text-12]
 ```php
-require $_SERVER['DOCUMENT_ROOT'] .
-    '/../app/routes.php';
+require $_SERVER['DOCUMENT_ROOT']
+    . '/../app/routes.php';
 ```
 @snapend
 
@@ -245,8 +245,8 @@ https://getcomposer.org/apidoc/master/index.html
 @snap[text-12]
 ```php
 $loader = require base_path() . '/vendor/autoload.php';
-$serviceLoader = require $_SERVER['DOCUMENT_ROOT'] .
-    '/../vendor/autoload.php';
+$serviceLoader = require $_SERVER['DOCUMENT_ROOT']
+    . '/../vendor/autoload.php';
 $loader->addClassMap($serviceLoader->getClassMap());
 foreach ($serviceLoader->getPrefixesPsr4() as $prefix => $paths) {
     $loader->addPsr4($prefix, $paths);
