@@ -197,7 +197,8 @@ lenet.jp
 
 ```php
 // lenet.jp/public/index.php
-require $_SERVER['DOCUMENT_ROOT'] . '/../../lenet_common/public/index.php';
+require $_SERVER['DOCUMENT_ROOT'] .
+    '/../../lenet_common/public/index.php';
 ```
 
 ---
