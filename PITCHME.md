@@ -388,7 +388,6 @@ parameters:
 ### ミドルウェアの登録
 @snapend
 
-@snap[span-100 text-20]
 `lenet_common/app/Providers/RouteServiceProvider.php`の`boot`メソッド
 ```php
 if ($_SERVER['SERVICE_NAME'] == 'lenet.jp') {
@@ -403,7 +402,6 @@ if ($_SERVER['SERVICE_NAME'] == 'lenet.jp') {
     // ...
 }
 ```
-@snapend
 
 ---
 
