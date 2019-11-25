@@ -132,7 +132,7 @@ lenet
 ### 共有コードのディレクトリ構成
 @snapend
 
-@snap[west span-40 text-14]
+@snap[west span-40 text-13]
 ```plaintext
 lenet_common
 ├── app
@@ -208,9 +208,11 @@ require $_SERVER['DOCUMENT_ROOT'] .
 @snapend
 
 `lenet_common/routes/web.php`
+@snap[text-13]
 ```php
 require $_SERVER['DOCUMENT_ROOT'] . '/../app/routes.php';
 ```
+@snapend
 
 ---
 
@@ -237,6 +239,7 @@ https://getcomposer.org/apidoc/master/index.html
 @snapend
 
 `lenet_common/app/Providers/AppServiceProvider.php`の`register`メソッド
+@snap[text-13]
 ```php
 $loader = require base_path() . '/vendor/autoload.php';
 $serviceLoader = require realpath($_SERVER['DOCUMENT_ROOT'])
@@ -246,6 +249,7 @@ foreach ($serviceLoader->getPrefixesPsr4() as $prefix => $paths) {
     $loader->addPsr4($prefix, $paths);
 }
 ```
+@snapend
 
 @snap[south span-100]
 @[1](共有コードのautoload.phpを読み込む)
@@ -322,6 +326,7 @@ https://www.kutsulenet.jp/ にアクセスした時
 @snapend
 
 `lenet.jp/phpstan.neon`
+@snap[text-13]
 ```yaml
 parameters:
   paths:
@@ -333,6 +338,7 @@ parameters:
     - %rootDir%/../../../_ide_helper.php
     - %rootDir%/../../../../lenet.jp/vendor/autoload.php
 ```
+@snapend
 
 @snap[south span-100]
 @[6-8](共有コードのクラスをオートロード)
@@ -346,6 +352,7 @@ parameters:
 @snapend
 
 `lenet_common/phpstan.neon`
+@snap[text-13]
 ```yaml
 parameters:
   paths:
@@ -356,6 +363,7 @@ parameters:
     - %rootDir%/../../../vendor/autoload.php
     - %rootDir%/../../../_ide_helper.php
 ```
+@snapend
 
 @snap[south span-100]
 @[6-8](共有コードのクラスをオートロード)
@@ -389,6 +397,7 @@ parameters:
 @snapend
 
 `lenet_common/app/Providers/RouteServiceProvider.php`の`boot`メソッド
+@snap[text-13]
 ```php
 if ($_SERVER['SERVICE_NAME'] == 'lenet.jp') {
     $this->app->make(Kernel::class)->pushMiddleware(
@@ -402,6 +411,7 @@ if ($_SERVER['SERVICE_NAME'] == 'lenet.jp') {
     // ...
 }
 ```
+@snapend
 
 ---
 
@@ -414,6 +424,7 @@ if ($_SERVER['SERVICE_NAME'] == 'lenet.jp') {
 - .envファイルは使っていない
 
 `kubernetes/lenet-jp.yaml`
+@snap[text-13]
 ```yaml
 env:
   - name: APP_ENV
@@ -425,6 +436,7 @@ env:
   - name: APP_DB_ENDPOINT
   # ...
 ```
+@snapend
 
 ---
 
@@ -441,12 +453,14 @@ env:
 @snapend
 
 `lenet_common/config/view.php`
+@snap[text-13]
 ```php
 'paths' => [
     realpath(base_path('resources/views')),
     $_SERVER['DOCUMENT_ROOT'] . '/../templates',
 ],
 ```
+@snapend
 
 ---
 
@@ -471,11 +485,13 @@ env:
 @snapend
 
 `lenet_common/bootstrap/app.php`
+@snap[text-13]
 ```
 $app->bind('path.public', function () {                                                                                 
     return $_SERVER['DOCUMENT_ROOT'];                                                                                   
-});   
+});
 ```
+@snapend
 
 ---
 
@@ -484,6 +500,7 @@ $app->bind('path.public', function () {
 @snapend
 
 `lenet_common/app/Providers/AppServiceProvider.php`の`register`メソッド
+@snap[text-13]
 ```php
 if ($_SERVER['SERVICE_NAME'] == 'lenet.jp') {
     $this->app->singleton(
@@ -492,6 +509,7 @@ if ($_SERVER['SERVICE_NAME'] == 'lenet.jp') {
     );
 }
 ```
+@snapend
 
 ---
 
