@@ -104,7 +104,7 @@ https://www.wh-plus.co.jp/
 ### リネットリポジトリのディレクトリ構成
 @snapend
 
-@snap[west span-40 text-13]
+@snap[west span-40 text-11]
 ```plaintext
 lenet
 ├── lenet_common
@@ -132,7 +132,7 @@ lenet
 ### 共有コードのディレクトリ構成
 @snapend
 
-@snap[west span-40 text-12]
+@snap[west span-40 text-11]
 ```plaintext
 lenet_common
 ├── app
@@ -163,7 +163,7 @@ lenet_common
 ### 各サービスのディレクトリ構成
 @snapend
 
-@snap[west span-40 text-12]
+@snap[west span-40 text-11]
 ```text
 lenet.jp
 ├── app
@@ -196,7 +196,7 @@ lenet.jp
 @snapend
 
 `lenet.jp/public/index.php`
-@snap[text-12]
+@snap[text-11]
 ```php
 require $_SERVER['DOCUMENT_ROOT']
     . '/../../lenet_common/public/index.php';
@@ -210,7 +210,7 @@ require $_SERVER['DOCUMENT_ROOT']
 @snapend
 
 `lenet_common/routes/web.php`
-@snap[text-12]
+@snap[text-11]
 ```php
 require $_SERVER['DOCUMENT_ROOT']
     . '/../app/routes.php';
@@ -242,7 +242,7 @@ https://getcomposer.org/apidoc/master/index.html
 @snapend
 
 `lenet_common/app/Providers/AppServiceProvider.php`の`register`メソッド
-@snap[text-12]
+@snap[text-11]
 ```php
 $loader = require base_path() . '/vendor/autoload.php';
 $serviceLoader = require $_SERVER['DOCUMENT_ROOT']
@@ -329,7 +329,7 @@ https://www.kutsulenet.jp/ にアクセスした時
 @snapend
 
 `lenet.jp/phpstan.neon`
-@snap[text-12]
+@snap[text-11]
 ```yaml
 parameters:
   paths:
@@ -355,7 +355,7 @@ parameters:
 @snapend
 
 `lenet_common/phpstan.neon`
-@snap[text-12]
+@snap[text-11]
 ```yaml
 parameters:
   paths:
@@ -400,7 +400,7 @@ parameters:
 @snapend
 
 `lenet_common/app/Providers/RouteServiceProvider.php`の`boot`メソッド
-@snap[text-12]
+@snap[text-11]
 ```php
 if ($_SERVER['SERVICE_NAME'] == 'lenet.jp') {
     $this->app->make(Kernel::class)->pushMiddleware(
@@ -427,7 +427,7 @@ if ($_SERVER['SERVICE_NAME'] == 'lenet.jp') {
 - .envファイルは使っていない
 
 `kubernetes/lenet-jp.yaml`
-@snap[text-12]
+@snap[text-11]
 ```yaml
 env:
   - name: APP_ENV
@@ -456,7 +456,7 @@ env:
 @snapend
 
 `lenet_common/config/view.php`
-@snap[text-12]
+@snap[text-11]
 ```php
 'paths' => [
     realpath(base_path('resources/views')),
@@ -488,7 +488,7 @@ env:
 @snapend
 
 `lenet_common/bootstrap/app.php`
-@snap[text-12]
+@snap[text-11]
 ```
 $app->bind('path.public', function () {                                                                                 
     return $_SERVER['DOCUMENT_ROOT'];                                                                                   
@@ -503,7 +503,7 @@ $app->bind('path.public', function () {
 @snapend
 
 `lenet_common/app/Providers/AppServiceProvider.php`の`register`メソッド
-@snap[text-12]
+@snap[text-11]
 ```php
 if ($_SERVER['SERVICE_NAME'] == 'lenet.jp') {
     $this->app->singleton(
