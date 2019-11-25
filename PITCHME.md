@@ -329,7 +329,7 @@ https://www.kutsulenet.jp/ にアクセスした時
 @snapend
 
 `lenet.jp/phpstan.neon`
-@snap[text-13]
+@snap[text-12]
 ```yaml
 parameters:
   paths:
