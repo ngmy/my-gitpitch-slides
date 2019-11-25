@@ -195,6 +195,7 @@ lenet.jp
 ### 各サービスのindex.php &rarr; Laravelのindex.php
 @snapend
 
+`lenet.jp/public/index.php`
 ```php
 // lenet.jp/public/index.php
 require $_SERVER['DOCUMENT_ROOT'] .
