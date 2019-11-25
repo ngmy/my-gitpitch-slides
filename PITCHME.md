@@ -196,10 +196,12 @@ lenet.jp
 @snapend
 
 `lenet.jp/public/index.php`
+@snap[text-13]
 ```php
 require $_SERVER['DOCUMENT_ROOT'] .
     '/../../lenet_common/public/index.php';
 ```
+@snapend
 
 ---
 
@@ -210,7 +212,8 @@ require $_SERVER['DOCUMENT_ROOT'] .
 `lenet_common/routes/web.php`
 @snap[text-13]
 ```php
-require $_SERVER['DOCUMENT_ROOT'] . '/../app/routes.php';
+require $_SERVER['DOCUMENT_ROOT'] .
+    '/../app/routes.php';
 ```
 @snapend
 
