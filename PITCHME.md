@@ -212,8 +212,7 @@ require $_SERVER['DOCUMENT_ROOT']
 `lenet_common/routes/web.php`
 @snap[text-11]
 ```php
-require $_SERVER['DOCUMENT_ROOT']
-    . '/../app/routes.php';
+require $_SERVER['DOCUMENT_ROOT'] . '/../app/routes.php';
 ```
 @snapend
 
