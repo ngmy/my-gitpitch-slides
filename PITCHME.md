@@ -132,7 +132,7 @@ lenet
 ### 共有コードのディレクトリ構成
 @snapend
 
-@snap[west span-40 text-13]
+@snap[west span-40 text-14]
 ```plaintext
 lenet_common
 ├── app
@@ -163,7 +163,7 @@ lenet_common
 ### 各サービスのディレクトリ構成
 @snapend
 
-@snap[west span-40]
+@snap[west span-40 text-13]
 ```text
 lenet.jp
 ├── app
