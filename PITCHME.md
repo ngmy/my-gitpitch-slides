@@ -195,9 +195,8 @@ lenet.jp
 ### 各サービスのindex.php &rarr; Laravelのindex.php
 @snapend
 
-#### `lenet.jp/public/index.php`
-
 ```php
+// lenet.jp/public/index.php
 require $_SERVER['DOCUMENT_ROOT'] . '/../../lenet_common/public/index.php';
 ```
 
@@ -207,9 +206,8 @@ require $_SERVER['DOCUMENT_ROOT'] . '/../../lenet_common/public/index.php';
 ### Laravelのルートファイル &rarr; 各サービスのルートファイル
 @snapend
 
-#### `lenet_common/routes/web.php`
-
-```php:lenet_common/routes/web.php
+```php
+// lenet_common/routes/web.php
 require $_SERVER['DOCUMENT_ROOT'] . '/../app/routes.php';
 ```
 
@@ -233,9 +231,8 @@ https://getcomposer.org/apidoc/master/index.html
 
 ---
 
-`lenet_common/app/Providers/AppServiceProvider.php`の`register`メソッド
-
 ```php
+// lenet_common/app/Providers/AppServiceProvider.phpのregisterメソッド
 $loader = require base_path() . '/vendor/autoload.php';
 $serviceLoader = require realpath($_SERVER['DOCUMENT_ROOT'])
     . '/../vendor/autoload.php';
@@ -319,9 +316,8 @@ https://www.kutsulenet.jp/ にアクセスした時
 ### 各サービスのphpstan.neon
 @snapend
 
-#### `lenet.jp/phpstan.neon`
-
 ```yaml
+# lenet.jp/phpstan.neon
 parameters:
   paths:
     - %rootDir%/../../../../lenet.jp/app
@@ -344,9 +340,8 @@ parameters:
 ### 共有コードのphpstan.neon
 @snapend
 
-#### `lenet_common/phpstan.neon`
-
 ```yaml
+# lenet_common/phpstan.neon
 parameters:
   paths:
     - %rootDir%/../../../app
