@@ -195,7 +195,7 @@ lenet.jp
 ### 各サービスのindex.php &rarr; Laravelのindex.php
 @snapend
 
-`lenet.jp/public/index.php`：
+`lenet.jp/public/index.php`
 ```php
 require $_SERVER['DOCUMENT_ROOT'] .
     '/../../lenet_common/public/index.php';
@@ -232,8 +232,12 @@ https://getcomposer.org/apidoc/master/index.html
 
 ---
 
+@snap[north span-100 text-07]
+### 共有コードのautoload.phpと各サービスのautoload.phpのマージ
+@snapend
+
+`lenet_common/app/Providers/AppServiceProvider.php`の`register`メソッド
 ```php
-// lenet_common/app/Providers/AppServiceProvider.phpのregisterメソッド
 $loader = require base_path() . '/vendor/autoload.php';
 $serviceLoader = require realpath($_SERVER['DOCUMENT_ROOT'])
     . '/../vendor/autoload.php';
@@ -244,10 +248,10 @@ foreach ($serviceLoader->getPrefixesPsr4() as $prefix => $paths) {
 ```
 
 @snap[south span-100]
-@[1,2](共有コードのautoload.phpを読み込む)
-@[1,3-4](ドキュメントルートに対応するサービスのautoload.phpを読み込む)
-@[1,5](Classmapをマージ)
-@[1,6-8](PSR-4をマージ)
+@[1](共有コードのautoload.phpを読み込む)
+@[2-3](ドキュメントルートに対応するサービスのautoload.phpを読み込む)
+@[4](Classmapをマージ)
+@[5-7](PSR-4をマージ)
 @snapend
 
 ---
@@ -317,8 +321,8 @@ https://www.kutsulenet.jp/ にアクセスした時
 ### 各サービスのphpstan.neon
 @snapend
 
+`lenet.jp/phpstan.neon`
 ```yaml
-# lenet.jp/phpstan.neon
 parameters:
   paths:
     - %rootDir%/../../../../lenet.jp/app
@@ -331,8 +335,8 @@ parameters:
 ```
 
 @snap[south span-100]
-@[1,7-9](共有コードのクラスをオートロード)
-@[1,7,10](自サービスのクラスをオートロード)
+@[6-8](共有コードのクラスをオートロード)
+@[6,9](自サービスのクラスをオートロード)
 @snapend
 
 ---
@@ -341,8 +345,8 @@ parameters:
 ### 共有コードのphpstan.neon
 @snapend
 
+`lenet_common/phpstan.neon`
 ```yaml
-# lenet_common/phpstan.neon
 parameters:
   paths:
     - %rootDir%/../../../app
@@ -354,7 +358,7 @@ parameters:
 ```
 
 @snap[south span-100]
-@[1,7-9](共有コードのクラスをオートロード)
+@[6-8](共有コードのクラスをオートロード)
 @snapend
 
 ---
@@ -385,8 +389,8 @@ parameters:
 @snapend
 
 @snap[span-100]
+`lenet_common/app/Providers/RouteServiceProvider.php`の`boot`メソッド
 ```php
-// lenet_common/app/Providers/RouteServiceProvider.phpのbootメソッド
 if ($_SERVER['SERVICE_NAME'] == 'lenet.jp') {
     $this->app->make(Kernel::class)->pushMiddleware(
         \Jp\Lenet\App\Http\Middleware\BeforeMiddleware::class
@@ -411,8 +415,8 @@ if ($_SERVER['SERVICE_NAME'] == 'lenet.jp') {
     - サービスごとにk8sのyamlがある
 - .envファイルは使っていない
 
+`kubernetes/lenet-jp.yaml`
 ```yaml
-# kubernetes/lenet-jp.yaml
 env:
   - name: APP_ENV
     value: production
@@ -438,8 +442,8 @@ env:
 ### ビューパス
 @snapend
 
+`lenet_common/config/view.php`
 ```php
-// lenet_common/config/view.php
 'paths' => [
     realpath(base_path('resources/views')),
     $_SERVER['DOCUMENT_ROOT'] . '/../templates',
@@ -468,8 +472,8 @@ env:
 ### 必要なパスの書き換え
 @snapend
 
+`lenet_common/bootstrap/app.php`
 ```
-// lenet_common/bootstrap/app.php
 $app->bind('path.public', function () {                                                                                 
     return $_SERVER['DOCUMENT_ROOT'];                                                                                   
 });   
@@ -481,8 +485,8 @@ $app->bind('path.public', function () {
 ### エラーハンドラの登録
 @snapend
 
+`lenet_common/app/Providers/AppServiceProvider.php`の`register`メソッド
 ```php
-// lenet_common/app/Providers/AppServiceProvider.phpのregisterメソッド
 if ($_SERVER['SERVICE_NAME'] == 'lenet.jp') {
     $this->app->singleton(
         \Illuminate\Contracts\Debug\ExceptionHandler::class,
