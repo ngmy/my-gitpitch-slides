@@ -1,5 +1,5 @@
-@snap[midpoint span-90 text-05]
-# Composer APIで実現する単一リポジトリ複数composer.json
+@snap[midpoint span-100 text-07]
+# Laravelでモジュラモノリス
 @snapend
 
 @snap[south-east span-100 text-07]
@@ -10,14 +10,14 @@ PHPカンファレンス2019 懇親会LT
 
 ---
 
-@snap[north-west]
+@snap[north text-07]
 ## 自己紹介
 @snapend
 
-@snap[west span-100 text-08]
+@snap[west span-60 text-08]
 - 永宮　悠大（NAGAMIYA Yuta）
 - 株式会社ホワイトプラスのエンジニア
-- PHP、Laravelの面倒を見てます
+- PHP・Laravelの面倒を見る人
 - @fa[github] [@ngmy](https://github.com/ngmy)
 - クライミング8：エンジニアリング2
 @snapend
@@ -29,7 +29,7 @@ PHPカンファレンス2019 懇親会LT
 ---
 
 @snap[north span-100 text-07]
-## ホワイトプラスを知ってる人？ &#x1f64b;
+## 株式会社ホワイトプラス
 @snapend
 
 @snap[midpoint span-90]
@@ -40,32 +40,23 @@ PHPカンファレンス2019 懇親会LT
 https://www.wh-plus.co.jp/
 @snapend
 
----
-
-@snap[north span-100 text-07]
-## ゴールドスポンサーやってます
-@snapend
-
-@snap[south span-90]
-![IMAGE](assets/img/sponsor.png)
-@snapend
+---?image=assets/img/sponsor.png&size=contain
 
 ---
 
-@snap[north span-100 text-07]
-## リネットやってます
+@snap[north span-100 text-05]
+## ネット宅配クリーニングのリネット
 @snapend
 
-@snap[west span-40]
-![IMAGE](assets/img/lenet.png)
+@snap[west span-50]
+![IMAGE](assets/img/cleaning_result.png)
 @snapend
 
 @snap[east span-50 text-07]
-- 宅配クリーニングのリネット
-- PC・スマホから注文できて、自宅にいたままクリーニングできるWebサービス
+- PC・スマホから24時間いつでも注文できて、自宅にいたままお洋服の預け、受け取りができるWebサービス
 - 衣類クリーニング
     - https://www.lenet.jp/
-- 衣類クリーニング + 保管
+- 衣類クリーニング保管
     - https://www.lenet-hokan.jp/
 - 布団クリーニング
     - https://www.futonlenet.jp/
@@ -76,70 +67,159 @@ https://www.wh-plus.co.jp/
 
 ---
 
-### 一つのプロジェクトで複数のcomposer.jsonを読み込みたくなった
-
----
-
-なんで？
-
----
-
-リネットのLaravelのディレクトリ構成のクセがすごい
-
----
-
-@snap[north span-100]
-リネットのLaravelのディレクトリ構成
+@snap[north span-100 text-07]
+## モノリス
 @snapend
 
-@snap[south-west span-50 text-07]
+@snap[midpoint]
+![IMAGE](assets/img/toy_dorodango_kirei.png)
+@snapend
+
+---
+
+@snap[north span-100 text-07]
+## モジュラモノリス
+@snapend
+
+@snap[midpoint]
+![IMAGE](assets/img/rubiks_cube.png)
+@snapend
+
+---
+
+モノリスとマイクロサービスの中間に位置する、一つのモノリシックなアプリケーション内でドメインごとにモジュールに分解しつつ運用するためのアーキテクチャ
+
+---
+
+- モノリスから複数のマイクロサービスを抽出するより、まずアプリ内をモジュラーにしていく
+- 独立したサービスとして抽出する前にアーキテクチャ上のよい境界を見つける。スムーズに移行しやすいようにコードを構成しておく
+
+---
+
+## モジュールに分割する
+
+---
+
+@snap[north span-100 text-07]
+### リネットリポジトリのディレクトリ構成
+@snapend
+
+@snap[west span-40]
 ```text
 lenet
 ├── lenet_common
-│   ├── public
-│   │   └── index.php
-│   ├── composer.json
-│   └── vendor
 ├── lenet.jp
-│   ├── public
-│   │   └── index.php
-│   ├── composer.json
-│   └── vendor
 ├── lenet-hokan.jp
-│   ├── public
-│   │   └── index.php
-│   ├── composer.json
-│   └── vendor
 ├── futonlenet.jp
-│   ├── public
-│   │   └── index.php
-│   ├── composer.json
-│   └── vendor
 ├── kutsulenet.jp
-│   ├── public
-│   │   └── index.php
-│   ├── composer.json
-│   └── vendor
 └── wh-plus.com
-    ├── public
-    │   └── index.php
-    ├── composer.json
-    └── vendor
 ```
 @snapend
 
-@snap[east span-50]
-@[2](Laravelと共有ライブラリ)
-@[2, 3-4](Laravelのindex.php)
-@[2, 5-6](Laravelのcomposer.jsonとvendor<br>共有ライブラリをpsr-4に登録している)
-@[7](衣類のコード)
-@[7, 8-9](衣類のドキュメントルート<br>Laravelのindex.phpをrequireしている)
-@[7, 10-11](衣類のcomposer.jsonとvendor<br>名前空間なしのレガシーなコードをclassmapに登録している)
-@[12-16](保管のコード<br>※衣類と同じ)
-@[17-21](布団のコード<br>※衣類と同じ)
-@[22-26](靴のコード<br>※衣類と同じ)
-@[27-31](社内・工場CMSのコード<br>※衣類と同じ)
+@snap[east span-60 text-center]
+@[1-7](1つの共有コード + 5つのサービス)
+@[2](共有コード（Laravel、ライブラリ、ビジネスロジック）)
+@[3](サービス1（衣類）)
+@[4](サービス2（保管）)
+@[5](サービス3（布団）)
+@[6](サービス4（靴）)
+@[7](サービス5（社内・工場CMS）)
 @snapend
+
+---
+
+@snap[north span-100 text-07]
+### 共有コードのディレクトリ構成
+@snapend
+
+@snap[west span-40]
+```text
+lenet_common
+├── app
+├── bootstrap
+├── config
+├── database
+├── lib
+├── public
+├── resources
+├── routes
+├── storage
+├── tests
+├── vendor
+├── composer.json
+└── phpstan.neon
+```
+@snapend
+
+@snap[east span-60 text-center]
+@[2-5, 7-13](Laravel)
+@[6](ライブラリ、ビジネスロジック)
+@[14](PHPStanの設定ファイル)
+@snapend
+
+---
+
+@snap[north span-100 text-07]
+### 各サービスのディレクトリ構成
+@snapend
+
+@snap[west span-40]
+```text
+lenet.jp
+├── app
+├── config
+├── controllers
+├── lib
+├── public
+├── templates
+├── vendor
+├── composer.json
+└── phpstan.neon
+```
+@snapend
+
+@snap[east span-60 text-center]
+@[2](ルートファイル、ミドルウェア、例外ハンドラ等)
+@[3](サービス固有の設定)
+@[4](コントローラ)
+@[5](ビジネスロジック)
+@[6](ドキュメントルート)
+@[7](テンプレート)
+@[8-9](composer.json + vendor)
+@[10](PHPStanの設定ファイル)
+@snapend
+
+---
+
+@snap[north span-100 text-07]
+### 各サービスのindex.php &rarr; Laravelのindex.php
+@snapend
+
+#### `lenet.jp/public/index.php`
+
+```php
+require $_SERVER['DOCUMENT_ROOT'] . '/../../lenet_common/public/index.php';
+```
+
+---
+
+@snap[north span-100 text-07]
+### Laravelのルートファイル &rarr; 各サービスのルートファイル
+@snapend
+
+#### `lenet_common/routes/web.php`
+
+```php:lenet_common/routes/web.php
+require $_SERVER['DOCUMENT_ROOT'] . '/../app/routes.php';
+```
+
+---
+
+## 境界を遵守させる
+
+---
+
+Composer APIでオートロードするクラスを制限する
 
 ---
 
@@ -153,6 +233,8 @@ https://getcomposer.org/apidoc/master/index.html
 
 ---
 
+`lenet_common/app/Providers/AppServiceProvider.php`の`register`メソッド
+
 ```php
 $loader = require base_path() . '/vendor/autoload.php';
 $serviceLoader = require realpath($_SERVER['DOCUMENT_ROOT'])
@@ -164,8 +246,8 @@ foreach ($serviceLoader->getPrefixesPsr4() as $prefix => $paths) {
 ```
 
 @snap[south span-100]
-@[1](Laravel + 共有ライブラリのautoload.phpを読み込む)
-@[2-3](ドキュメントルートから応じたサービスのautoload.phpを読み込む)
+@[1](共有コードのautoload.phpを読み込む)
+@[2-3](ドキュメントルートに対応するサービスのautoload.phpを読み込む)
 @[4](Classmapをマージ)
 @[5-7](PSR-4をマージ)
 @snapend
@@ -229,8 +311,201 @@ https://www.kutsulenet.jp/ にアクセスした時
 
 ---
 
-Composer APIを使えば単純にcomposer.jsonを読み込む以外にも色々できる
-（ご利用は計画的に）
+## PHPStanで依存の違反を検出する
+
+---
+
+@snap[north span-100 text-07]
+### 各サービスのphpstan.neon
+@snapend
+
+#### `lenet.jp/phpstan.neon`
+
+```yaml
+parameters:
+  paths:
+    - %rootDir%/../../../../lenet.jp/app
+    - %rootDir%/../../../../lenet.jp/controllers
+    - %rootDir%/../../../../lenet.jp/lib
+  autoload_files:
+    - %rootDir%/../../../vendor/autoload.php
+    - %rootDir%/../../../_ide_helper.php
+    - %rootDir%/../../../../lenet.jp/vendor/autoload.php
+```
+
+@snap[south span-100]
+@[6-8](共有コードのクラスをオートロード)
+@[6,9](自サービスのクラスをオートロード)
+@snapend
+
+---
+
+@snap[north span-100 text-07]
+### 共有コードのphpstan.neon
+@snapend
+
+#### `lenet_common/phpstan.neon`
+
+```yaml
+parameters:
+  paths:
+    - %rootDir%/../../../app
+    - %rootDir%/../../../controllers
+    - %rootDir%/../../../lib
+  autoload_files:
+    - %rootDir%/../../../vendor/autoload.php
+    - %rootDir%/../../../_ide_helper.php
+```
+
+@snap[south span-100]
+@[6-8](共有コードのクラスをオートロード)
+@snapend
+
+---
+
+@snap[midpoint span-100]
+![IMAGE](assets/img/lenet-package-7.png)
+@snapend
+
+---
+
+サービスごとを疎結合にしつつ
+共通のコードは共有できる
+
+ゆくゆくはマイクロサービスかも目指す？
+
+---
+
+ご静聴ありがとうございました
+
+---
+
+まだ時間がある？
+
+---
+
+@snap[north span-100 text-07]
+### ミドルウェアの登録
+@snapend
+
+`lenet_common/app/Providers/RouteServiceProvider.php`の`boot`メソッド
+
+@snap[span-100]
+```php
+if ($_SERVER['SERVICE_NAME'] == 'lenet.jp') {
+    $this->app->make(Kernel::class)->pushMiddleware(
+        \Jp\Lenet\App\Http\Middleware\BeforeMiddleware::class
+    );
+    // ...
+    $this->app['router']->aliasMiddleware(
+        'auth',
+        \Jp\Lenet\App\Http\Middleware\Authenticate::class
+    );
+    // ...
+}
+```
+@snapend
+
+---
+
+@snap[north span-100 text-07]
+### 環境設定
+@snapend
+
+- Laravelの設定はすべて環境変数で流し込むようにしている
+    - サービスごとにk8sのyamlがある
+- .envファイルは使っていない
+
+#### `lenet-jp.yaml`
+
+```yaml
+env:
+  - name: APP_ENV
+    value: production
+  - name: APP_HOST_PREFIX
+    value: www
+  - name: APP_SERVICE
+    value: lenet.jp
+  - name: APP_DB_ENDPOINT
+  # ...
+```
+
+---
+
+@snap[north span-100 text-07]
+### 設定ファイル
+@snapend
+
+各サービスの設定ファイルはヘルパークラスを作って読み込んでいる
+
+---
+
+@snap[north span-100 text-07]
+### ビューパス
+@snapend
+
+#### `lenet_common/config/view.php`
+
+```php
+'paths' => [
+    realpath(base_path('resources/views')),
+    $_SERVER['DOCUMENT_ROOT'] . '/../templates',
+],
+```
+
+---
+
+@snap[north span-100 text-07]
+### マイグレーション・ストレージ・ジョブスケジューラ
+@snapend
+
+@snap[midpoint span-100]
+- 全てのサービスで共有
+- Laravelをそのまま利用
+- ただし、ジョブスケジューラは最近[DigDag](https://www.digdag.io/)に移行
+@snapend
+
+@snap[south span-40]
+![IMAGE](assets/img/logo-digdag-rec-tr.png)
+@snapend
+
+---
+
+@snap[north span-100 text-07]
+### 必要なパスの書き換え
+@snapend
+
+#### `lenet_common/bootstrap/app.php`
+
+```
+ $app->bind('path.public', function () {                                                                                 
+     return $_SERVER['DOCUMENT_ROOT'];                                                                                   
+ });   
+```
+
+---
+
+@snap[north span-100 text-07]
+### エラーハンドラの登録
+@snapend
+
+#### `lenet_common/app/Providers/AppServiceProvider.php`の`register`メソッド
+
+```php
+if ($_SERVER['SERVICE_NAME'] == 'lenet.jp') {
+    $this->app->singleton(
+        \Illuminate\Contracts\Debug\ExceptionHandler::class,
+        \Jp\Lenet\App\Exceptions\Handler::class
+    );
+}
+```
+
+---
+
+サービスごとを疎結合にしつつ
+共通のコードは共有できる
+
+ゆくゆくはマイクロサービスかも目指す？
 
 ---
 

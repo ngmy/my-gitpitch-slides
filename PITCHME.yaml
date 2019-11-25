@@ -2,7 +2,7 @@
 # Theme Template
 # Doc: https://gitpitch.com/docs/themes/default
 #
-theme : template
+theme : theme
 
 theme-background : [ "#FFF" ]
 theme-headline   : [ "Raleway", "#5289F7", "none" ]
@@ -36,13 +36,13 @@ logo-position : top-left
 # Layout Setting
 # Doc: https://gitpitch.com/docs/settings/layout
 #
-layout : center
+#layout : top
 
 #
 # Footnote Setting
 # Doc: https://gitpitch.com/docs/settings/footnote
 #
-footnote : "GitPitch - The Fastest Way From Idea To Presentation"
+footnote : "&copy; 2019 永宮　悠大"
 
 #
 # Published Setting
@@ -54,6 +54,6 @@ published : true
 # Twitter Card Settings [Pro Only]
 # Doc: https://gitpitch.com/docs/settings/twitter-card
 #
-title : "GitPitch In 60 Seconds"
-description : "A short tutorial introducing the power and simplicity of GitPitch, the markdown presentation service on Git."
-thumbnail : https://gitpitch.com/gpimg/tutorial-thumb.png
+title : "Laravelでモジュラモノリス"
+description : "PHPカンファレンス2019の懇親会LTの資料です。"
+thumbnail : assets/img/rubiks_cube.png
