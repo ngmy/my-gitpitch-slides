@@ -423,12 +423,13 @@ if ($_SERVER['SERVICE_NAME'] == 'lenet.jp') {
 ### 環境設定
 @snapend
 
-@snap[text-07]
+@snap[text-09]
 - Laravelの設定はすべて環境変数を流し込むようにしている
     - サービスごとにk8sのPodがある
 - .envファイルは使っていない
 
 
+@snap[south]
 `kubernetes/lenet-jp.yaml`
 @snap[text-11]
 ```yaml
@@ -442,6 +443,7 @@ env:
   - name: APP_DB_ENDPOINT
   # ...
 ```
+@snapend
 @snapend
 
 ---
