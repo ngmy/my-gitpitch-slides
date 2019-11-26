@@ -481,7 +481,7 @@ env:
 ---
 
 @snap[north span-100 text-07]
-### 必要なパスの書き換え
+### パスの書き換え
 @snapend
 
 `lenet_common/bootstrap/app.php`
