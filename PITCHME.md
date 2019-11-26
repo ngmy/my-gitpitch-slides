@@ -429,7 +429,6 @@ if ($_SERVER['SERVICE_NAME'] == 'lenet.jp') {
 - .envファイルは使っていない
 @snapend
 
-@snap[south]
 `kubernetes/lenet-jp.yaml`
 @snap[text-11]
 ```yaml
@@ -443,7 +442,6 @@ env:
   - name: APP_DB_ENDPOINT
   # ...
 ```
-@snapend
 @snapend
 
 ---
