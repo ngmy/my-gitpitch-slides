@@ -396,7 +396,7 @@ parameters:
 ### ミドルウェアの登録
 @snapend
 
-@snap[text-08]
+@snap[text-09]
 `lenet_common/app/Providers/RouteServiceProvider.php`の`boot`メソッド
 @snapend
 @snap[text-11]
