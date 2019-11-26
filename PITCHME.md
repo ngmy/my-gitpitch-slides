@@ -17,7 +17,7 @@ PHPカンファレンス2019 懇親会LT
 @snap[west span-60 text-08]
 - 永宮　悠大（NAGAMIYA Yuta）
 - 株式会社ホワイトプラスのエンジニア
-- PHP・Laravelの面倒を見る人
+- PHP（Laravel）の面倒を見る人
 - @fa[github] [@ngmy](https://github.com/ngmy)
 - クライミング8：エンジニアリング2
 @snapend
@@ -62,7 +62,7 @@ https://www.wh-plus.co.jp/
     - https://www.futonlenet.jp/
 - 靴クリーニング
     - https://www.kutsulenet.jp/</dd>
-- PHP + Laravelで構築
+- PHP（Laravel）で構築
 @snapend
 
 ---
@@ -179,7 +179,7 @@ lenet.jp
 @snapend
 
 @snap[east span-60 text-center]
-@[2](ルートファイル、ミドルウェア、例外ハンドラ等)
+@[2](ルートファイル・ミドルウェア・例外ハンドラ等)
 @[3](サービス固有の設定)
 @[4](コントローラ)
 @[5](ビジネスロジック)
