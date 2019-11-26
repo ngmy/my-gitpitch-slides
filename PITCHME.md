@@ -240,7 +240,9 @@ https://getcomposer.org/apidoc/master/index.html
 ### 共有コードのautoload.phpと各サービスのautoload.phpのマージ
 @snapend
 
+@snap[text-08]
 `lenet_common/app/Providers/AppServiceProvider.php`の`register`メソッド
+@snapend
 ```php
 $loader = require base_path() . '/vendor/autoload.php';
 $serviceLoader = require $_SERVER['DOCUMENT_ROOT']
@@ -396,7 +398,7 @@ parameters:
 ### ミドルウェアの登録
 @snapend
 
-@snap[text-09]
+@snap[text-08]
 `lenet_common/app/Providers/RouteServiceProvider.php`の`boot`メソッド
 @snapend
 @snap[text-11]
@@ -501,7 +503,9 @@ $app->bind('path.public', function () {
 ### エラーハンドラの登録
 @snapend
 
+@snap[text-08]
 `lenet_common/app/Providers/AppServiceProvider.php`の`register`メソッド
+@snapend
 @snap[text-11]
 ```php
 if ($_SERVER['SERVICE_NAME'] == 'lenet.jp') {
