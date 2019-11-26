@@ -397,7 +397,8 @@ parameters:
 @snapend
 
 @snap[text-07]
-`lenet_common/app/Providers/RouteServiceProvider.php`の`boot`メソッド
+`lenet_common/app/Providers/RouteServiceProvider.php`の
+`boot`メソッド
 @snapend
 @snap[text-11]
 ```php
