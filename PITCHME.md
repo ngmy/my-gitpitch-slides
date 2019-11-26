@@ -465,7 +465,7 @@ env:
 ---
 
 @snap[north span-100 text-07]
-### マイグレーション、ストレージ、ジョブスケジューラ
+### マイグレーション・ストレージ・ジョブスケジューラ
 @snapend
 
 @snap[midpoint span-100]
