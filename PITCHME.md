@@ -473,7 +473,7 @@ env:
 
 @snap[midpoint span-100]
 - 全てのサービスで共有
-- Laravelをそのまま利用
+- Laravelの機能をそのまま利用
 - ただし、ジョブスケジューラは最近[DigDag](https://www.digdag.io/)に移行
 @snapend
 
