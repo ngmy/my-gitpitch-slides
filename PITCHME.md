@@ -426,7 +426,7 @@ if ($_SERVER['SERVICE_NAME'] == 'lenet.jp') {
 @snap[text-09]
 - 環境ごとの設定値の切り替えは環境変数で行なっている
     - サービスごとにKubernetes Podが動いている
-- `.env`ファイルは使っていない
+- Laravelの`.env`ファイルは使っていない
 @snapend
 
 `kubernetes/lenet-jp.yaml`
