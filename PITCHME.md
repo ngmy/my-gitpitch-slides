@@ -403,7 +403,7 @@ parameters:
 @snapend
 @snap[text-11]
 ```php
-if ($_SERVER['SERVICE_NAME'] == 'lenet.jp') {
+if ($_SERVER['APP_SERVICE'] == 'lenet.jp') {
     $this->app->make(Kernel::class)->pushMiddleware(
         \Jp\Lenet\App\Http\Middleware\BeforeMiddleware::class
     );
@@ -437,6 +437,8 @@ env:
     value: "0"
   - name: APP_ENV
     value: production
+  - name: APP_SERVICE
+    value: lenet.jp
   # ...
 ```
 @snapend
