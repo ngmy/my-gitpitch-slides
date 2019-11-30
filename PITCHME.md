@@ -424,9 +424,9 @@ if ($_SERVER['SERVICE_NAME'] == 'lenet.jp') {
 @snapend
 
 @snap[text-09]
-- Laravelの設定はすべて環境変数を流し込むようにしている
-    - サービスごとにk8sのPodがある
-- .envファイルは使っていない
+- 環境設定には環境変数を使っている
+    - サービスごとにKubernetes Podが動いている
+- `.env`ファイルは使っていない
 @snapend
 
 `kubernetes/lenet-jp.yaml`
@@ -473,7 +473,7 @@ env:
 
 @snap[midpoint span-100]
 - 全てのサービスで共有
-- Laravelの機能をそのまま利用
+- Laravelの標準機能を利用
 - ジョブスケジューラは最近[DigDag](https://www.digdag.io/)に移行
 @snapend
 
