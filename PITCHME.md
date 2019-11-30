@@ -319,7 +319,7 @@ https://www.kutsulenet.jp/ にアクセスした時
 
 ---
 
-## PHPStanで依存の違反を検出する
+## PHPStanで依存関係の違反を検出する
 
 ---
 
@@ -418,6 +418,10 @@ env:
     value: lenet.jp
   # ...
 ```
+@snapend
+
+@snap[south span-100]
+共有コード &rarr; 各サービスへの依存があるとPHPStanでエラーになる
 @snapend
 
 ---
