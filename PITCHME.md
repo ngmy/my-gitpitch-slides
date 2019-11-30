@@ -468,13 +468,13 @@ env:
 ---
 
 @snap[north span-100 text-07]
-### マイグレーション・ストレージ・ジョブスケジューラ
+### マイグレーション・ジョブスケジューラ
 @snapend
 
 @snap[midpoint span-100]
 - 全てのサービスで共有
 - Laravelの機能をそのまま利用
-- ただし、ジョブスケジューラは最近[DigDag](https://www.digdag.io/)に移行
+    - ジョブスケジューラは最近[DigDag](https://www.digdag.io/)に移行
 @snapend
 
 @snap[south span-40]
