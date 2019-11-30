@@ -192,7 +192,7 @@ lenet.jp
 ---
 
 @snap[north span-100 text-07]
-### 各サービスのindex.php &rarr; Laravelのindex.php
+### 各サービスの`index.php` &rarr; Laravelの`index.php`
 @snapend
 
 `lenet.jp/public/index.php`
@@ -237,7 +237,7 @@ https://getcomposer.org/apidoc/master/index.html
 ---
 
 @snap[north span-100 text-07]
-### 共有コードのautoload.phpと各サービスのautoload.phpのマージ
+### 共有コードの`autoload.php`と各サービスの`autoload.php`のマージ
 @snapend
 
 @snap[text-08]
@@ -254,8 +254,8 @@ foreach ($serviceLoader->getPrefixesPsr4() as $prefix => $paths) {
 ```
 
 @snap[south span-100]
-@[1](共有コードのautoload.phpを読み込む)
-@[2-3](ドキュメントルートに対応するサービスのautoload.phpを読み込む)
+@[1](共有コードの`autoload.php`を読み込む)
+@[2-3](ドキュメントルートに対応するサービスの`autoload.php`を読み込む)
 @[4](Classmapをマージ)
 @[5-7](PSR-4をマージ)
 @snapend
@@ -324,7 +324,7 @@ https://www.kutsulenet.jp/ にアクセスした時
 ---
 
 @snap[north span-100 text-07]
-### 各サービスのphpstan.neon
+### 各サービスの`phpstan.neon`
 @snapend
 
 `lenet.jp/phpstan.neon`
@@ -350,7 +350,7 @@ parameters:
 ---
 
 @snap[north span-100 text-07]
-### 共有コードのphpstan.neon
+### 共有コードの`phpstan.neon`
 @snapend
 
 `lenet_common/phpstan.neon`
