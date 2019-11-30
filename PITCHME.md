@@ -395,6 +395,32 @@ parameters:
 ---
 
 @snap[north span-100 text-07]
+### 環境設定
+@snapend
+
+@snap[text-09]
+- 環境ごとの設定値の切り替えは環境変数で行なっている
+    - サービスごとにKubernetes Podが動いている
+- Laravelの`.env`ファイルは使っていない
+@snapend
+
+`kubernetes/lenet-jp.yaml`
+@snap[text-11]
+```yaml
+env:
+  - name: APP_DEBUG
+    value: "0"
+  - name: APP_ENV
+    value: production
+  - name: APP_SERVICE
+    value: lenet.jp
+  # ...
+```
+@snapend
+
+---
+
+@snap[north span-100 text-07]
 ### ミドルウェアの登録
 @snapend
 
@@ -420,26 +446,20 @@ if ($_SERVER['APP_SERVICE'] == 'lenet.jp') {
 ---
 
 @snap[north span-100 text-07]
-### 環境設定
+### エラーハンドラの登録
 @snapend
 
-@snap[text-09]
-- 環境ごとの設定値の切り替えは環境変数で行なっている
-    - サービスごとにKubernetes Podが動いている
-- Laravelの`.env`ファイルは使っていない
+@snap[text-08]
+`lenet_common/app/Providers/AppServiceProvider.php`の`register`メソッド
 @snapend
-
-`kubernetes/lenet-jp.yaml`
 @snap[text-11]
-```yaml
-env:
-  - name: APP_DEBUG
-    value: "0"
-  - name: APP_ENV
-    value: production
-  - name: APP_SERVICE
-    value: lenet.jp
-  # ...
+```php
+if ($_SERVER['APP_SERVICE'] == 'lenet.jp') {
+    $this->app->singleton(
+        \Illuminate\Contracts\Debug\ExceptionHandler::class,
+        \Jp\Lenet\App\Exceptions\Handler::class
+    );
+}
 ```
 @snapend
 
@@ -496,26 +516,6 @@ env:
 $app->bind('path.public', function () {                                                                                 
     return $_SERVER['DOCUMENT_ROOT'];                                                                                   
 });
-```
-@snapend
-
----
-
-@snap[north span-100 text-07]
-### エラーハンドラの登録
-@snapend
-
-@snap[text-08]
-`lenet_common/app/Providers/AppServiceProvider.php`の`register`メソッド
-@snapend
-@snap[text-11]
-```php
-if ($_SERVER['APP_SERVICE'] == 'lenet.jp') {
-    $this->app->singleton(
-        \Illuminate\Contracts\Debug\ExceptionHandler::class,
-        \Jp\Lenet\App\Exceptions\Handler::class
-    );
-}
 ```
 @snapend
 
