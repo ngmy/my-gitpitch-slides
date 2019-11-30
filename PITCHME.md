@@ -180,7 +180,7 @@ lenet.jp
 @[5](ビジネスロジック)
 @[6](ドキュメントルート)
 @[7](テンプレート)
-@[8-9](composer.json + vendor)
+@[8-9](`composer.json` + `vendor`)
 @[10](PHPStanの設定ファイル)
 @snapend
 
