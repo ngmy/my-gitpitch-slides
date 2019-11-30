@@ -377,6 +377,10 @@ parameters:
 ![IMAGE](assets/img/lenet-package-7.png)
 @snapend
 
+@snap[south span-100]
+共有コード &rarr; 各サービスへの依存があるとPHPStanでエラーになる
+@snapend
+
 ---
 
 @snap[north span-100 text-07]
@@ -418,10 +422,6 @@ env:
     value: lenet.jp
   # ...
 ```
-@snapend
-
-@snap[south span-100]
-共有コード &rarr; 各サービスへの依存があるとPHPStanでエラーになる
 @snapend
 
 ---
