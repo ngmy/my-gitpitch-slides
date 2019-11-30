@@ -433,13 +433,10 @@ if ($_SERVER['SERVICE_NAME'] == 'lenet.jp') {
 @snap[text-11]
 ```yaml
 env:
+  - name: APP_DEBUG
+    value: "0"
   - name: APP_ENV
     value: production
-  - name: APP_HOST_PREFIX
-    value: www
-  - name: APP_SERVICE
-    value: lenet.jp
-  - name: APP_DB_ENDPOINT
   # ...
 ```
 @snapend
