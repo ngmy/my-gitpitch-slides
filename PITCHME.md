@@ -453,7 +453,7 @@ env:
 ---
 
 @snap[north span-100 text-07]
-### ビューパス
+### ビューパスの追加
 @snapend
 
 `lenet_common/config/view.php`
