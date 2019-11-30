@@ -431,9 +431,9 @@ env:
 ```php
 if ($_SERVER['APP_SERVICE'] == 'lenet.jp') {
     $this->app->make(\Illuminate\Contracts\Http\Kernel::class)
-    ->pushMiddleware(
-        \Jp\Lenet\App\Http\Middleware\BeforeMiddleware::class
-    );
+        ->pushMiddleware(
+            \Jp\Lenet\App\Http\Middleware\BeforeMiddleware::class
+        );
     // ...
     $this->app['router']->aliasMiddleware(
         'auth',
