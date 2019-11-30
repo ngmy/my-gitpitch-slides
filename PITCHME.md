@@ -324,7 +324,7 @@ https://www.kutsulenet.jp/ にアクセスした時
 ---
 
 @snap[north span-100 text-07]
-### 各サービスの`phpstan.neon`
+### 各サービスのPHPStanの設定
 @snapend
 
 `lenet.jp/phpstan.neon`
@@ -350,7 +350,7 @@ parameters:
 ---
 
 @snap[north span-100 text-07]
-### 共有コードの`phpstan.neon`
+### 共有コードのPHPStanの設定
 @snapend
 
 `lenet_common/phpstan.neon`
