@@ -510,7 +510,7 @@ $app->bind('path.public', function () {
 @snapend
 @snap[text-11]
 ```php
-if ($_SERVER['SERVICE_NAME'] == 'lenet.jp') {
+if ($_SERVER['APP_SERVICE'] == 'lenet.jp') {
     $this->app->singleton(
         \Illuminate\Contracts\Debug\ExceptionHandler::class,
         \Jp\Lenet\App\Exceptions\Handler::class
