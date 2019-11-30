@@ -427,7 +427,7 @@ env:
 @snap[text-08]
 `lenet_common/app/Providers/RouteServiceProvider.php`の`boot`メソッド
 @snapend
-@snap[text-11]
+@snap[text-10]
 ```php
 if ($_SERVER['APP_SERVICE'] == 'lenet.jp') {
     $this->app->make(\Illuminate\Contracts\Http\Kernel::class)
