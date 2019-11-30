@@ -424,7 +424,7 @@ if ($_SERVER['SERVICE_NAME'] == 'lenet.jp') {
 @snapend
 
 @snap[text-09]
-- 環境設定には環境変数を使っている
+- 環境にもとづく設定値の切り替えは環境変数で行なっている
     - サービスごとにKubernetes Podが動いている
 - `.env`ファイルは使っていない
 @snapend
